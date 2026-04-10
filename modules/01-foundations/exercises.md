@@ -150,7 +150,7 @@ For each task below, decide: is this an **included request** (inline completion 
 | 4 | Use Ask with GPT-4o to review the architecture of a microservices design | | |
 | 5 | Use Edit mode with the default model to rename a variable in one file | | |
 
-Compare your answers against `labs/lab-01-setup-and-verify/solution/request-classification.md`.
+Check your answers against [modules/01-foundations/theory.md](../../modules/01-foundations/theory.md) — see the Chat Mode Tool Access Reference table.
 
 ---
 

@@ -97,21 +97,25 @@ Before each sub-task: state which mode you are using and why (one sentence in yo
 
 **2b — Edit mode: targeted code change**
 
-1. Keep `scratch/task1.py` open.
-2. Switch the chat panel to **Edit** mode. Add `task1.py` to the working set.
+1. Open `starter/verify.py`.
+2. Switch the chat panel to **Edit** mode. Add `verify.py` to the working set.
 3. Send this prompt:
 
    ```
-   Add input validation that raises ValueError if weight_kg or height_m is zero or negative.
+   Add type annotations and input validation to all four functions.
+   Raise TypeError for non-numeric arguments.
+   Raise ZeroDivisionError if the divisor is zero in divide().
+   Add a one-line docstring to each function.
    ```
 
 4. **Review the diff carefully** before accepting. Check:
-   - Does the validation cover both parameters?
-   - Is the error message informative?
-   - Does the rest of the function still work if inputs are valid?
+   - Do all four functions have type annotations?
+   - Is the error message in each TypeError informative?
+   - Does `divide()` guard against zero?
 5. Accept the diff.
+6. Compare your result with `solution/verify.py`.
 
-**Expected output:** `task1.py` has input validation. The diff was reviewed and accepted deliberately.
+**Expected output:** `starter/verify.py` has type annotations, docstrings, and input validation on all four functions. The diff was reviewed and accepted deliberately.
 
 ---
 
@@ -270,8 +274,7 @@ By the end of this lab you will have:
 
 | Deliverable | Location |
 |-------------|---------|
-| BMI function with input validation | `scratch/task1.py` |
-| Ask / Edit / Plan / Inline chat used on real tasks | VS Code chat history |
+| BMI function with input validation | `scratch/task1.py` || `verify.py` with type annotations, docstrings, and input validation | `starter/verify.py` || Ask / Edit / Plan / Inline chat used on real tasks | VS Code chat history |
 | Critical review answers for AI-generated code | `scratch/task3.py` (as comments) |
 | Security flaw identified by name | `scratch/task3.py` |
 | Task cost classification (4/5 correct) | Worksheet in Task 5 |

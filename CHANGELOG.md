@@ -53,7 +53,7 @@ This project uses [semantic versioning](https://semver.org/): `MAJOR.MINOR.PATCH
 - `.vscode/settings.json` — repo-level editor config
 - `templates/` — module, lab, prompt, and agent definition templates
 - `modules/01-foundations/` — complete: README, theory, exercises, checklist
-- `labs/lab-01-setup-and-verify/` — complete: README, starter, solution, checklist
+- `labs/lab-01-getting-started/` — complete: README, starter, solution, checklist
 - `prompts/README.md` + starter prompts (generation, debugging)
 - `checklists/beginner-completion.md`
 - `docs/architecture.md`

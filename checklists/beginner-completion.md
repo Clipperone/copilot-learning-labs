@@ -12,9 +12,9 @@ Use this checklist after completing Modules 01–03 and Labs 01–03 to confirm 
 - [ ] Can explain — in one sentence each — when to use each mode
 - [ ] Applies the four critical review questions to AI-generated code
 
-## Lab 01: Setup and Verify
+## Lab 01: Getting Started
 
-- [ ] All six success criteria from `labs/lab-01-setup-and-verify/checklist.md` are met
+- [ ] All success criteria from [labs/lab-01-getting-started/checklist.md](../labs/lab-01-getting-started/checklist.md) are met
 - [ ] Premium model access confirmed (or limitation documented)
 
 ---

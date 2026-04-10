@@ -41,7 +41,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Evaluating AI output critically | Four-question review gate; never commit unreviewed AI code |
 | Key VS Code settings | Essential Copilot settings to configure immediately |
 
-**Lab:** [Lab 01 — Setup and Verify](./labs/lab-01-setup-and-verify/)
+**Lab:** [Lab 01 — Getting Started](./labs/lab-01-getting-started/)
 **Deliverable:** Working Copilot setup verified across all major modes
 
 ---

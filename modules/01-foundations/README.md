@@ -204,8 +204,7 @@ See [checklist.md](./checklist.md) for the full self-assessment.
 
 | Lab | Focus | Time |
 |-----|-------|------|
-| [Lab 01 — Getting Started](../../labs/lab-01-getting-started/) | All six modes on real tasks, critical review, three habits | 40–50 min |
-| [Lab 01 — Setup and Verify](../../labs/lab-01-setup-and-verify/) | Installation verification, mode confirmation, request classification worksheets | 40–50 min |
+| [Lab 01 — Getting Started](../../labs/lab-01-getting-started/) | All six modes on real tasks, critical review, productivity habits | 40–50 min |
 
 See [labs/README.md](../../labs/README.md) for the full lab index.
 

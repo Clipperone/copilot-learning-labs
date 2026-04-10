@@ -176,7 +176,7 @@ cd copilot-learning-labs
 
 4. Start here: **[LEARNING_PATH.md](./LEARNING_PATH.md)**
 
-Or go directly to the first lab: **[labs/lab-01-setup-and-verify/](./labs/lab-01-setup-and-verify/)**
+Or go directly to the first lab: **[labs/lab-01-getting-started/](./labs/lab-01-getting-started/)**
 
 ---
 
@@ -186,7 +186,7 @@ Or go directly to the first lab: **[labs/lab-01-setup-and-verify/](./labs/lab-01
 |-----------|-------|
 | Follow the course from the beginning | [LEARNING_PATH.md](./LEARNING_PATH.md) |
 | See all modules and topics at a glance | [SYLLABUS.md](./SYLLABUS.md) |
-| Start the first lab immediately | [labs/lab-01-setup-and-verify/](./labs/lab-01-setup-and-verify/) |
+| Start the first lab immediately | [labs/lab-01-getting-started/](./labs/lab-01-getting-started/) |
 | Find a reusable prompt | [prompts/](./prompts/) |
 | Read the full course overview | [COURSE_OVERVIEW.md](./COURSE_OVERVIEW.md) |
 | Review AI-generated code safely | [checklists/ai-output-review.md](./checklists/ai-output-review.md) |
@@ -226,7 +226,7 @@ Modules 02–10 are being released progressively. See the [roadmap](#roadmap) be
 
 | Lab | Paired module | Status |
 |-----|--------------|--------|
-| [Lab 01 — Setup and Verify](./labs/lab-01-setup-and-verify/) | Module 01 | ✅ Available |
+| [Lab 01 — Getting Started](./labs/lab-01-getting-started/) | Module 01 | ✅ Available |
 | Lab 02 — Project Configuration | Module 02 | Planned — v0.2 |
 | Lab 03 — Token Audit | Module 03 | Planned — v0.2 |
 | Lab 04 — Prompt Patterns Workshop | Module 04 | Planned — v0.3 |
