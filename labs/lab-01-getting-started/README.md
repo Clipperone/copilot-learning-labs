@@ -10,7 +10,7 @@
 
 ## Learning Objective
 
-Complete this lab and you will have used GitHub Copilot Pro+ deliberately across all six interaction modes on real coding tasks, applied the Read → Run → Reason → Risk critical review workflow to AI-generated code, and established the three first-session productivity habits.
+Complete this lab and you will have used GitHub Copilot Pro+ deliberately across five of the six interaction modes on real coding tasks (Agent mode is introduced in Module 06), applied the Read → Run → Reason → Risk critical review workflow to AI-generated code, and established the three first-session productivity habits.
 
 ---
 
@@ -274,7 +274,9 @@ By the end of this lab you will have:
 
 | Deliverable | Location |
 |-------------|---------|
-| BMI function with input validation | `scratch/task1.py` || `verify.py` with type annotations, docstrings, and input validation | `starter/verify.py` || Ask / Edit / Plan / Inline chat used on real tasks | VS Code chat history |
+| BMI function with input validation | `scratch/task1.py` |
+| `verify.py` with type annotations, docstrings, and input validation | `starter/verify.py` |
+| Ask / Edit / Plan / Inline chat used on real tasks | VS Code chat history |
 | Critical review answers for AI-generated code | `scratch/task3.py` (as comments) |
 | Security flaw identified by name | `scratch/task3.py` |
 | Task cost classification (4/5 correct) | Worksheet in Task 5 |
@@ -294,18 +296,7 @@ By the end of this lab you will have:
 
 ---
 
-## Review Checklist
-
-- [ ] Task 1: inline completion accepted after applying the four-step review — not reflexively
-- [ ] Task 2a: Ask mode used; edge case identified in follow-up
-- [ ] Task 2b: Edit mode diff reviewed line by line before accepting
-- [ ] Task 2c: Plan mode used; no code written during planning
-- [ ] Task 2d: Inline chat used for a scoped, single-line change
-- [ ] Task 3: `scratch/task3.py` contains generated function + four written review answers
-- [ ] Task 3: plaintext credential storage identified as the security flaw
-- [ ] Task 4: each of the three habits practised once
-- [ ] Task 5: cost classification complete; any wrong answers have a written correction
-- [ ] I can explain in one sentence when I would use each of the six modes
+→ Self-assess with [checklist.md](./checklist.md) before moving on.
 
 ---
 

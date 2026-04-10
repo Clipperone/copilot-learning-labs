@@ -36,7 +36,7 @@ Compare `starter/verify.py` after Task 2b with `solution/verify.py` to check you
 
 ## Task 3: Critical Review in Practice
 
-- [ ] Promptly generated a password-check function using Ask mode
+- [ ] Used Ask mode to generate a password-check function
 - [ ] `scratch/task3.py` contains the generated function and all four Read → Run → Reason → Risk answers as comments
 - [ ] The plaintext credential storage flaw is named in the comments
 - [ ] Copilot follow-up confirmed OWASP A02 — Cryptographic Failures

@@ -58,6 +58,7 @@ If the icon shows a warning:
 ### The Six Interaction Modes
 
 | Mode | Trigger | Best for |
+|------|---------|----------|
 | **Inline completion** | Editor, as you type | Short completions, boilerplate, next lines |
 | **Chat (ask)** | Chat panel / `Ctrl+Alt+I` | Questions, explanations, short generation |
 | **Edit** | Chat panel → Edit mode | Apply changes to one or more open files |
@@ -164,14 +165,6 @@ See [exercises.md](./exercises.md) for full instructions.
 | Ignoring the status bar icon | Easy to miss when focused on code | When completions stop, check the icon first |
 | Pasting large irrelevant files into context | "More context = better answers" | Irrelevant context dilutes signal and increases cost |
 | Continuing a new topic in an existing session | Feels efficient to keep going | Each unrelated topic should start a new chat session |
-
----
-
-
-
----
-
-
 
 ---
 

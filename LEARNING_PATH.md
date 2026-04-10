@@ -40,7 +40,7 @@ Answer these questions to self-place:
 
 ```
 Module 01: Foundations                          ~2 hrs
-    └── Lab 01: Setup and Verify                ~40 min
+    └── Lab 01: Getting Started                 ~40 min
 Module 02: Configuration                        ~2 hrs
     └── Lab 02: Project Configuration Baseline  ~50 min
 Module 03: Token Optimization                   ~1.5 hrs
