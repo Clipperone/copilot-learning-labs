@@ -15,11 +15,24 @@ This project uses [semantic versioning](https://semver.org/): `MAJOR.MINOR.PATCH
 
 ## [Unreleased]
 
-### Planned for v0.2 (Beginner complete)
-- Module 02: Configuration
-- Module 03: Token Optimization
-- Labs 02–05
-- Prompts: generation and refactoring starter sets
+### Planned for v0.3 (Intermediate)
+- Module 04: Prompt Engineering for Coding
+- Module 05: Persistent Custom Instructions
+- Labs 04–06
+- `instructions/` folder with global, project, and path-scoped examples
+
+---
+
+## [0.2.0] — 2026-04-10
+
+### Added
+- `modules/02-configuration/` — complete: README, theory, exercises, checklist
+- `modules/03-token-optimization/` — complete: README, theory, exercises, checklist
+- `labs/lab-02-configuration/` — complete: README, checklist, starter (Python project), solution (fully configured project with `.vscode/`, `.github/`, `.editorconfig`, `pyproject.toml`)
+- `labs/lab-03-token-audit/` — complete: README, checklist, starter worksheet, solution worksheet
+- `prompts/refactoring/refactor-for-clarity.md` — refactoring prompt library starter
+- `prompts/refactoring/extract-function.md` — extract helper function prompt
+- `checklists/pre-commit.md` — AI-assisted code pre-commit review checklist
 
 ---
 
