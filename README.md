@@ -1,0 +1,191 @@
+# copilot-learning-labs
+
+> **From first autocomplete to production-grade AI-assisted workflows.**
+
+An open, self-paced course on **GitHub Copilot Pro+** in **Visual Studio Code**.
+Clone this repository, follow the labs, and apply the templates to your own projects — no registration, no LMS, no cost beyond your Copilot subscription.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+[![Release](https://img.shields.io/badge/release-v0.1--foundation-green)](./CHANGELOG.md)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](./CONTRIBUTING.md)
+
+---
+
+## Who This Course Is For
+
+| Learner | Starting point | Primary goal |
+|---------|---------------|-------------|
+| Developer new to Copilot | No Copilot experience | Get productive fast with a structured foundation |
+| Developer using Copilot informally | Uses completions and basic chat | Move from ad hoc usage to deliberate, repeatable workflows |
+| Engineering manager | Team has Copilot, no standards | Define team conventions, instructions, and adoption milestones |
+| Developer productivity coach | Copilot experience, no training framework | Build and deliver a structured, practical training program |
+
+**Prerequisite knowledge:** Basic familiarity with VS Code and at least one programming language. No prior Copilot experience required.
+
+**Plan requirement:** Most beginner and intermediate content applies to all paid Copilot plans. Agent mode, premium model access, and some advanced features require **GitHub Copilot Pro+**. Plan-specific restrictions are noted at the module level.
+
+---
+
+## What You Will Learn
+
+- Configure GitHub Copilot Pro+ and VS Code for maximum productivity
+- Choose the right Copilot mode — inline completion, chat, ask, edit, plan, agent — for any task
+- Write effective, repeatable prompts for code generation, refactoring, debugging, testing, documentation, and security review
+- Design persistent custom instructions that guide Copilot consistently across a project
+- Define role-specialized agents with clear responsibilities, tool permissions, and handoff protocols
+- Orchestrate multi-agent workflows on complex, multi-step tasks without wasting context or requests
+- Make cost-aware decisions about models and modes to minimize premium request consumption
+- Apply a structured 7/30/60/90-day personal adoption roadmap
+
+---
+
+## Getting Started
+
+**Requirements:**
+
+- GitHub account with an active **GitHub Copilot Pro+** subscription
+- **VS Code** 1.90 or later
+- Internet connection for initial authentication
+
+**Steps:**
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/copilot-learning-labs.git
+cd copilot-learning-labs
+```
+
+2. Open the folder in VS Code. When prompted, install the recommended extensions.
+
+3. Sign in to GitHub in VS Code if not already: **Accounts** icon (bottom-left) → **Sign in with GitHub**.
+
+4. Start here: **[LEARNING_PATH.md](./LEARNING_PATH.md)**
+
+Or go directly to the first lab: **[labs/lab-01-setup-and-verify/](./labs/lab-01-setup-and-verify/)**
+
+---
+
+## Quick Navigation
+
+| I want to… | Go to |
+|-----------|-------|
+| Follow the course from the beginning | [LEARNING_PATH.md](./LEARNING_PATH.md) |
+| See all modules and topics at a glance | [SYLLABUS.md](./SYLLABUS.md) |
+| Start the first lab immediately | [labs/lab-01-setup-and-verify/](./labs/lab-01-setup-and-verify/) |
+| Find a reusable prompt | [prompts/](./prompts/) |
+| Read the full course overview | [COURSE_OVERVIEW.md](./COURSE_OVERVIEW.md) |
+| Review AI-generated code safely | [checklists/ai-output-review.md](./checklists/ai-output-review.md) |
+| Understand what was recently added | [CHANGELOG.md](./CHANGELOG.md) |
+
+---
+
+## Course Structure
+
+The course is organized into **10 progressive modules** across 4 levels, each paired with a hands-on lab and a self-assessment checklist.
+
+| Level | Modules | Focus |
+|-------|---------|-------|
+| **Beginner** | 01 — 03 | Setup, configuration, token and cost awareness |
+| **Intermediate** | 04 — 05 | Prompt engineering, custom instructions |
+| **Advanced** | 06 — 07 | Agent personas, multi-agent workflows |
+| **Expert** | 08 — 10 | Advanced features, repository quality, adoption planning |
+
+### Modules
+
+| # | Module | Level | Key skill |
+|---|--------|-------|-----------|
+| 01 | [Foundations](./modules/01-foundations/) | Beginner | Install, verify, understand all modes, evaluate AI output |
+| 02 | Configuration | Beginner | Optimize VS Code and project structure for AI context |
+| 03 | Token Optimization | Beginner | Mode/model decision framework, cost-aware workflows |
+| 04 | Prompt Engineering | Intermediate | Structured prompts for every coding scenario |
+| 05 | Custom Instructions | Intermediate | Persistent guidance at global, project, and path scope |
+| 06 | Agents | Advanced | 10 role-specialized personas with tool permissions and handoffs |
+| 07 | Multi-Agent Workflows | Advanced | Orchestrate agents across complex, multi-step tasks |
+| 08 | Advanced Features | Expert | Plan mode, AI review, terminal integration, CI/CD |
+| 09 | Repository Quality | Expert | AI-friendly project structure, governance, review protocols |
+| 10 | Adoption Roadmap | Expert | 7/30/60/90-day personal and team adoption plan |
+
+Modules 02–10 are being released progressively. See the [roadmap](#roadmap) below.
+
+### Labs
+
+| Lab | Paired module | Status |
+|-----|--------------|--------|
+| [Lab 01 — Setup and Verify](./labs/lab-01-setup-and-verify/) | Module 01 | ✅ Available |
+| Lab 02 — Project Configuration | Module 02 | Planned — v0.2 |
+| Lab 03 — Token Audit | Module 03 | Planned — v0.2 |
+| Lab 04 — Prompt Patterns Workshop | Module 04 | Planned — v0.3 |
+| Lab 05 — Build a Prompt Library | Module 04 | Planned — v0.3 |
+| Lab 06 — Custom Instructions | Module 05 | Planned — v0.3 |
+| Lab 07 — First Agent Session | Module 06 | Planned — v0.4 |
+| Lab 08 — Multi-Agent Workflow | Module 07 | Planned — v0.4 |
+| Lab 09 — Advanced Feature Tour | Module 08 | Planned — v1.0 |
+| Lab 10 — Repository Health Audit | Module 09 | Planned — v1.0 |
+
+---
+
+## Repository Contents
+
+| Folder / File | Purpose |
+|---------------|---------|
+| [modules/](./modules/) | Learning modules — theory, exercises, and checklists |
+| [labs/](./labs/) | Hands-on labs — starter files and reference solutions |
+| [prompts/](./prompts/) | Reusable prompt library by category |
+| [instructions/](./instructions/) | Custom instruction examples *(coming in v0.3)* |
+| [agents/](./agents/) | Agent persona definitions *(coming in v0.4)* |
+| [templates/](./templates/) | Authoring templates for all content types |
+| [checklists/](./checklists/) | AI output review, pre-commit, and completion checklists |
+| [docs/](./docs/) | Architecture decisions and design reference |
+| [capstone/](./capstone/) | Final project *(coming in v1.0)* |
+| [COURSE_OVERVIEW.md](./COURSE_OVERVIEW.md) | Scope, audience, and key outcomes |
+| [SYLLABUS.md](./SYLLABUS.md) | Full 10-module curriculum detail |
+| [LEARNING_PATH.md](./LEARNING_PATH.md) | Guided navigation by level and persona |
+| [CONTRIBUTING.md](./CONTRIBUTING.md) | How to contribute |
+| [CHANGELOG.md](./CHANGELOG.md) | Release history |
+
+---
+
+## Roadmap
+
+| Release | Status | Contents |
+|---------|--------|---------|
+| `v0.1` — Foundation | **Current** | Module 01, Lab 01, all templates, prompt starter set, checklists, `.github/` and `.vscode/` config |
+| `v0.2` — Beginner complete | Planned | Modules 02–03, Labs 02–03, additional prompts |
+| `v0.3` — Intermediate complete | Planned | Modules 04–05, Labs 04–06, `instructions/` folder |
+| `v0.4` — Advanced complete | Planned | Modules 06–07, Labs 07–08, `agents/` folder |
+| `v1.0` — Full course | Planned | All 10 modules, Labs 09–10, capstone, examples, FAQ |
+
+Feature requests and content suggestions are tracked as [GitHub Issues](../../issues). Use the [content suggestion template](./.github/ISSUE_TEMPLATE/content_suggestion.md) to propose new material.
+
+---
+
+## Contributing
+
+Contributions of all kinds are welcome — content fixes, new prompts, improved labs, and translation notes.
+
+Before opening a PR:
+
+1. Read [CONTRIBUTING.md](./CONTRIBUTING.md) for conventions and template requirements.
+2. For significant changes, open an issue first.
+3. Follow the [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md).
+
+Use [GitHub Discussions](../../discussions) for questions, learning support, and ideas that are not yet ready for an issue.
+
+---
+
+## Feature Verification
+
+This course documents GitHub Copilot features as they exist at publication time. Each module includes a `Verified: YYYY-MM` date. Copilot evolves quickly — if you find outdated content, open a [bug report](./.github/ISSUE_TEMPLATE/bug_report.md).
+
+Official references:
+
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot)
+- [VS Code Copilot documentation](https://code.visualstudio.com/docs/copilot/overview)
+- [GitHub Copilot changelog](https://github.blog/changelog/label/copilot/)
+
+---
+
+## License
+
+[MIT](./LICENSE) — free to use, adapt, and share with attribution.

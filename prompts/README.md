@@ -1,0 +1,33 @@
+# Prompt Library
+
+A curated collection of reusable, tested prompts for common coding scenarios.
+
+## Categories
+
+| Category | Focus | Prompts |
+|----------|-------|---------|
+| [generation/](./generation/) | Writing new code from a specification | Function, class, API endpoint |
+| [debugging/](./debugging/) | Diagnosing and fixing problems | Symptom-based debug, explain error |
+| refactoring/ | Improving structure without changing behavior | *(coming in v0.2)* |
+| testing/ | Writing tests for existing code | *(coming in v0.2)* |
+| documentation/ | Writing and improving docs | *(coming in v0.2)* |
+| review/ | Reviewing code for quality, style, and correctness | *(coming in v0.2)* |
+| security/ | Identifying vulnerabilities and applying fixes | *(coming in v0.2)* |
+
+## How to Use a Prompt
+
+1. Find the prompt that matches your task.
+2. Copy it and fill in the `[UPPERCASE]` placeholders with your values.
+3. Paste it into the Copilot chat panel in the appropriate mode (listed in the prompt file).
+4. If results are poor, try the tips and failure notes at the bottom of each prompt file.
+
+## How to Add a Prompt
+
+Follow [templates/prompt-template.md](../templates/prompt-template.md) and open a PR.
+Verify that the prompt produces correct output before submitting.
+
+## Premium Request Guidance
+
+All prompts are marked with whether a premium model is recommended.
+`Premium model recommended: no` means the default model handles this well.
+Only use a premium model when the task involves complex reasoning, multi-step logic, or security analysis.

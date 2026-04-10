@@ -1,0 +1,14 @@
+{
+  "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "yzhang.markdown-all-in-one",
+    "davidanson.vscode-markdownlint",
+    "bierner.markdown-preview-github-styles",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens"
+  ]
+}
