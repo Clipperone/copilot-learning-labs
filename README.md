@@ -24,7 +24,7 @@ Open the folder in VS Code, install the recommended extensions when prompted, an
 
 **Then start here → [LEARNING_PATH.md](./LEARNING_PATH.md)**
 
-Or jump straight to the first lab → [labs/lab-01-setup-and-verify/](./labs/lab-01-setup-and-verify/)
+Or jump straight to the first lab → [labs/lab-01-getting-started/](./labs/lab-01-getting-started/) · [Browse all labs](./labs/)
 
 > Most beginner and intermediate content works on any paid Copilot plan. Agent mode and premium model access require **Pro+**. Plan-specific restrictions are noted at the module level.
 
