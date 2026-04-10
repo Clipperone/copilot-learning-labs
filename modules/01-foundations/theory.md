@@ -1,6 +1,6 @@
 # Module 01: Foundations — Extended Theory
 
-> Reference material to supplement the module README. Read this for deeper context or when the README summary is insufficient.
+> Reference material to supplement the module README. Read this for deeper context or when the README summary is insufficient. Prose sections are capped at 500 words; tables and code are excluded from that limit.
 
 ---
 
@@ -13,22 +13,33 @@
 | Premium model access | ❌ | Limited | ✅ | ✅ | ✅ |
 | Agent mode | ❌ | ❌ | ✅ | ✅ | ✅ |
 | Premium request quota | — | — | Monthly allotment | Seat-based | Seat-based |
+| Custom instructions | ❌ | ❌ | ✅ | ✅ | ✅ |
+| Repository-scoped policies | ❌ | ❌ | ❌ | ✅ | ✅ |
 
-> Plan features change frequently. Verify at [https://github.com/features/copilot](https://github.com/features/copilot).
+> Plan features change frequently. Verify at [github.com/features/copilot](https://github.com/features/copilot).
 
 ---
 
-## How GitHub Copilot Works (Operational Model)
+## How Copilot Works: The Prompt Pipeline
 
-Copilot sends a **prompt** to a language model and returns a **completion**. The prompt includes:
+Every Copilot interaction follows the same pipeline:
 
-- The text you typed (or the chat message you sent)
-- Surrounding file context (content before and after your cursor)
-- Open tabs and referenced files (depending on mode)
-- Custom instructions (if configured)
-- Conversation history (in chat modes)
+```
+You type → VS Code builds a prompt → Model processes it → Completion returned → You review
+```
 
-The model does not have access to your file system beyond what VS Code passes in the context window. It does not remember previous sessions.
+The prompt VS Code sends contains:
+
+| Component | Present in |
+|-----------|----------|
+| Your message or typed text | All modes |
+| Content before/after cursor | Inline completion |
+| Open file contents | Chat modes |
+| Conversation history | Chat modes |
+| Custom instruction files | All modes (if configured) |
+| Referenced files (`#file:`) | Chat modes, when you add them |
+
+The model has no access to anything outside what VS Code passes. It does not retain state between sessions. Restarting VS Code clears the conversation.
 
 ### What "context window" means in practice
 
@@ -73,19 +84,40 @@ In chat modes (ask, edit, plan, agent), Copilot operates as a **conversation** w
 
 ---
 
-## Why Critical Evaluation Matters
+## AI Failure Mode Reference
 
-Language models are trained to produce **plausible text**, not necessarily correct code. Common failure modes:
+Language models are optimised to produce **plausible text**, not verified code. The five failure modes a beginner will encounter most often:
 
-| Failure type | Example | Detection strategy |
-|-------------|---------|-------------------|
-| Hallucinated API | Calls `list.findLast()` in Python 3.8 which doesn't exist | Check API docs; run the code |
-| Correct pattern, wrong context | Adds `async/await` where the framework is synchronous | Understand the context before accepting |
-| Missing error handling | Happy-path only; exceptions will crash | Ask Copilot: "What can go wrong here?" |
-| Security anti-pattern | Concatenates user input into SQL | Use security review prompt; check OWASP |
-| Stale knowledge | References a deprecated API | Search current docs for the symbol |
+| Failure | Concrete example | Detection method |
+|---------|-----------------|------------------|
+| **Hallucinated API** | Calls `pd.DataFrame.pivot_wider()` — this method does not exist in pandas | Run the code; read the traceback |
+| **Stale knowledge** | Uses `app.run(debug=True)` in a Flask 3.x context where the API changed | Check the current official docs |
+| **Missing error handling** | Opens a file with no `try/except`; any missing file crashes the program | Ask: "What can go wrong here?" |
+| **Security anti-pattern** | Formats user input directly into a SQL string — SQL injection (OWASP A03) | Check against OWASP A03 Injection |
+| **Correct pattern, wrong context** | Adds `async def` to a function in a synchronous Django view | Understand the framework conventions before accepting |
 
-The four critical questions from the module README are the minimum gate. For production code, use the [AI output review checklist](../../checklists/ai-output-review.md).
+**OWASP anchors for beginners:**
+
+- **A01 — Broken Access Control:** AI-generated code may expose resources without checking who the caller is. Ask: *"Does this code verify the caller has permission?"*
+- **A03 — Injection:** AI-generated code may construct SQL, shell commands, or HTML from user inputs without sanitisation. Ask: *"Does any user-controlled value flow into a query, command, or rendered output?"*
+
+For a full review protocol, see [checklists/ai-output-review.md](../../checklists/ai-output-review.md).
+
+---
+
+## The Three Productivity Habits: Rationale
+
+**Habit 1 — Choose the mode before writing the prompt**
+
+When you switch modes mid-session, VS Code discards the current context and starts a new one. Requests spent re-orienting a new session on the same problem are wasted. Deciding the mode first takes two seconds and saves one re-prompt.
+
+**Habit 2 — Write your acceptance criteria first**
+
+With no acceptance criteria, the brain defaults to pattern-matching: "This looks like what I asked for." A one-sentence criterion — *"I will accept this if the function handles a None input without raising an exception"* — forces you to check the specific behaviour you actually need.
+
+**Habit 3 — Close irrelevant files before a chat session**
+
+VS Code includes the content of open files in the context it sends to the model. A 500-line unrelated file in an open tab dilutes the prompt, consumes context window space, and increases the chance Copilot references the wrong file in its answer.
 
 ---
 
@@ -93,5 +125,6 @@ The four critical questions from the module README are the minimum gate. For pro
 
 - [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot)
-- [GitHub Copilot feature comparison](https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot)
+- [GitHub Copilot plan comparison](https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot)
 - [VS Code Copilot keyboard shortcuts](https://code.visualstudio.com/docs/copilot/copilot-vscode-features)
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)

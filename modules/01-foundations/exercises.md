@@ -1,6 +1,8 @@
 # Module 01: Foundations — Exercises
 
-Complete these exercises in order. Each one targets a specific Copilot mode.
+Complete these exercises in order. Each one targets a specific Copilot mode or skill.
+
+Before each exercise: decide which mode you are using and why. Apply Read → Run → Reason → Risk before accepting any suggestion.
 
 ---
 
@@ -130,12 +132,35 @@ def divide(a, b)
 
 ---
 
+---
+
+## Exercise 6: Request Classification
+
+**Goal:** Apply the included vs. premium distinction to real task descriptions without looking up documentation.
+
+**Instructions:**
+
+For each task below, decide: is this an **included request** (inline completion or Ask/Edit with the default model) or a **premium request** (premium model, agent session, or large-context operation)? Write one sentence explaining your reasoning.
+
+| # | Task description | Your classification | Your reasoning |
+|---|-----------------|--------------------|-----------------|
+| 1 | Accept a ghost text completion that suggests a loop body | | |
+| 2 | Ask the default model to explain a 20-line Python function | | |
+| 3 | Run an agent session to scaffold a new FastAPI project across 5 files | | |
+| 4 | Use Ask with GPT-4o to review the architecture of a microservices design | | |
+| 5 | Use Edit mode with the default model to rename a variable in one file | | |
+
+Compare your answers against `labs/lab-01-setup-and-verify/solution/request-classification.md`.
+
+---
+
 ## Reflection Questions
 
-After completing all five exercises, answer these in your own words (no submission required — this is for your own consolidation):
+After completing all six exercises, answer these in your own words (no submission required):
 
 1. Which mode would you use to understand a 200-line function you've never seen before?
 2. Which mode would you use to scaffold a new API endpoint across three files?
-3. What's the difference in cost between Exercise 2 (Ask) and a full Agent session?
-4. When in Exercise 3 (Edit), why is reviewing the diff before accepting it important?
+3. What's the cost difference between Exercise 2 (Ask, default model) and a full Agent session?
+4. In Exercise 3 (Edit), why is reviewing the diff before accepting it important?
 5. In Exercise 4 (Plan), what would have gone wrong if you had skipped to coding immediately?
+6. In Exercise 6, which tasks were the hardest to classify, and why?

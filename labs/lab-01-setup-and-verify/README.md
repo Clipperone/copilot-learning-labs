@@ -1,9 +1,151 @@
 # Lab 01: Setup and Verify
 
 > **Difficulty:** Beginner
-> **Estimated time:** 30–45 minutes
+> **Estimated time:** 40–50 minutes
 > **Module:** [Module 01 — Foundations](../../modules/01-foundations/)
 > **Type:** Standalone
+
+---
+
+## Learning Objective
+
+Complete this lab and you will have confirmed that GitHub Copilot Pro+ is installed, authenticated, and functional in VS Code; used all six interaction modes with a real prompt; applied the critical review workflow to an AI suggestion; and classified task types by request cost.
+
+---
+
+## Prerequisites
+
+- [ ] A GitHub account with an active GitHub Copilot Pro+ subscription
+- [ ] VS Code installed (version 1.90 or later)
+- [ ] Internet connection (required for authentication)
+
+---
+
+## Setup
+
+1. Clone or open this repository in VS Code.
+2. When prompted, install the recommended extensions, or run **Extensions: Show Recommended Extensions** from the command palette.
+3. Sign in to GitHub: **Accounts** icon (bottom-left) → **Sign in with GitHub**.
+
+---
+
+## Tasks
+
+### Task 1: Verify Copilot is Active
+
+**Goal:** Confirm the extension is installed, authenticated, and serving completions.
+
+**Instructions:**
+
+1. Check the VS Code status bar (bottom right). The Copilot icon must be visible with no warning or error state. If it shows a warning, click it and sign in.
+2. Open `starter/verify.py`.
+3. Place your cursor at the end of the last line and press `Enter`.
+4. Type `def greet(` and pause. Grey ghost text should appear.
+5. Press `Tab` to accept it. Then press `Ctrl+Z` to undo and restore the file.
+
+**Success criterion:** Ghost text appeared, `Tab` accepted it, the file is back to its original state.
+
+---
+
+### Task 2: Complete the Mode Verification Worksheet
+
+**Goal:** Confirm all six modes produce a valid response in your environment.
+
+**Instructions:**
+
+1. Open `starter/mode-verification.md`.
+2. For each mode in the worksheet, run the test prompt and record the result (one sentence: what Copilot returned or did).
+3. Mark each mode as ✅ (worked) or ❌ (error — note the error message).
+
+**Test prompts by mode:**
+
+| Mode | How to open | Test prompt |
+|------|------------|------------|
+| Inline completion | Type in any `.py` file | Type `def calculate_area(` and pause |
+| Ask | `Ctrl+Alt+I`, set to Ask | `What does starter/verify.py do?` |
+| Edit | `Ctrl+Alt+I`, set to Edit, add `verify.py` to working set | `Add a docstring to each function.` — review diff, then **Discard** |
+| Plan | `Ctrl+Alt+I`, set to Plan | `Plan a function that reads a CSV and returns rows where status = active.` |
+| Agent | `Ctrl+Alt+I`, set to Agent | `List all Python files in the starter/ folder and describe each one.` |
+| Inline chat | Open `verify.py`, select the `add` function, press `Ctrl+I` | `Add input validation to reject non-numeric arguments.` — press `Esc` after reviewing |
+
+> **Discard after each Edit or Inline chat test.** These tasks verify function only — do not save changes to `verify.py`.
+
+**Success criterion:** `starter/mode-verification.md` has a result recorded for all six modes.
+
+---
+
+### Task 3: Apply the Critical Review Workflow
+
+**Goal:** Use Read → Run → Reason → Risk on AI-generated code to identify a real flaw.
+
+**Instructions:**
+
+1. Open `starter/review-exercise.md`.
+2. Read both code snippets in the file.
+3. For each snippet, apply the four-step workflow and write your answers in the labeled fields.
+4. Identify which snippet contains a flaw and describe it.
+
+**Success criterion:** `starter/review-exercise.md` has written answers for all four steps on both snippets. The flaw in Snippet B is identified correctly.
+
+Compare your answers with `solution/review-exercise.md`.
+
+---
+
+### Task 4: Request Classification
+
+**Goal:** Classify five task descriptions as included or premium requests without looking up documentation.
+
+**Instructions:**
+
+1. Open `starter/request-classification.md`.
+2. For each task description, write your classification (`included` or `premium`) and a one-sentence explanation.
+3. Aim to answer from memory using the cost-aware decision rule: *use the cheapest mode that handles the task*.
+
+**Success criterion:** At least 4 of 5 classifications match the solution. `starter/request-classification.md` has written reasoning for all five.
+
+Compare your answers with `solution/request-classification.md`.
+
+---
+
+## Success Criteria
+
+| Criterion | How to verify |
+|-----------|--------------|
+| Copilot active | Status bar icon shows no error |
+| Inline completion works | Ghost text appeared in `verify.py` |
+| All six modes work | `mode-verification.md` has ✅ for all six rows |
+| Critical review applied | `review-exercise.md` has answers in all four fields per snippet |
+| Flaw identified | Snippet B flaw is named correctly |
+| Request classification | At least 4/5 correct in `request-classification.md` |
+
+---
+
+## Common Failure Points
+
+| Symptom | Likely cause | Fix |
+|---------|-------------|-----|
+| No ghost text appears | Not authenticated, or extension disabled | Click the Copilot status bar icon and sign in |
+| Chat panel won't open | Copilot Chat extension not installed | Install `github.copilot-chat` from the Extensions panel |
+| Agent mode not available | Plan does not include Agent mode | Verify subscription at [github.com/settings/copilot](https://github.com/settings/copilot) |
+| Edit mode diff is empty | File not added to the working set | Click **+** in the Edit mode header to add the file |
+| Completions appear then stop | Firewall or proxy blocking requests | Check VS Code network proxy settings |
+
+---
+
+## Files in This Lab
+
+| File / Folder | Purpose |
+|---------------|---------|
+| `README.md` | Lab instructions (this file) |
+| `checklist.md` | Completion self-assessment |
+| `starter/verify.py` | Python file used in Tasks 1 and 2 |
+| `starter/mode-verification.md` | Blank worksheet for Task 2 |
+| `starter/review-exercise.md` | Two code snippets + question fields for Task 3 |
+| `starter/request-classification.md` | Five task descriptions for Task 4 |
+| `solution/verify.py` | Reference: `verify.py` with docstrings and validation added |
+| `solution/mode-verification.md` | Reference: filled mode verification example |
+| `solution/review-exercise.md` | Reference: correct answers including flaw identification |
+| `solution/request-classification.md` | Reference: classifications with rationale |
 
 ---
 

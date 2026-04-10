@@ -1,51 +1,56 @@
 # Lab 01: Setup and Verify — Completion Checklist
 
-Use this checklist to confirm the lab is complete before moving on.
+Use this checklist to self-assess before moving to Module 02.
 
 ---
 
-## Task 1: Inline Completion
+## Task 1: Verify Copilot is Active
 
-- [ ] Opened `starter/verify.py`
-- [ ] Triggered a ghost text completion by typing a function header and pausing
-- [ ] Pressed `Tab` to accept the completion
-- [ ] Pressed `Ctrl+Z` to undo and restore the file
-
----
-
-## Task 2: Mode Verification
-
-- [ ] **Ask mode** — sent a question about `verify.py` and received a relevant answer
-- [ ] **Edit mode** — proposed a diff to add docstrings; reviewed it; discarded without saving
-- [ ] **Inline chat** — selected a function, pressed `Ctrl+I`, received a suggestion; pressed `Esc` to discard
+- [ ] Copilot status bar icon is visible with no warning or error
+- [ ] Ghost text appeared in `starter/verify.py` when typing a function header
+- [ ] `Tab` accepted the completion; `Ctrl+Z` restored the file
 
 ---
 
-## Task 3: Premium Model Access
+## Task 2: Mode Verification Worksheet
 
-- [ ] Opened the model selector in the chat panel
-- [ ] Confirmed at least one premium model is selectable (or documented the limitation if not available)
-- [ ] Switched back to the default model after testing
-
----
-
-## Task 4: Settings Review
-
-- [ ] Opened `.vscode/settings.json` — confirmed the three Copilot settings are present
-- [ ] Opened `.vscode/extensions.json` — noted which recommended extensions are missing
-- [ ] Installed any missing recommended extensions (or noted them for later)
+- [ ] `starter/mode-verification.md` is complete — all six modes have a result recorded
+- [ ] Inline completion: ✅ ghost text appeared
+- [ ] Ask mode: ✅ Copilot described `verify.py` content
+- [ ] Edit mode: ✅ diff proposed; discarded without saving
+- [ ] Plan mode: ✅ a multi-step plan returned (no code written)
+- [ ] Agent mode: ✅ tool-based response (file listing or similar)
+- [ ] Inline chat: ✅ suggestion appeared on selected code; dismissed with `Esc`
 
 ---
 
-## Overall
+## Task 3: Critical Review Worksheet
 
-- [ ] Copilot status bar icon shows no errors
-- [ ] All four modes (inline, ask, edit, inline chat) responded correctly
-- [ ] I understand the difference between included and premium requests
+- [ ] `starter/review-exercise.md` has answers for all four Read → Run → Reason → Risk fields on Snippet A
+- [ ] `starter/review-exercise.md` has answers for all four fields on Snippet B
+- [ ] The flaw in Snippet B is correctly identified (MD5 hash as password storage)
+- [ ] Answers compared with `solution/review-exercise.md`
 
 ---
 
-## Ready for the next step?
+## Task 4: Request Classification
 
-→ Module completion checklist: [modules/01-foundations/checklist.md](../../modules/01-foundations/checklist.md)
-→ Next lab: Lab 02 will be available in the next course release (`v0.2`).
+- [ ] `starter/request-classification.md` has a classification and one-sentence reason for all five tasks
+- [ ] At least 4 of 5 classifications match `solution/request-classification.md`
+
+---
+
+## Knowledge Check
+
+- [ ] I can name all six Copilot modes and give a one-sentence use case for each
+- [ ] I understand Read → Run → Reason → Risk and can apply it without prompting
+- [ ] I know the difference between included and premium requests
+- [ ] I closed irrelevant files before each chat session during this lab
+
+---
+
+## Ready for Module 02?
+
+→ Complete [modules/01-foundations/checklist.md](../../modules/01-foundations/checklist.md) before advancing.
+
+→ Next: [Lab 02 — Project Configuration Baseline](../../labs/lab-02-configuration/)

@@ -3,7 +3,9 @@
 > **Level:** Beginner
 > **Estimated time:** 2 hours
 > **Prerequisites:** A GitHub account with Copilot Pro+ activated. VS Code installed.
-> **Verified against:** GitHub Copilot feature set as of 2026-04
+> **Verified:** 2026-04
+
+> ⚠️ **Premium request note:** All tasks in this module use the included model and standard modes. No premium requests are consumed.
 
 ---
 
@@ -11,31 +13,51 @@
 
 By the end of this module, you will be able to:
 
-- [ ] Install and verify GitHub Copilot Pro+ in VS Code
-- [ ] Identify the six Copilot interaction modes and choose the right one for a task
-- [ ] Configure the essential Copilot settings in VS Code
-- [ ] Evaluate AI output critically instead of accepting it blindly
+- [ ] Describe what GitHub Copilot Pro+ is, how it differs from other plans, and what premium requests are
+- [ ] Install, authenticate, and verify Copilot Pro+ in VS Code
+- [ ] Identify the six Copilot interaction modes and choose the right one for each task type
+- [ ] Apply the **Read → Run → Reason → Risk** critical review workflow to every AI suggestion
+- [ ] Recognize the five most common AI output failure modes
+- [ ] Apply the three first-session productivity habits
+- [ ] Distinguish included requests from premium requests and make cost-aware mode choices
 
 ---
 
 ## Essential Theory
 
-See [theory.md](./theory.md) for the full reference. The summary below covers what you need to proceed.
+See [theory.md](./theory.md) for the full reference.
 
-### What GitHub Copilot Pro+ Gives You
+### What GitHub Copilot Pro+ Is
 
-GitHub Copilot Pro+ extends the base Copilot subscription with:
+Copilot is a pair programmer that runs inside VS Code. It sends a **prompt** — your message plus surrounding file context — to a language model and returns a completion. The model does not have access to your file system beyond what VS Code passes it. It does not remember previous sessions.
 
-- Access to premium models (Claude, GPT-4o, o1/o3) in addition to the default model
-- Agent mode with multi-step task execution and tool use
-- Higher monthly limits for premium requests
+Copilot Pro+ extends the base subscription with:
 
-> **⚠️ Premium request note:** Inline completions and standard chat use included requests (unlimited on most plans). Switching to a premium model, starting an agent session, or processing a large context window consumes premium requests. In this module, all tasks use standard mode — no premium requests are consumed.
+- Access to premium models (Claude, GPT-4o, o1, o3) in addition to the default model
+- **Agent mode** — multi-step task execution with tool use (read files, run terminal commands, search)
+- A monthly allotment of **premium requests**
 
-### The Six Copilot Modes
+Framing for new users: Copilot is a fast, knowledgeable, and confidently wrong pair programmer. Your job is to know when it's wrong.
 
-| Mode | Where | Best for |
-|------|-------|---------|
+### Install and Authenticate
+
+1. Open VS Code → **Extensions** (`Ctrl+Shift+X`)
+2. Search for and install **GitHub Copilot** (the Chat extension installs automatically)
+3. Sign in with GitHub when prompted
+4. Verify the Copilot icon appears in the status bar (bottom right)
+
+If the icon shows a warning:
+
+| Symptom | Likely cause | Fix |
+|---------|--------------|----- |
+| "No subscription" warning | Account lacks Copilot access | Check [github.com/settings/copilot](https://github.com/settings/copilot) |
+| Completions never appear | Extension disabled | Enable in Extensions panel |
+| Signed in as wrong account | Multiple GitHub accounts | **Accounts** icon → sign out → re-sign in |
+| Completions appear then stop | Firewall / proxy blocking | Contact IT; see VS Code proxy docs |
+
+### The Six Interaction Modes
+
+| Mode | Trigger | Best for |
 | **Inline completion** | Editor, as you type | Short completions, boilerplate, next lines |
 | **Chat (ask)** | Chat panel / `Ctrl+Alt+I` | Questions, explanations, short generation |
 | **Edit** | Chat panel → Edit mode | Apply changes to one or more open files |
@@ -43,68 +65,78 @@ GitHub Copilot Pro+ extends the base Copilot subscription with:
 | **Agent** | Chat panel → Agent mode | Multi-step tasks, tool use, file operations |
 | **Inline chat** | Editor, `Ctrl+I` | Quick ask or edit in context |
 
-### When to Use Each Mode
+**Mode decision — three questions:**
+
+1. Does the task require changes to files? → **No** → Use Ask. **Yes** → go to 2
+2. Is it one file or a targeted change? → **Yes** → Use Edit or Inline chat. **No** → go to 3
+3. Does it require multi-step execution across files? → **No** → Plan then Edit. **Yes** → Agent
+
+**Beginners:** Default to Ask and Edit. Defer Agent mode until Module 06 — agent sessions accumulate context and cost, and mid-session mistakes are harder to reverse. The one exception: Agent mode is appropriate from the start when scaffolding a new, empty project.
 
 | Task type | Recommended mode | Why |
 |-----------|-----------------|-----|
 | Autocomplete a method signature | Inline completion | Lowest cost, fastest |
-| Explain a confusing function | Ask (chat) | Conversational, no file edits |
-| Refactor a single file | Edit mode | Targeted, reversible |
-| Design a solution before coding | Plan mode | Prevents premature implementation |
-| Scaffold a new feature across files | Agent mode | Multi-file, multi-step |
+| Explain a confusing function | Ask | Conversational, no file edits |
+| Refactor a single file | Edit | Targeted, creates a reviewable diff |
+| Design a solution before coding | Plan | Prevents premature implementation |
+| Scaffold a new feature across files | Agent | Multi-file, multi-step |
 | Quick fix on the current line | Inline chat | No context switch |
 
-### Evaluating AI Output Critically
+### Critical Review: Read → Run → Reason → Risk
 
-**Never accept AI output without review.** Copilot can:
+Never accept AI output without review. Apply this workflow to every suggestion:
 
-- Produce syntactically correct but logically wrong code
-- Hallucinate APIs that do not exist
-- Miss edge cases and security considerations
-- Apply a pattern correctly in the wrong context
+| Step | Question | If no → |
+|------|----------|--------|
+| **Read** | Did you read the output line by line before accepting? | Read it now |
+| **Run** | Does it compile and execute without errors? | Fix or reject |
+| **Reason** | Does it do exactly what was asked, with no unintended side effects? | Revise the prompt |
+| **Risk** | Does it introduce a security concern? | Ask Copilot to review for OWASP A01/A03 issues |
 
-Use these four questions every time:
+**The explain rule:** If you cannot explain a line of AI-generated code in your own words, ask Copilot to explain it before committing. Never commit code you do not understand.
 
-1. **Does it compile / run?** — Verify, don't assume.
-2. **Does it do what I asked?** — Read the output, not just the intent.
-3. **Does it break anything?** — Check dependencies, side effects, and edge cases.
-4. **Do I understand it fully?** — If not, ask Copilot to explain it before committing.
+**Five common AI failure modes:**
+
+| Failure | Example | How to detect |
+|---------|---------|--------------|
+| Hallucinated API | Calls a method that does not exist in the installed version | Run the code; check the docs |
+| Stale knowledge | Uses a deprecated function or removed argument | Search current official documentation |
+| Missing error handling | Happy path only; exceptions will crash | Ask: "What can go wrong here?" |
+| Security anti-pattern | Concatenates user input into a SQL query | Check against OWASP A03 (injection) |
+| Correct pattern, wrong context | Adds `async/await` in a synchronous framework | Understand the framework before accepting |
+
+See [checklists/ai-output-review.md](../../checklists/ai-output-review.md) and [checklists/pre-commit.md](../../checklists/pre-commit.md) for the full review gates.
+
+### First Productivity Habits
+
+Three habits to establish from session one:
+
+1. **Choose the mode before writing the prompt.** Prevents mode-switching mid-session, which resets context and wastes requests. Decide: Ask, Edit, Plan, or Agent — then open the panel.
+
+2. **Write your acceptance criteria first.** One sentence: *"I will accept this if it does X."* Prevents accepting plausible-looking wrong answers because you forgot what you actually needed.
+
+3. **Close irrelevant files before a chat session.** Copilot includes open file content in context. Unrelated files dilute the signal, increase cost per turn, and can cause the model to reference the wrong file.
 
 ---
 
-## Practical Procedure
+## Token and Premium Request Basics
 
-### Step 1: Install and authenticate
+Two request types govern Copilot usage:
 
-1. Open VS Code and go to **Extensions** (`Ctrl+Shift+X`).
-2. Search for **GitHub Copilot** and install it (the Chat extension installs automatically).
-3. Sign in with GitHub when prompted.
-4. Verify the Copilot icon appears in the status bar (bottom right).
+| Type | Examples | Cost |
+|------|---------|------|
+| **Included** | Inline completion, Ask with default model | Unlimited on most plans |
+| **Premium** | Ask/Edit/Agent with a premium model, agent sessions | Counts against monthly quota |
 
-### Step 2: Verify activation
+**The cost-aware decision rule:** Use the cheapest mode that can handle the task. Escalate only when the cheaper option gives an incorrect or incomplete result.
 
-1. Open any code file and start typing — completions should appear as grey ghost text.
-2. Press `Tab` to accept a completion. Press `Esc` to dismiss.
-3. Open the chat panel (`Ctrl+Alt+I`) and type: `What is my Copilot plan?`
-4. Confirm the response mentions Pro+ or your active plan.
+| Guideline | Rationale |
+|-----------|-----------|
+| Default model handles 80% of questions | Switch to premium only for hard reasoning or architecture design |
+| Agent mode is expensive per turn | If a task fits in two Edit prompts, use Edit |
+| Large open files increase cost per turn | Close files not needed for the current task |
 
-### Step 3: Configure essential settings
-
-Open VS Code settings (`Ctrl+,`) and verify or set the following:
-
-```json
-{
-  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
-  "github.copilot.chat.generateTests.codeLens": true,
-  "github.copilot.chat.reviewSelection.enabled": true
-}
-```
-
-These are already set in this repository's `.vscode/settings.json`.
-
-### Step 4: Try each mode
-
-Complete the quick exercises in [exercises.md](./exercises.md) — one exercise per mode.
+After your first session, note one thing: did you use the right mode, or did you escalate unnecessarily? That's your first token audit.
 
 ---
 
@@ -112,44 +144,34 @@ Complete the quick exercises in [exercises.md](./exercises.md) — one exercise 
 
 See [exercises.md](./exercises.md) for full instructions.
 
-**Quick list:**
-
-1. First inline completion — accept and reject a suggestion
-2. Ask mode — explain a function you paste in
-3. Edit mode — rename a variable throughout a file
-4. Plan mode — design a small utility before writing it
-5. Inline chat — fix a syntax error using `Ctrl+I`
+1. First inline completion — accept, reject, and cycle alternatives
+2. Ask mode — explain a function and identify a security issue
+3. Edit mode — rename a variable and review the diff before accepting
+4. Plan mode — design a utility before writing any code
+5. Inline chat — fix a syntax error and a logic issue
+6. Request classification — classify 5 tasks as included or premium
 
 ---
 
 ## Common Mistakes
 
-| Mistake | Why it happens | How to fix it |
-|---------|----------------|---------------|
-| Accepting completions without reading them | Tab is fast and completions look plausible | Always read the ghost text before pressing Tab |
-| Using agent mode for a two-line fix | Agent sessions have higher startup cost | For small tasks, use inline chat or Edit mode |
-| Ignoring the Copilot status bar icon | Status is easy to miss | Check it when completions stop appearing |
-| Switching to a premium model for basic questions | Premium models are better, so "why not?" | Included model handles most questions; use premium for hard reasoning tasks |
+| Mistake | Root cause | Fix |
+|---------|------------|-----|
+| Pressing `Tab` before reading ghost text | The gesture is reflexive; completions look plausible | Read first, then accept. One wrong Tab costs a revert and a re-prompt. |
+| Using Agent mode for a one-file change | "More capable = better" | For single-file changes, Edit mode is faster and cheaper |
+| Switching to premium model for every question | "Premium is better, why not always?" | Escalate only after the included model gives an insufficient answer |
+| Accepting an explanation without running the code | Copilot explains confidently even when wrong | Always run or trace code before trusting the explanation |
+| Ignoring the status bar icon | Easy to miss when focused on code | When completions stop, check the icon first |
+| Pasting large irrelevant files into context | "More context = better answers" | Irrelevant context dilutes signal and increases cost |
+| Continuing a new topic in an existing session | Feels efficient to keep going | Each unrelated topic should start a new chat session |
 
 ---
 
-## Best Practices
 
-- **Do:** Start every significant task by choosing the right mode consciously.
-- **Do:** Use inline completion for boilerplate; use chat for anything that benefits from a back-and-forth.
-- **Don't:** Skip reading completions because they "look right."
-- **Don't:** Use agent mode for tasks that can be done in Edit mode — agent sessions accumulate context and cost.
 
 ---
 
-## Token / Premium Request Impact
 
-| Action | Cost level | Notes |
-|--------|-----------|-------|
-| Inline completion | Low (included) | Never consumes premium requests |
-| Standard chat (included model) | Low (included) | Default model on most queries |
-| Chat with premium model | Medium | Justified for complex reasoning, architecture questions |
-| Agent session | High | Multi-step, multi-tool; use deliberately |
 
 ---
 
@@ -157,10 +179,11 @@ See [exercises.md](./exercises.md) for full instructions.
 
 You have completed this module when you can:
 
-- [ ] Open VS Code and confirm Copilot is active with a Pro+ plan
-- [ ] Demonstrate inline completion, chat, edit, and inline chat modes
-- [ ] Explain — in one sentence each — when you would choose each mode
-- [ ] Apply the four critical review questions to a piece of AI-generated code
+- [ ] Confirm Copilot Pro+ is active in VS Code
+- [ ] Demonstrate all six modes and explain in one sentence when you would use each
+- [ ] Apply Read → Run → Reason → Risk to a piece of AI-generated code and identify at least one issue
+- [ ] Classify 5 task types correctly as included or premium requests
+- [ ] Name the three first-session productivity habits from memory
 
 See [checklist.md](./checklist.md) for the full self-assessment.
 
