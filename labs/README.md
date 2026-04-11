@@ -13,9 +13,8 @@ Complete labs in order unless you are following a [persona-based shortcut path](
 | [Lab 01 — Getting Started](./lab-01-getting-started/) | [Module 01 — Foundations](../modules/01-foundations/) | Beginner | 40–50 min | All six modes, critical review, productivity habits |
 | [Lab 02 — Project Configuration Baseline](./lab-02-configuration/) | [Module 02 — Configuration](../modules/02-configuration/) | Beginner | 45–60 min | VS Code settings, instruction files, linting, tasks |
 | [Lab 03 — Token Audit](./lab-03-token-audit/) | [Module 03 — Token Optimization](../modules/03-token-optimization/) | Beginner | 30–45 min | Mode/model decision audit, prompt compaction |
-| Lab 04 — Prompt Patterns Workshop | Module 04 — Prompt Engineering | Intermediate | ~45 min | Structured prompt construction *(v0.3)* |
-| Lab 05 — Personal Prompt Library | Module 04 — Prompt Engineering | Intermediate | ~60 min | Build and test a reusable prompt library *(v0.3)* |
-| Lab 06 — Custom Instructions | Module 05 — Custom Instructions | Intermediate | ~50 min | Global, project, and path-scoped instructions *(v0.3)* |
+| [Lab 04 — Prompt Engineering Workshop](./lab-04-prompt-engineering/) | [Module 04 — Prompt Engineering](../modules/04-prompt-engineering/) | Intermediate | ~50 min | Structured prompts across 7 coding scenarios |
+| Lab 05 — Custom Instructions | Module 05 — Custom Instructions | Intermediate | ~50 min | Global, project, and path-scoped instructions *(v0.3)* |
 | Lab 07 — First Agent Session | Module 06 — Agents | Advanced | ~60 min | Define and run a role-specialized agent *(v0.4)* |
 | Lab 08 — Multi-Agent Workflow | Module 07 — Multi-Agent Workflows | Advanced | ~60 min | Orchestrate agents across a complex task *(v0.4)* |
 | Lab 09 — Advanced Feature Tour | Module 08 — Advanced Features | Expert | ~50 min | Plan mode, AI review, terminal integration *(v0.5)* |

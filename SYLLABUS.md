@@ -111,9 +111,8 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Prompting for security review | OWASP scope, threat model, language and framework context |
 | Prompt anti-patterns | What causes hallucinations, scope creep, and repetition |
 
-**Lab:** [Lab 04 — Prompt Patterns Workshop](./labs/lab-04-prompt-patterns/)
-**Lab:** [Lab 05 — Build a Personal Prompt Library](./labs/lab-05-prompt-library/)
-**Deliverable:** 10+ personal prompts in `/prompts/` using the course prompt template
+**Lab:** [Lab 04 — Prompt Engineering Workshop](./labs/lab-04-prompt-engineering/)
+**Deliverable:** 5 prompt entries committed to `prompts/` using the course prompt template
 
 ---
 
@@ -132,7 +131,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Testing instructions | Verify Copilot reads and applies them; fix when they are ignored |
 | Maintenance | Version, audit, and update instructions as the codebase evolves |
 
-**Lab:** [Lab 06 — Write Your Project's Custom Instructions](./labs/lab-06-custom-instructions/)
+**Lab:** [Lab 05 — Write Your Project's Custom Instructions](./labs/lab-05-custom-instructions/)
 **Deliverable:** Complete `instructions/` folder for a sample project with 3 scoped examples
 
 **Level 2 completion:** → [checklists/intermediate-completion.md](./checklists/intermediate-completion.md)

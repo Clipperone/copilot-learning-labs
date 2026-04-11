@@ -90,7 +90,7 @@ The course is organized into **10 progressive modules** across 4 levels, each pa
 | 01 | [Foundations](./modules/01-foundations/) | Beginner | Install, verify, understand all modes, evaluate AI output |
 | 02 | [Configuration](./modules/02-configuration/) | Beginner | Optimize VS Code and project structure for AI context |
 | 03 | [Token Optimization](./modules/03-token-optimization/) | Beginner | Mode/model decision framework, cost-aware workflows |
-| 04 | Prompt Engineering | Intermediate | Structured prompts for every coding scenario |
+| 04 | [Prompt Engineering](./modules/04-prompt-engineering/) | Intermediate | Structured prompts for every coding scenario |
 | 05 | Custom Instructions | Intermediate | Persistent guidance at global, project, and path scope |
 | 06 | Agents | Advanced | 10 role-specialized personas with tool permissions and handoffs |
 | 07 | Multi-Agent Workflows | Advanced | Orchestrate agents across complex, multi-step tasks |
@@ -107,9 +107,8 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | [Lab 01 — Getting Started](./labs/lab-01-getting-started/) | Module 01 | ✅ Available |
 | [Lab 02 — Project Configuration Baseline](./labs/lab-02-configuration/) | Module 02 | ✅ Available |
 | [Lab 03 — Token Audit](./labs/lab-03-token-audit/) | Module 03 | ✅ Available |
-| Lab 04 — Prompt Patterns Workshop | Module 04 | Planned — v0.3 |
-| Lab 05 — Build a Prompt Library | Module 04 | Planned — v0.3 |
-| Lab 06 — Custom Instructions | Module 05 | Planned — v0.3 |
+| [Lab 04 — Prompt Engineering Workshop](./labs/lab-04-prompt-engineering/) | Module 04 | ✅ Available |
+| Lab 05 — Custom Instructions | Module 05 | Planned — v0.3 |
 | Lab 07 — First Agent Session | Module 06 | Planned — v0.4 |
 | Lab 08 — Multi-Agent Workflow | Module 07 | Planned — v0.4 |
 | Lab 09 — Advanced Feature Tour | Module 08 | Planned — v1.0 |

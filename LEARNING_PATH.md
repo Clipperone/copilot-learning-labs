@@ -65,7 +65,7 @@ Module 03: Token Optimization                   ~1.5 hrs
 - Write a complete, structured prompt for any coding scenario — generation, refactoring, debugging, testing, documentation, security — without follow-ups
 - Recognize the five prompt anti-patterns and fix them on sight
 - Maintain persistent custom instructions at global, repository, and path scope
-- Operate a personal prompt library of 10+ reusable, tested prompts
+- Operate a personal prompt library of 5+ reusable, tested prompts committed to `prompts/`
 
 **Prerequisites:** Path 1 complete. Copilot is running in a configured project with an instruction file.
 
@@ -75,15 +75,14 @@ Module 03: Token Optimization                   ~1.5 hrs
 
 ```
 Module 04: Prompt Engineering                   ~2.5 hrs
-    └── Lab 04: Prompt Patterns Workshop        ~45 min
-    └── Lab 05: Build a Personal Prompt Library ~60 min
+    └── Lab 04: Prompt Engineering Workshop        ~50 min
 Module 05: Custom Instructions                  ~2 hrs
-    └── Lab 06: Write Your Project's Custom Instructions  ~50 min
+    └── Lab 05: Write Your Project's Custom Instructions  ~50 min
     └── checklists/intermediate-completion.md  ← self-assess before advancing
 ```
 
 **Exit deliverables:**
-- 10+ prompts committed to `prompts/` using the course template
+- 5 prompt entries committed to `prompts/` using the course template
 - `instructions/` folder with 3 scoped examples (global, project, path-specific)
 
 **Next:** → [Path 3 — Advanced](#path-3--advanced)
