@@ -258,6 +258,6 @@ See [checklist.md](./checklist.md) for the full self-assessment.
 
 ## Next Module
 
-Module 08 — Advanced Features *(coming in v0.5)* · Complete Module 07 and pass checklists/advanced-completion.md *(coming in v0.5)* before advancing.
+[Module 08 — Advanced Features](../08-advanced-features/) · Complete Module 07 and pass checklists/advanced-completion.md *(coming soon)* before advancing.
 
 Module 07 taught you to orchestrate roles manually: one initialization prompt per session, one handoff prompt between each step. Module 08 introduces Plan mode, terminal integration, and CI/CD connections that automate the mechanics you just learned to do explicitly.

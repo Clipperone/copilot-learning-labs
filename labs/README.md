@@ -17,7 +17,7 @@ Complete labs in order unless you are following a [persona-based shortcut path](
 | [Lab 05 — Write Your Project's Custom Instructions](./lab-05-custom-instructions/) | [Module 05 — Custom Instructions](../modules/05-custom-instructions/) | Intermediate | ~50 min | Global, project, and path-scoped instructions |
 | [Lab 06 — Agents and Personas](./lab-06-agents-and-personas/) | [Module 06 — Agents and Role Specialization](../modules/06-agents/) | Advanced | ~60 min | Define 10 agent personas, initialize a bounded session, write handoff prompts |
 | [Lab 07 — Run a Complete Multi-Agent Workflow](./lab-07-multi-agent-workflow/) | [Module 07 — Multi-Agent Workflows](../modules/07-multi-agent-workflows/) | Advanced | ~70 min | Execute the Feature Delivery workflow end-to-end with clean handoffs |
-| Lab 08 — Advanced Feature Tour | Module 08 — Advanced Features | Expert | ~50 min | Plan mode, AI review, terminal integration *(v0.5)* |
+| [Lab 08 — Advanced Feature Tour](./lab-08-advanced-feature-tour/) | [Module 08 — Advanced Features](../modules/08-advanced-features/) | Expert | ~60 min | Plan mode, AI review, terminal integration, quality gate, secure usage |
 | Lab 09 — Repository Health Audit | Module 09 — Repository Quality | Expert | ~60 min | AI-friendliness audit, governance protocol *(v0.5)* |
 
 ---

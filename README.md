@@ -111,7 +111,7 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | [Lab 05 — Write Your Project's Custom Instructions](./labs/lab-05-custom-instructions/) | Module 05 | ✅ Available |
 | [Lab 06 — Agents and Personas](./labs/lab-06-agents-and-personas/) | Module 06 | ✅ Available |
 | [Lab 07 — Run a Complete Multi-Agent Workflow](./labs/lab-07-multi-agent-workflow/) | Module 07 | ✅ Available |
-| Lab 08 — Advanced Feature Tour | Module 08 | Planned — v1.0 |
+| [Lab 08 — Advanced Feature Tour](./labs/lab-08-advanced-feature-tour/) | Module 08 | ✅ Available |
 | Lab 09 — Repository Health Audit | Module 09 | Planned — v1.0 |
 
 ---

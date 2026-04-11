@@ -231,6 +231,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Large codebase strategies | Scope context effectively in repositories with hundreds of files |
 | Secure usage patterns | Secrets hygiene, sensitive code handling, confidentiality boundaries |
 
+**Module:** [modules/08-advanced-features/](./modules/08-advanced-features/)
 **Lab:** [Lab 08 — Advanced Feature Tour](./labs/lab-08-advanced-feature-tour/)
 **Deliverable:** CI/CD integration notes and a completed secure-usage checklist
 

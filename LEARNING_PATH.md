@@ -139,7 +139,7 @@ Module 07: Multi-Agent Workflows                ~2.5 hrs
 
 ```
 Module 08: Advanced Features                    ~2.5 hrs
-    └── Lab 08: Advanced Feature Tour           ~50 min
+    └── Lab 08: Advanced Feature Tour           ~60 min
 Module 09: Repository Quality for AI            ~2 hrs
     └── Lab 09: Repository Health Audit         ~60 min
 Module 10: Adoption Roadmap                     ~2 hrs
