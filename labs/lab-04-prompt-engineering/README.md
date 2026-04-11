@@ -216,6 +216,47 @@ The solution file shows one valid implementation for each function. Your impleme
 
 ---
 
+## Review Checklist
+
+Before marking this lab complete, verify each item.
+
+**Scenario coverage**
+- [ ] All 7 prompt scenarios applied: generation, refactoring, debugging, testing, documentation, review, security.
+- [ ] Debugging task used a two-prompt chain — diagnosis confirmed before fix applied.
+- [ ] Security task used a premium model and cited OWASP A02:2021 explicitly.
+
+**Prompt quality**
+- [ ] Each prompt contains a Task line with one verb and one noun.
+- [ ] Each prompt that produces code includes an explicit Output format line.
+- [ ] Security and review prompts state what is out of scope.
+
+**Anti-pattern work**
+- [ ] All three anti-pattern prompts diagnosed by name.
+- [ ] All three rewritten using the 4-component structure.
+
+**Prompt library**
+- [ ] All 5 prompt files committed to `prompts/`.
+- [ ] No `[PLACEHOLDER]` stubs remain in any file.
+- [ ] Each file has at least one row in its Common Failures table.
+
+→ Full self-assessment: [checklist.md](./checklist.md)
+
+---
+
+## Extension Ideas
+
+These tasks extend the lab if you have time or want deeper practice. None are required to meet the success criteria.
+
+| Idea | What you practise |
+|------|------------------|
+| Write a prompt chain that generates `parse_config`, then immediately writes its tests in a second prompt | Chaining: output of Prompt 1 as context for Prompt 2 |
+| Prompt Copilot to diagnose `merge_sorted` using Edit mode instead of Ask mode — compare the output | Mode selection: edit vs. ask for diagnostic tasks |
+| Add a sixth scenario: use a migration prompt from `theory.md` to migrate `parse_config` from `open()` to `pathlib.Path.read_bytes()` | Migration scenario pattern |
+| Write a composite prompt that performs a logic review AND a documentation review of `check_permissions` in a single message — observe the quality difference vs. two separate prompts | Anti-pattern verification: double task |
+| Add a parameter to `apply_discount` to support a minimum order value, then write the complete prompt chain: generate → refactor → test | Full prompt workflow from scratch |
+
+---
+
 ## Completion
 
 → [checklist.md](./checklist.md) — Self-assessment before marking this lab complete

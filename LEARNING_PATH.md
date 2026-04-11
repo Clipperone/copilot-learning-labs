@@ -166,8 +166,7 @@ Prerequisite: Copilot is installed and running.
 Module 03: Token Optimization  (compact prompt section only)
     ↓
 Module 04: Prompt Engineering
-    └── Lab 04: Prompt Patterns Workshop
-    └── Lab 05: Build a Personal Prompt Library
+    └── Lab 04: Prompt Engineering Workshop
 ```
 
 Then return to Module 01 to fill any gaps.
@@ -182,7 +181,7 @@ Prerequisite: Copilot Pro+ is deployed. You have admin access.
 Module 02: Configuration
     └── Lab 02: Project Configuration Baseline
 Module 05: Custom Instructions
-    └── Lab 06: Write Your Project's Custom Instructions
+    └── Lab 05: Write Your Project's Custom Instructions
 Module 10: Adoption Roadmap (team section)
 ```
 

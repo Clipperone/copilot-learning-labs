@@ -43,9 +43,8 @@ Each module assumes completion of all modules before it in this chain.
 | Lab 01 — Setup and Verify | Module 01 | none |
 | Lab 02 — Project Configuration | Module 02 | Lab 01 |
 | Lab 03 — Token Audit | Module 03 | Lab 01 |
-| Lab 04 — Prompt Patterns Workshop | Module 04 | Lab 01 |
-| Lab 05 — Build a Prompt Library | Module 04 | Lab 04 |
-| Lab 06 — Custom Instructions | Module 05 | Lab 04 |
+| Lab 04 — Prompt Engineering Workshop | Module 04 | Lab 01 |
+| Lab 05 — Custom Instructions | Module 05 | Lab 04 |
 | Lab 07 — First Agent Session | Module 06 | Lab 06 |
 | Lab 08 — Multi-Agent Workflow | Module 07 | Lab 07 |
 | Lab 09 — Advanced Feature Tour | Module 08 | Lab 07 |
