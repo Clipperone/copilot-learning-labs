@@ -292,6 +292,6 @@ See [checklist.md](./checklist.md) for the full self-assessment.
 
 ## Next Module
 
-[Module 09 — Repository Quality for AI](../09-repository-quality/) *(coming soon)* · Complete Module 08 before advancing.
+[Module 09 — AI-Friendly Repository Engineering](../09-repository-quality/) · Complete Module 08 before advancing.
 
 Module 08 applied the full Copilot feature set to a working codebase. Module 09 turns the lens inward: how to structure, name, and govern a repository so that AI context signals are strong, documentation serves both humans and AI, and every AI-assisted commit has a documented human review trail. Module 08's effectiveness degrades in a poorly structured repository; Module 09 is what sustains it.

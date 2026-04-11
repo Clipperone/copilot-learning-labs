@@ -95,7 +95,7 @@ The course is organized into **10 progressive modules** across 4 levels, each pa
 | 06 | [Agents and Role Specialization](./modules/06-agents/) | Advanced | 10 role-specialized personas with tool permissions and handoffs |
 | 07 | [Multi-Agent Workflows](./modules/07-multi-agent-workflows/) | Advanced | Orchestrate agents across complex, multi-step tasks |
 | 08 | [Advanced Features](./modules/08-advanced-features/) | Expert | Plan mode, AI review, terminal integration, CI/CD |
-| 09 | Repository Quality | Expert | AI-friendly project structure, governance, review protocols |
+| 09 | [AI-Friendly Repository Engineering](./modules/09-repository-quality/) | Expert | AI-friendly project structure, governance, review protocols |
 | 10 | Adoption Roadmap | Expert | 7/30/60/90-day personal and team adoption plan |
 
 Modules 04–10 are being released progressively. See the [roadmap](#roadmap) below.
@@ -112,7 +112,7 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | [Lab 06 — Agents and Personas](./labs/lab-06-agents-and-personas/) | Module 06 | ✅ Available |
 | [Lab 07 — Run a Complete Multi-Agent Workflow](./labs/lab-07-multi-agent-workflow/) | Module 07 | ✅ Available |
 | [Lab 08 — Advanced Feature Tour](./labs/lab-08-advanced-feature-tour/) | Module 08 | ✅ Available |
-| Lab 09 — Repository Health Audit | Module 09 | Planned — v1.0 |
+| [Lab 09 — Repository Health Audit](./labs/lab-09-repository-health-audit/) | Module 09 | ✅ Available |
 
 ---
 

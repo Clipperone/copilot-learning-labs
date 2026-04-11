@@ -237,7 +237,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 
 ---
 
-### Module 09: Repository Quality for AI
+### [Module 09: AI-Friendly Repository Engineering](./modules/09-repository-quality/)
 
 **Goal:** Keep repositories AI-friendly, clearly structured, and governed for the long term.
 

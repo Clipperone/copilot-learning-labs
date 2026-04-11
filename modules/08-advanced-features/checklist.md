@@ -89,4 +89,4 @@ Use the first section before Lab 08 as a readiness gate. Use the second section 
 All boxes above are checked.
 
 → Advance to [Lab 08 — Advanced Feature Tour](../../labs/lab-08-advanced-feature-tour/) if not yet done.
-→ Then proceed to [Module 09 — Repository Quality for AI](../../modules/09-repository-quality/) *(coming soon)*.
+→ Then proceed to [Module 09 — AI-Friendly Repository Engineering](../../modules/09-repository-quality/).
