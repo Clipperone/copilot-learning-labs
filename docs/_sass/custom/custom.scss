@@ -1,0 +1,250 @@
+// =============================================================================
+// Copilot Learning Labs — custom theme overrides
+// Just the Docs v0.10 · loaded after dark color scheme
+// =============================================================================
+
+// --- 1. GitHub-flavored dark palette overrides --------------------------------
+
+$body-background-color:    #0d1117;   // GitHub dark canvas
+$sidebar-color:            #161b22;   // GitHub dark sidebar
+$border-color:             #30363d;   // GitHub dark border
+$body-text-color:          #c9d1d9;   // GitHub dark primary text
+$body-heading-color:       #f0f6fc;   // GitHub dark heading text
+$link-color:               #58a6ff;   // GitHub dark link blue
+$nav-child-link-color:     #8b949e;   // muted nav child links
+$code-background-color:    #161b22;   // code block bg matches sidebar
+$table-background-color:   #161b22;
+$search-background-color:  #21262d;
+$feedback-color:           darken($link-color, 30%);
+
+// --- 2. Typography — Inter + JetBrains Mono -----------------------------------
+
+$body-font-family:  "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+$code-font-family:  "JetBrains Mono", "Fira Code", "Cascadia Code", ui-monospace, monospace;
+$body-font-size:    16px;
+$body-line-height:  1.6;
+
+// --- 3. Layout ----------------------------------------------------------------
+
+$nav-width:      272px;
+$content-width:  860px;
+
+// --- 4. CSS custom property bridge --------------------------------------------
+// Just the Docs 0.10 uses both Sass vars (compile-time) and CSS custom
+// properties (runtime). Bridging here ensures sidebar scrollbar, focus rings,
+// and selection highlights also pick up the overrides.
+
+:root {
+  --body-background-color: #{$body-background-color};
+  --sidebar-color:         #{$sidebar-color};
+  --body-text-color:       #{$body-text-color};
+  --body-heading-color:    #{$body-heading-color};
+  --border-color:          #{$border-color};
+  --link-color:            #{$link-color};
+  --code-background-color: #{$code-background-color};
+}
+
+// --- 5. Hero block ------------------------------------------------------------
+
+.hero {
+  padding: 3rem 0 2.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid $border-color;
+}
+
+.hero-title {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  color: $body-heading-color;
+  line-height: 1.15;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+  font-size: 1.0625rem;
+  color: $nav-child-link-color;
+  max-width: 640px;
+  line-height: 1.6;
+  margin-bottom: 1.75rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+// --- 6. CTA Buttons -----------------------------------------------------------
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #238636;
+  border-color: #2ea043;
+  color: #ffffff;
+
+  &:hover {
+    background-color: #2ea043;
+    border-color: #3fb950;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.btn-secondary {
+  background-color: #21262d;
+  border-color: $border-color;
+  color: $body-heading-color;
+
+  &:hover {
+    background-color: #30363d;
+    border-color: #8b949e;
+    color: $body-heading-color;
+    text-decoration: none;
+  }
+}
+
+// --- 7. Level badges ----------------------------------------------------------
+// NOTE: %badge-base and all @extend calls must remain at root level.
+// Moving them inside @media blocks causes a Sass compile error.
+
+%badge-base {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2em 0.65em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  border-radius: 2em;
+  white-space: nowrap;
+  vertical-align: middle;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.badge-beginner {
+  @extend %badge-base;
+  background-color: rgba(35, 134, 54, 0.2);
+  color: #3fb950;
+  border: 1px solid rgba(63, 185, 80, 0.4);
+}
+
+.badge-intermediate {
+  @extend %badge-base;
+  background-color: rgba(210, 153, 34, 0.2);
+  color: #e3b341;
+  border: 1px solid rgba(227, 179, 65, 0.4);
+}
+
+.badge-advanced {
+  @extend %badge-base;
+  background-color: rgba(210, 106, 34, 0.2);
+  color: #f0883e;
+  border: 1px solid rgba(240, 136, 62, 0.4);
+}
+
+.badge-expert {
+  @extend %badge-base;
+  background-color: rgba(218, 54, 51, 0.2);
+  color: #f85149;
+  border: 1px solid rgba(248, 81, 73, 0.4);
+}
+
+// --- 8. Navigation sidebar refinements ----------------------------------------
+
+.site-nav {
+  font-size: 0.875rem;
+}
+
+.nav-list-item > .nav-list-link {
+  border-radius: 4px;
+  padding-left: 0.75rem;
+
+  &:hover {
+    background-color: rgba($link-color, 0.08);
+  }
+
+  &.active {
+    background-color: rgba($link-color, 0.12);
+    color: $link-color;
+    font-weight: 600;
+  }
+}
+
+// --- 9. Code block refinements ------------------------------------------------
+
+div.highlighter-rouge,
+figure.highlight {
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  margin: 1.25rem 0;
+}
+
+code.highlighter-rouge {
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  font-size: 0.875em;
+  border: 1px solid $border-color;
+}
+
+// --- 10. Table refinements ----------------------------------------------------
+
+table {
+  font-size: 0.9375rem;
+
+  th {
+    background-color: #161b22;
+    color: $body-heading-color;
+    font-weight: 600;
+    border-bottom: 2px solid $border-color;
+  }
+
+  tr:nth-child(even) td {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+}
+
+// --- 11. Sidebar brand --------------------------------------------------------
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  font-size: 1rem;
+  color: $body-heading-color;
+}
+
+// --- 12. Responsive hero ------------------------------------------------------
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 2rem 0 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 1.625rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
