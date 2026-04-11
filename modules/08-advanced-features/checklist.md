@@ -80,7 +80,7 @@ Use the first section before Lab 08 as a readiness gate. Use the second section 
 - [ ] I classified all 3 starter files by sensitivity level.
 - [ ] I identified all 3 OWASP issues in `auth.py`.
 - [ ] I saved my classification as `starter/sensitivity-classification.md`.
-- [ ] I compared my classification and OWASP findings to `solution/secure-usage-checklist.md`.
+- [ ] I compared my classification and OWASP findings to `solution/sensitivity-classification.md`.
 
 ---
 

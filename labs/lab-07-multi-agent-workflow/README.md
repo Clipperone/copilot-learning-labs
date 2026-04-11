@@ -128,6 +128,8 @@ After completing this lab you can write a workflow file before executing any ses
 4. Save the findings as `review-findings.md` in `labs/lab-07-multi-agent-workflow/starter/` and commit.
 5. If there are BLOCKING findings, open a new Implementer session to resolve them (do not fix them in the Reviewer session).
 
+> **Severity schema:** This lab uses BLOCKING / NON-BLOCKING. Module 08 introduces the 4-level scale (Critical / High / Medium / Low). Both are correct schemas for different use cases — you will use the richer scale in Lab 08.
+
 **Expected output:** `review-findings.md` committed — numbered findings list, each marked BLOCKING or NON-BLOCKING.
 
 > **Reviewer boundary:** If the Code Reviewer session produces a direct code edit in `notifications.py`, the Reviewer definition has a permissions error. Close the session and correct `agents/code-reviewer.md` before re-running.

@@ -38,6 +38,8 @@ cd labs/lab-08-advanced-feature-tour
 pytest --version
 ```
 
+> **Output file locations:** Tasks 1, 2, and 5 ask you to save output files inside `starter/`. This is intentional — all lab tasks operate against the same starter codebase and outputs live alongside the files that generated them.
+
 ---
 
 ## Tasks
@@ -78,6 +80,8 @@ pytest --version
 
 1. Switch Copilot Chat to **Agent mode**.
 2. Open a Code Reviewer session using the Code Reviewer persona definition from `agents/code-reviewer.md` (created in Lab 06). Scope the session to `starter/api/routes.py` only.
+
+   > **Prerequisite check:** This task requires `agents/code-reviewer.md` to be complete and passing the completeness test. If this file is absent or contains `[PLACEHOLDER]` stubs, return to [Lab 06 Task 1](../lab-06-agents-and-personas/) before continuing.
 3. Use this initialization prompt:
 
    ```
@@ -188,7 +192,7 @@ pytest --version
 
 **Expected output:** `starter/sensitivity-classification.md` committed; classification table covers all 3 starter files; 3 OWASP issues in `auth.py` identified.
 
-> **Check against solution only after completing this task independently.** See `solution/secure-usage-checklist.md`.
+> **Check against solution only after completing this task independently.** See `solution/sensitivity-classification.md`.
 
 ---
 
@@ -257,4 +261,4 @@ See [checklist.md](./checklist.md) for the full self-assessment checklist.
 | `starter/tests/test_routes.py` | Partial test coverage — GET only (Tasks 3–4) |
 | `solution/plan-output.md` | Reference Plan mode output |
 | `solution/review-findings.md` | Reference Code Reviewer findings |
-| `solution/secure-usage-checklist.md` | Reference sensitivity classification and OWASP findings |
+| `solution/sensitivity-classification.md` | Reference sensitivity classification and OWASP findings |
