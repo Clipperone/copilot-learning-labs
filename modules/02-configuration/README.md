@@ -5,6 +5,8 @@
 > **Prerequisites:** [Module 01 — Foundations](../01-foundations/)
 > **Verified:** 2026-04
 
+> ⚠️ **Premium request note:** Configuration is a one-time setup effort. Writing `.github/copilot-instructions.md` uses one chat turn. The resulting instructions reduce ambiguity in every subsequent session, saving premium requests over time.
+
 ---
 
 ## Learning Objectives
@@ -21,7 +23,7 @@ By the end of this module, you will be able to:
 
 ## Essential Theory
 
-See [theory.md](./theory.md) for the full reference. The summary below covers what you need to proceed.
+See [theory.md](./theory.md) for the full reference.
 
 ### How Configuration Shapes Copilot's Context
 
@@ -54,6 +56,8 @@ Always prefer workspace settings over user settings for project-specific configu
 - Security constraints and review requirements
 
 Keep instructions specific, bounded, and non-contradictory. Vague instructions ("write good code") have no effect. Precise instructions ("use `snake_case` for all Python functions, `PascalCase` for classes") are followed reliably.
+
+Write rules in imperative form: "Use `snake_case` for all function names." Add a `Verified: YYYY-MM` header comment so you know when the file was last reviewed against actual Copilot behaviour.
 
 ### Useful Extensions
 
@@ -90,7 +94,7 @@ Copilot's context is stronger when:
 - **Related files are co-located.** Group by feature, not by file type.
 - **Documentation is inline.** Docstrings and type annotations are read as context.
 
-Avoid large monolithic files. A 1000-line `utils.py` dilutes context and makes Copilot suggestions less relevant.
+Avoid large monolithic files. A 1000-line `utils.py` dilutes context and makes Copilot suggestions less relevant. Keep each file under 400 lines and split at natural responsibility boundaries. Avoid leaving commented-out code blocks in files — they add noise to Copilot's context and can cause it to reference dead code.
 
 ### Documentation and Testing Baseline
 
@@ -115,17 +119,13 @@ For testing, a passing test suite is a prerequisite for agent mode to self-valid
 
 Agent mode reads test output and self-corrects. Without tests, it cannot validate its own changes.
 
-> **⚠️ Premium request note:** Configuration is a one-time effort with no runtime cost. Writing `.github/copilot-instructions.md` uses a chat turn (low cost). The resulting instructions reduce ambiguity in every subsequent session, making subsequent responses shorter and more accurate — a net premium request saving over time.
-
 Apply these configuration steps in [Lab 02: Project Configuration Baseline](../../labs/lab-02-configuration/).
 
 ---
 
 ## Exercises
 
-See [exercises.md](./exercises.md) for full instructions.
-
-**Quick list:**
+See [exercises.md](./exercises.md) for full instructions. Complete [Lab 02](../../labs/lab-02-configuration/) first — all exercises use the lab's `starter/` project.
 
 1. Write your first project-level Copilot instructions — configure a minimal starter project
 2. Test instruction effectiveness — verify Copilot applies your conventions
@@ -149,17 +149,7 @@ See [exercises.md](./exercises.md) for full instructions.
 
 ---
 
-## Best Practices
-
-- **Do:** Write instructions in imperative form: "Use `dataclasses` for all data models."
-- **Do:** Version your instructions — add `Verified: YYYY-MM` to the header.
-- **Do:** Keep each file under 400 lines. Split at natural boundaries.
-- **Don't:** Put all helper functions in a single `utils.py` — context becomes ambiguous for Copilot.
-- **Don't:** Leave commented-out code blocks in files — they add noise to Copilot's context.
-
----
-
-## Token / Premium Request Impact
+## Token and Premium Request Impact
 
 | Action | Cost level | Notes |
 |--------|-----------|-------|
@@ -173,15 +163,17 @@ See [exercises.md](./exercises.md) for full instructions.
 
 ## Completion Criteria
 
-Before moving to Module 03, confirm:
+You have completed this module when you can:
 
-- [ ] Your project has a `.vscode/settings.json` with `useInstructionFiles: true`
-- [ ] Your project has a `.github/copilot-instructions.md` with at least 3 specific rules
-- [ ] A linter or formatter is configured and runs on save
-- [ ] `.vscode/tasks.json` defines at least one `test` task
-- [ ] `.vscode/extensions.json` exists and recommends the project's required tools
-- [ ] All functions in `src/calculator.py` have type annotations and docstrings
-- [ ] All exercises in `exercises.md` are complete
+- [ ] Explain how VS Code settings, `copilot-instructions.md`, and a linter each affect Copilot suggestion quality
+- [ ] Configure `.vscode/settings.json` with `useInstructionFiles: true` and formatting on save
+- [ ] Write a `.github/copilot-instructions.md` with at least 3 specific, verifiable rules and verify Copilot reads them
+- [ ] Set up a linter to surface violations on save
+- [ ] Define a `test` task in `.vscode/tasks.json` and run it from VS Code
+- [ ] Create a `.vscode/extensions.json` with team-required extension recommendations
+- [ ] Add type annotations and docstrings to functions and observe the improvement in Copilot suggestions
+
+See [checklist.md](./checklist.md) for the full self-assessment.
 
 ---
 
