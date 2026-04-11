@@ -91,4 +91,4 @@ Use the first section before Lab 09 as a readiness gate. Use the second section 
 All boxes above are checked.
 
 → Advance to [Lab 09 — Repository Health Audit](../../labs/lab-09-repository-health-audit/) if not yet done.
-→ Then proceed to [Module 10 — Adoption Roadmap](../../modules/10-adoption-roadmap/) *(coming soon)*.
+→ Then proceed to [Module 10 — Adoption Roadmap](../../modules/10-adoption-roadmap/).

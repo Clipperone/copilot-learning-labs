@@ -140,11 +140,11 @@ Module 07: Multi-Agent Workflows                ~2.5 hrs
 ```
 Module 08: Advanced Features                    ~2.5 hrs
     └── Lab 08: Advanced Feature Tour           ~60 min
-Module 09: Repository Quality for AI            ~2 hrs
+Module 09: AI-Friendly Repository Engineering   ~2 hrs
     └── Lab 09: Repository Health Audit         ~60 min
 Module 10: Adoption Roadmap                     ~2 hrs
-    └── Capstone: /capstone/
-    └── checklists/expert-completion.md  ← final self-assessment
+    └── Capstone: [/capstone/](./capstone/)
+    └── [checklists/expert-completion.md](./checklists/expert-completion.md)  ← final self-assessment
 ```
 
 **Exit deliverables:**

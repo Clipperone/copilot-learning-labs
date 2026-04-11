@@ -256,7 +256,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 
 ---
 
-### Module 10: Adoption Roadmap
+### [Module 10: Adoption Roadmap](./modules/10-adoption-roadmap/)
 
 **Goal:** Plan and execute a personal or team Copilot adoption across 7, 30, 60, and 90 days.
 
@@ -269,9 +269,11 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | 60 days | Agent workflows, advanced features in production | 10 agent definitions + first multi-agent run |
 | 90 days | Full mastery, governance, team rollout ready | Capstone complete; adoption plan written and shared |
 
-**Capstone:** [/capstone](./capstone/)
+**Capstone:** [/capstone/](./capstone/)
 
 **Level 4 completion:** → [checklists/expert-completion.md](./checklists/expert-completion.md)
+
+**Deliverables:** `capstone/roadmap.md` (self-placement + 90-day plan + KPIs + governance policy), completed `checklists/adoption-milestones.md`, and reviewed `checklists/expert-completion.md`
 
 ---
 

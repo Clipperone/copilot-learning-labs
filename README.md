@@ -96,7 +96,7 @@ The course is organized into **10 progressive modules** across 4 levels, each pa
 | 07 | [Multi-Agent Workflows](./modules/07-multi-agent-workflows/) | Advanced | Orchestrate agents across complex, multi-step tasks |
 | 08 | [Advanced Features](./modules/08-advanced-features/) | Expert | Plan mode, AI review, terminal integration, CI/CD |
 | 09 | [AI-Friendly Repository Engineering](./modules/09-repository-quality/) | Expert | AI-friendly project structure, governance, review protocols |
-| 10 | Adoption Roadmap | Expert | 7/30/60/90-day personal and team adoption plan |
+| 10 | [Adoption Roadmap](./modules/10-adoption-roadmap/) | Expert | 7/30/60/90-day personal and team adoption plan |
 
 Modules 04–10 are being released progressively. See the [roadmap](#roadmap) below.
 
@@ -128,7 +128,7 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | [templates/](./templates/) | Authoring templates for all content types |
 | [checklists/](./checklists/) | AI output review, pre-commit, and completion checklists |
 | [docs/](./docs/) | Architecture decisions and design reference |
-| [capstone/](./capstone/) | Final project *(coming in v1.0)* |
+| [capstone/](./capstone/) | Final project — 90-day adoption roadmap capstone |
 | [COURSE_OVERVIEW.md](./COURSE_OVERVIEW.md) | Scope, audience, and key outcomes |
 | [SYLLABUS.md](./SYLLABUS.md) | Full 10-module curriculum detail |
 | [LEARNING_PATH.md](./LEARNING_PATH.md) | Guided navigation by level and persona |

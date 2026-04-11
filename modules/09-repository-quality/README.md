@@ -276,6 +276,6 @@ See [checklist.md](./checklist.md) for the full self-assessment.
 
 ## Next Module
 
-[Module 10 — Adoption Roadmap](../10-adoption-roadmap/) *(coming soon)* · Complete Module 09 before advancing.
+[Module 10 — Adoption Roadmap](../10-adoption-roadmap/) · Complete Module 09 before advancing.
 
 Module 09 produces an audited, governed repository — with a score, a remediation plan, and a `CONVENTIONS.md` in place. Module 10 synthesizes everything learned across all nine modules into a personal and team adoption roadmap: 7, 30, 60, and 90-day milestones that make Copilot adoption measurable and transferable. The repository quality work done in Module 09 is the foundation for that roadmap.

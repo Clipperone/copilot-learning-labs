@@ -49,6 +49,7 @@ Each module assumes completion of all modules before it in this chain.
 | Lab 07 — Run a Complete Multi-Agent Workflow | Module 07 | Lab 06 |
 | Lab 08 — Advanced Feature Tour | Module 08 | Lab 07 |
 | Lab 09 — Repository Health Audit | Module 09 | none (standalone) |
+| Capstone — 90-Day Adoption Roadmap | Module 10 | Labs 01–09 |
 
 ---
 
