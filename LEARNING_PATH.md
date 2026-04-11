@@ -14,11 +14,10 @@ Answer these questions to self-place:
 
 | Question | If yes → |
 |----------|---------|
-| I have not used GitHub Copilot before | **Start at Path 1** |
-| Copilot is installed but I mostly use ghost text and basic chat | **Start at Path 1** — complete it and move to Path 2 |
-| I write structured prompts deliberately and have a configured project | **Start at Path 2** |
-| I have working custom instructions and a personal prompt library | **Start at Path 3** |
-| I run agent sessions and multi-agent workflows regularly | **Start at Path 4** |
+| Copilot is installed but I mostly use ghost text and basic chat | [**Start at Path 1**](#path-1--beginner) |
+| I write structured prompts deliberately and have a configured project | [**Start at Path 2**](#path-2--intermediate) |
+| I have working custom instructions and a personal prompt library | [**Start at Path 3**](#path-3--advanced) |
+| I run agent sessions and multi-agent workflows regularly | [**Start at Path 4**](#path-4--expert) |
 
 ---
 
