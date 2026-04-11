@@ -252,7 +252,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Pre-merge validation | The minimum human check before every AI-assisted commit |
 
 **Lab:** [Lab 09 — Repository Health Audit](./labs/lab-09-repository-health-audit/)
-**Deliverable:** Completed AI output review checklist applied to a real project
+**Deliverables:** `audit-report.md` (6-property score + ranked remediation), restructured `README.md`, `validation-report.md` (5-gate pre-merge result), `.copilotignore`, and `CONVENTIONS.md` for the starter project
 
 ---
 

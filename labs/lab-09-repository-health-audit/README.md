@@ -34,6 +34,8 @@ cd labs/lab-09-repository-health-audit
 
 The `starter/` directory contains a small Python project with intentional structural problems. Do not fix the code problems before reading the task instructions — the problems are the learning material.
 
+> ⚠️ **Security note:** The starter files contain deliberate vulnerabilities — including two SQL injection vectors — for learning purposes only. Do not use these files outside this lab exercise.
+
 ---
 
 ## Tasks
@@ -181,3 +183,15 @@ This lab is complete when:
 | Gate 4 OWASP finding is missed | f-string SQL injection is easy to overlook | Explicitly prompt: "Check this function for SQL injection" if the initial review misses it |
 | `.copilotignore` entries lack comments | Copilot generates uncommented entries by default | Ask Copilot to add an inline comment to each entry explaining the exclusion reason |
 | `CONVENTIONS.md` output uses prose blocks | Copilot defaults to narrative when no format is specified | Provide the Module 09 declarative format explicitly as a constraint in the prompt |
+
+---
+
+## Extension Ideas
+
+After completing all 5 tasks, these extensions apply the same skills to real-world contexts.
+
+1. **Audit your own project** — Apply the 6-property checklist to an active repository you maintain. Produce a personal remediation plan ranked by impact; fix at least the top two items.
+2. **Issue template** — Write a `.github/ISSUE_TEMPLATE/ai-assisted-task.md` that enforces the 4-component issue writing standard (observed behavior, expected behavior, scope, acceptance criteria).
+3. **Session log template** — Create an `agents/session-log-template.md` that captures all Tier 1 audit-trail fields for any future AI session: date, task, prompt summary, model used, reviewer.
+4. **Commit trailer CI check** — Configure a GitHub Actions workflow that blocks merge to `main` if the commit message body is missing both `AI-assisted:` and `Reviewed-by:` trailers on AI-assisted commits.
+5. **Retrospective validation** — Pick a recent commit from your project history that was AI-assisted. Apply the 5-gate pre-merge protocol retroactively. Record which gates it passes and which it would have blocked.

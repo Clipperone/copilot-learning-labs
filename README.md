@@ -145,8 +145,8 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | `v0.2` — Beginner complete | ✅ Released | Modules 02–03, Labs 02–03, additional prompts |
 | `v0.3` — Intermediate complete | ✅ Released | Modules 04–05, Labs 04–05, `instructions/` folder |
 | `v0.4` — Advanced complete | ✅ Released | Module 06–07, Lab 06, `agents/` folder |
-| `v0.5` — Expert complete | **Current** | Module 08, Lab 08 |
-| `v1.0` — Full course | Planned | All 10 modules, Labs 09–10, capstone, examples, FAQ |
+| `v0.5` — Expert phase (partial) | ✅ Released | Modules 08–09, Labs 08–09 |
+| `v1.0` — Full course | **Current** | All 10 modules, Labs 09–10, capstone, examples, FAQ |
 
 Feature requests and content suggestions are tracked as [GitHub Issues](../../issues). Use the [content suggestion template](./.github/ISSUE_TEMPLATE/content_suggestion.md) to propose new material.
 
