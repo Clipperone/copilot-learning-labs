@@ -199,6 +199,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Handoff protocols | What to pass between agents, how to summarize, when to stop |
 | Context hygiene | Prevent context pollution and duplicate work across sessions |
 
+**Module:** [modules/07-multi-agent-workflows/](./modules/07-multi-agent-workflows/)
 **Lab:** [Lab 07 — Run a Complete Multi-Agent Workflow](./labs/lab-07-multi-agent-workflow/)
 **Deliverable:** One documented, repeatable workflow file in `/agents/`
 

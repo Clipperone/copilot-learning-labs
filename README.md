@@ -93,7 +93,7 @@ The course is organized into **10 progressive modules** across 4 levels, each pa
 | 04 | [Prompt Engineering](./modules/04-prompt-engineering/) | Intermediate | Structured prompts for every coding scenario |
 | 05 | [Custom Instructions](./modules/05-custom-instructions/) | Intermediate | Persistent guidance at global, project, and path scope |
 | 06 | [Agents and Role Specialization](./modules/06-agents/) | Advanced | 10 role-specialized personas with tool permissions and handoffs |
-| 07 | Multi-Agent Workflows | Advanced | Orchestrate agents across complex, multi-step tasks |
+| 07 | [Multi-Agent Workflows](./modules/07-multi-agent-workflows/) | Advanced | Orchestrate agents across complex, multi-step tasks |
 | 08 | Advanced Features | Expert | Plan mode, AI review, terminal integration, CI/CD |
 | 09 | Repository Quality | Expert | AI-friendly project structure, governance, review protocols |
 | 10 | Adoption Roadmap | Expert | 7/30/60/90-day personal and team adoption plan |
@@ -110,7 +110,7 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | [Lab 04 — Prompt Engineering Workshop](./labs/lab-04-prompt-engineering/) | Module 04 | ✅ Available |
 | [Lab 05 — Write Your Project's Custom Instructions](./labs/lab-05-custom-instructions/) | Module 05 | ✅ Available |
 | [Lab 06 — Agents and Personas](./labs/lab-06-agents-and-personas/) | Module 06 | ✅ Available |
-| Lab 07 — Multi-Agent Workflow | Module 07 | Planned — v0.4 |
+| [Lab 07 — Run a Complete Multi-Agent Workflow](./labs/lab-07-multi-agent-workflow/) | Module 07 | Planned — v0.5 |
 | Lab 08 — Advanced Feature Tour | Module 08 | Planned — v1.0 |
 | Lab 09 — Repository Health Audit | Module 09 | Planned — v1.0 |
 
@@ -144,7 +144,7 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | `v0.1` — Foundation | ✅ Released | Module 01, Lab 01, all templates, prompt starter set, checklists, `.github/` and `.vscode/` config |
 | `v0.2` — Beginner complete | ✅ Released | Modules 02–03, Labs 02–03, additional prompts |
 | `v0.3` — Intermediate complete | ✅ Released | Modules 04–05, Labs 04–05, `instructions/` folder |
-| `v0.4` — Advanced complete | **Current** | Module 06, Lab 06, `agents/` folder |
+| `v0.4` — Advanced complete | **Current** | Module 06–07, Lab 06, `agents/` folder |
 | `v1.0` — Full course | Planned | All 10 modules, Labs 09–10, capstone, examples, FAQ |
 
 Feature requests and content suggestions are tracked as [GitHub Issues](../../issues). Use the [content suggestion template](./.github/ISSUE_TEMPLATE/content_suggestion.md) to propose new material.
