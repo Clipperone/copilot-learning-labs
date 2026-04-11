@@ -154,3 +154,66 @@ select = ["E", "F", "I", "N", "S"]
 > Before running agent mode, read what it proposes to do. Agent mode can execute terminal commands and modify files.
 
 **What to observe:** Agent mode can discover and run VS Code tasks. Defined tasks reduce ambiguity about which command to use. Compare this to what happens when there is no tasks.json — agent mode will guess.
+
+---
+
+## Exercise 6: Create a Shared Extensions File
+
+**Goal:** Add `.vscode/extensions.json` to the starter project so VS Code prompts contributors to install required tools.
+
+**Before this exercise, complete Task 6 in Lab 02.**
+
+**Instructions:**
+
+1. In the `starter/` project from Lab 02, create `.vscode/extensions.json`:
+
+```json
+{
+  "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "charliermarsh.ruff",
+    "editorconfig.editorconfig"
+  ]
+}
+```
+
+2. Close and reopen the `starter/` folder in VS Code.
+3. Observe the notification: **"Do you want to install the recommended extensions for this repository?"**
+4. Dismiss the notification — you have already installed these tools.
+5. Open the Extensions panel (`Ctrl+Shift+X`), click the filter icon, and select **Show Recommended Extensions**. Confirm your extensions appear under **Workspace Recommendations**.
+
+**What to observe:** VS Code displays workspace recommendations separately from global extensions. Any contributor who opens this project sees the same list — the same lint, format, and Copilot toolchain across the team.
+
+---
+
+## Exercise 7: Documentation Baseline Signal Test
+
+**Goal:** Observe how type annotations and docstrings improve Copilot's inline suggestion quality.
+
+**Before this exercise, complete Exercise 1.**
+
+**Instructions:**
+
+1. Open `starter/src/calculator.py` from Lab 02.
+2. Add an unannotated function with no docstring at the end of the file:
+
+```python
+def clamp(value, min_value, max_value):
+    pass
+```
+
+3. Position the cursor on `pass` and trigger inline completion (`Alt+\` or wait for the ghost text).
+4. Note the suggestion(s) — quality will vary.
+5. Now rewrite the function signature with full type annotations and a docstring:
+
+```python
+def clamp(value: float, min_value: float, max_value: float) -> float:
+    """Return value clamped to the inclusive range [min_value, max_value]."""
+    pass
+```
+
+6. Trigger inline completion again. Note the suggestion(s).
+7. Compare the two results. The annotated version should produce a complete, correct implementation.
+
+**What to observe:** Annotations and docstrings dramatically reduce Copilot's guesswork. The effect is most visible for numeric operations, validation logic, and any function with a non-obvious return type.

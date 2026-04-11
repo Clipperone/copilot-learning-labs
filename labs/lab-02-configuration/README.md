@@ -3,7 +3,8 @@
 > **Difficulty:** Beginner
 > **Estimated time:** 45–60 minutes
 > **Module:** [Module 02 — Configuration](../../modules/02-configuration/)
-> **Type:** Hands-on project setup
+> **Prerequisites:** Module 01 completed, Module 02 theory read, Python 3.10+ installed, Ruff extension installed
+> **Verified:** 2026-04
 
 ---
 
@@ -202,6 +203,46 @@ select = ["E", "F", "I", "N"]
 
 ---
 
+### Task 6: Create an Extensions Recommendations File
+
+**Goal:** Create `.vscode/extensions.json` so VS Code prompts contributors to install required tools.
+
+**Instructions:**
+
+1. Create `.vscode/extensions.json` in the `starter/` project:
+
+```json
+{
+  "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "charliermarsh.ruff",
+    "editorconfig.editorconfig"
+  ]
+}
+```
+
+2. Close and reopen the `starter/` folder in VS Code.
+3. Confirm the notification: **"Do you want to install the recommended extensions for this repository?"** appears.
+4. Dismiss the notification — the tools are already installed.
+
+**Success criterion:** `.vscode/extensions.json` exists and lists at least `charliermarsh.ruff` and `github.copilot`.
+
+---
+
+## Expected Outputs
+
+| File | Location | Created in task |
+|------|----------|-----------------|
+| `.vscode/settings.json` | `starter/` | Task 1 |
+| `.github/copilot-instructions.md` | `starter/` | Task 2 |
+| `.editorconfig` | `starter/` | Task 3 |
+| `pyproject.toml` | `starter/` | Task 4 |
+| `.vscode/tasks.json` | `starter/` | Task 5 |
+| `.vscode/extensions.json` | `starter/` | Task 6 |
+
+---
+
 ## Success Criteria
 
 | Item | Verified |
@@ -212,6 +253,7 @@ select = ["E", "F", "I", "N"]
 | `.editorconfig` removes trailing whitespace on save | ☐ |
 | Ruff detects unused imports in `src/calculator.py` | ☐ |
 | `test` task runs and all 4 tests pass | ☐ |
+| `.vscode/extensions.json` lists required extensions | ☐ |
 
 ---
 

@@ -3,7 +3,7 @@
 > **Level:** Beginner
 > **Estimated time:** 2 hours
 > **Prerequisites:** [Module 01 — Foundations](../01-foundations/)
-> **Verified against:** GitHub Copilot feature set as of 2026-04
+> **Verified:** 2026-04
 
 ---
 
@@ -55,6 +55,32 @@ Always prefer workspace settings over user settings for project-specific configu
 
 Keep instructions specific, bounded, and non-contradictory. Vague instructions ("write good code") have no effect. Precise instructions ("use `snake_case` for all Python functions, `PascalCase` for classes") are followed reliably.
 
+### Useful Extensions
+
+The `.vscode/extensions.json` file lists extensions the team recommends. VS Code prompts any new contributor to install them on first open.
+
+```json
+{
+  "recommendations": [
+    "github.copilot",
+    "github.copilot-chat",
+    "charliermarsh.ruff",
+    "editorconfig.editorconfig"
+  ]
+}
+```
+
+| Extension | Publisher ID | Purpose |
+|-----------|-------------|---------|
+| Ruff | `charliermarsh.ruff` | Python lint + format (replaces Flake8 + Black) |
+| ESLint | `dbaeumer.vscode-eslint` | JavaScript/TypeScript lint |
+| Prettier | `esbenp.prettier-vscode` | Multi-language formatter |
+| EditorConfig | `editorconfig.editorconfig` | Baseline whitespace consistency |
+| GitLens | `eamodio.gitlens` | Inline Git history and authorship signals |
+| Code Spell Checker | `streetsidesoftware.code-spell-checker` | Catches typos in identifiers and comments |
+
+A curated extensions list ensures every contributor's VS Code setup produces consistent lint, format, and context signals — the same signals Copilot reads.
+
 ### File Organization for AI Context
 
 Copilot's context is stronger when:
@@ -66,113 +92,32 @@ Copilot's context is stronger when:
 
 Avoid large monolithic files. A 1000-line `utils.py` dilutes context and makes Copilot suggestions less relevant.
 
+### Documentation and Testing Baseline
+
+Type annotations and docstrings are Copilot's primary signals for understanding function contracts. Compare:
+
+```python
+# Minimal signal — Copilot must guess intent
+def process(x, items):
+    ...
+
+# Strong signal — Copilot inherits precise expectations
+def process(multiplier: float, items: list[str]) -> list[str]:
+    """Return items with each string prefixed by its index times multiplier."""
+    ...
+```
+
+For testing, a passing test suite is a prerequisite for agent mode to self-validate changes:
+
+- Use **pytest** (Python) or **Jest** (JavaScript/TypeScript) as the test runner.
+- Keep tests in a top-level `tests/` folder, mirroring the `src/` structure.
+- Define a `test` VS Code task so agent mode can run the suite without guessing the command.
+
+Agent mode reads test output and self-corrects. Without tests, it cannot validate its own changes.
+
 > **⚠️ Premium request note:** Configuration is a one-time effort with no runtime cost. Writing `.github/copilot-instructions.md` uses a chat turn (low cost). The resulting instructions reduce ambiguity in every subsequent session, making subsequent responses shorter and more accurate — a net premium request saving over time.
 
----
-
-## Practical Procedure
-
-### Step 1: Create or update `.vscode/settings.json`
-
-Add these settings to your workspace settings file. They enable and tune Copilot for professional use:
-
-```json
-{
-  "editor.formatOnSave": true,
-  "editor.rulers": [120],
-  "editor.wordWrap": "off",
-  "github.copilot.enable": {
-    "*": true
-  },
-  "github.copilot.editor.enableAutoCompletions": true,
-  "github.copilot.chat.codeGeneration.useInstructionFiles": true,
-  "github.copilot.chat.codeGeneration.instructions": [],
-  "files.exclude": {
-    "**/__pycache__": true,
-    "**/.pytest_cache": true,
-    "**/node_modules": true
-  }
-}
-```
-
-`useInstructionFiles: true` activates `.github/copilot-instructions.md` automatically.
-
-### Step 2: Create `.github/copilot-instructions.md`
-
-Create the folder if it does not exist, then create the file. Start with this minimal structure and expand it for your project:
-
-```markdown
-# Copilot Instructions — [project name]
-
-## Project Context
-- Language: [Python 3.12 / TypeScript 5.x / etc.]
-- Framework: [FastAPI / React 18 / etc.]
-- Style guide: [PEP 8 / Airbnb / etc.]
-
-## Coding Conventions
-- [Convention 1 — be specific]
-- [Convention 2]
-
-## Do Not
-- [Prohibition 1 — explain why]
-- [Prohibition 2]
-```
-
-### Step 3: Configure a linter and formatter
-
-Formatting tools signal code style to Copilot. Install and configure at minimum:
-
-- **Python projects:** [Ruff](https://docs.astral.sh/ruff/) for lint + format, or Black + Flake8
-- **JavaScript/TypeScript:** ESLint + Prettier
-- **All projects:** [EditorConfig](https://editorconfig.org/) for baseline whitespace consistency
-
-Add a `.editorconfig` to the project root:
-
-```ini
-root = true
-
-[*]
-indent_style = space
-indent_size = 4
-end_of_line = lf
-charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
-
-[*.{js,ts,json,yaml,yml}]
-indent_size = 2
-```
-
-### Step 4: Define VS Code tasks
-
-Tasks standardize how you build, test, and run the project — and make these commands available to Copilot's agent mode. Create `.vscode/tasks.json`:
-
-```json
-{
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "test",
-      "type": "shell",
-      "command": "python -m pytest",
-      "group": {
-        "kind": "test",
-        "isDefault": true
-      },
-      "presentation": {
-        "reveal": "always",
-        "panel": "shared"
-      }
-    },
-    {
-      "label": "lint",
-      "type": "shell",
-      "command": "ruff check .",
-      "group": "build"
-    }
-  ]
-}
-```
+Apply these configuration steps in [Lab 02: Project Configuration Baseline](../../labs/lab-02-configuration/).
 
 ---
 
@@ -187,6 +132,8 @@ See [exercises.md](./exercises.md) for full instructions.
 3. File organization audit — identify context dilution in a sample project
 4. Configure a linter — install Ruff or ESLint and integrate with VS Code
 5. Tasks and agent mode — define a task and invoke it through agent mode
+6. Shared extensions file — create `.vscode/extensions.json` for the starter project
+7. Documentation baseline signal test — add type annotations and docstrings to `calculator.py`, compare Copilot suggestion quality before and after
 
 ---
 
@@ -232,6 +179,33 @@ Before moving to Module 03, confirm:
 - [ ] Your project has a `.github/copilot-instructions.md` with at least 3 specific rules
 - [ ] A linter or formatter is configured and runs on save
 - [ ] `.vscode/tasks.json` defines at least one `test` task
+- [ ] `.vscode/extensions.json` exists and recommends the project's required tools
+- [ ] All functions in `src/calculator.py` have type annotations and docstrings
 - [ ] All exercises in `exercises.md` are complete
 
-Next: [Module 03 — Token and Premium Request Optimization](../03-token-optimization/)
+---
+
+## Files in This Module
+
+| File | Purpose |
+|------|---------|
+| `README.md` | Module overview (this file) |
+| `theory.md` | Extended theory and reference material |
+| `exercises.md` | All exercises with full instructions |
+| `checklist.md` | Completion checklist and self-assessment |
+
+---
+
+## Related Labs
+
+| Lab | Focus | Time |
+|-----|-------|------|
+| [Lab 02 — Project Configuration Baseline](../../labs/lab-02-configuration/) | VS Code workspace setup, Copilot instructions, Ruff linting, task runner, extensions recommendations | 45–60 min |
+
+See [labs/README.md](../../labs/README.md) for the full lab index.
+
+---
+
+## Next Module
+
+→ [Module 03: Token and Premium Request Optimization](../03-token-optimization/)

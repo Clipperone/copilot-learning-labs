@@ -53,3 +53,16 @@ Use this checklist to self-assess before moving to Module 03.
 - [ ] Exercise 3 completed — audited a file for context dilution
 - [ ] Exercise 4 completed — linter configured and running on save
 - [ ] Exercise 5 completed — defined a task and invoked it via agent mode
+- [ ] Exercise 6 completed — created `.vscode/extensions.json` with recommendations
+- [ ] Exercise 7 completed — compared Copilot suggestion quality before and after type annotations
+
+---
+
+## Ready for Module 03?
+
+Complete all sections above, then move to the next module.
+
+- [ ] [Lab 02](../../labs/lab-02-configuration/) completed (all 6 tasks)
+- [ ] All 7 exercises complete
+
+→ [Module 03: Token and Premium Request Optimization](../03-token-optimization/)
