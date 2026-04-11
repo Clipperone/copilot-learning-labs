@@ -19,27 +19,30 @@ Use this checklist after completing Modules 01–03 and Labs 01–03 to confirm 
 
 ---
 
-## Module 02: Configuration *(available in v0.2)*
+## Module 02: Configuration
 
-- [ ] `.vscode/settings.json` is configured for optimal Copilot behavior
-- [ ] Project structure is organized to help Copilot understand context
-- [ ] Linting and formatting tools are configured and running
+- [ ] `.vscode/settings.json` committed with `useInstructionFiles: true` and format-on-save
+- [ ] `.github/copilot-instructions.md` has at least 3 specific, verifiable rules
+- [ ] Copilot reflects the conventions when asked in Ask mode
+- [ ] A linter is running on save in VS Code
 
-## Lab 02: Project Configuration *(available in v0.2)*
+## Lab 02: Project Configuration Baseline
 
-- [ ] Configuration deliverables produced and documented
+- [ ] All 6 tasks complete — configuration files created and verified
+- [ ] All 4 tests pass via the VS Code test task
 
 ---
 
-## Module 03: Token Optimization *(available in v0.2)*
+## Module 03: Token Optimization
 
-- [ ] Can distinguish between included and premium request consumption
-- [ ] Has a personal mode/model decision rule for at least 5 common task types
-- [ ] Has reduced at least one unnecessary request pattern in their normal workflow
+- [ ] Can classify any Copilot action as included or premium without looking it up
+- [ ] Can select the correct mode and model for any task type in under 5 seconds
+- [ ] Can write a compact prompt with goal, constraints, and output format
 
-## Lab 03: Token Audit *(available in v0.2)*
+## Lab 03: Token Audit Exercise
 
-- [ ] Token audit completed on a real task
+- [ ] Token audit worksheet complete — all 4 sections filled in
+- [ ] Personal mode/model cheat sheet has at least 11 rows and is saved for future reference
 
 ---
 
@@ -56,5 +59,5 @@ Before moving to intermediate level, confirm these behaviors:
 
 ## You're Ready for Intermediate Level
 
-→ [LEARNING_PATH.md — Path 2](../../LEARNING_PATH.md#path-2--intermediate-developer)
-→ Start with [Module 04: Prompt Engineering](../../modules/04-prompt-engineering/)
+→ [LEARNING_PATH.md — Path 2](../LEARNING_PATH.md#path-2--intermediate)
+→ Start with [Module 04: Prompt Engineering](../modules/04-prompt-engineering/)

@@ -88,8 +88,8 @@ The course is organized into **10 progressive modules** across 4 levels, each pa
 | # | Module | Level | Key skill |
 |---|--------|-------|-----------|
 | 01 | [Foundations](./modules/01-foundations/) | Beginner | Install, verify, understand all modes, evaluate AI output |
-| 02 | Configuration | Beginner | Optimize VS Code and project structure for AI context |
-| 03 | Token Optimization | Beginner | Mode/model decision framework, cost-aware workflows |
+| 02 | [Configuration](./modules/02-configuration/) | Beginner | Optimize VS Code and project structure for AI context |
+| 03 | [Token Optimization](./modules/03-token-optimization/) | Beginner | Mode/model decision framework, cost-aware workflows |
 | 04 | Prompt Engineering | Intermediate | Structured prompts for every coding scenario |
 | 05 | Custom Instructions | Intermediate | Persistent guidance at global, project, and path scope |
 | 06 | Agents | Advanced | 10 role-specialized personas with tool permissions and handoffs |
@@ -98,15 +98,15 @@ The course is organized into **10 progressive modules** across 4 levels, each pa
 | 09 | Repository Quality | Expert | AI-friendly project structure, governance, review protocols |
 | 10 | Adoption Roadmap | Expert | 7/30/60/90-day personal and team adoption plan |
 
-Modules 02–10 are being released progressively. See the [roadmap](#roadmap) below.
+Modules 04–10 are being released progressively. See the [roadmap](#roadmap) below.
 
 ### Labs
 
 | Lab | Paired module | Status |
 |-----|--------------|--------|
 | [Lab 01 — Getting Started](./labs/lab-01-getting-started/) | Module 01 | ✅ Available |
-| Lab 02 — Project Configuration | Module 02 | Planned — v0.2 |
-| Lab 03 — Token Audit | Module 03 | Planned — v0.2 |
+| [Lab 02 — Project Configuration Baseline](./labs/lab-02-configuration/) | Module 02 | ✅ Available |
+| [Lab 03 — Token Audit](./labs/lab-03-token-audit/) | Module 03 | ✅ Available |
 | Lab 04 — Prompt Patterns Workshop | Module 04 | Planned — v0.3 |
 | Lab 05 — Build a Prompt Library | Module 04 | Planned — v0.3 |
 | Lab 06 — Custom Instructions | Module 05 | Planned — v0.3 |
@@ -142,8 +142,8 @@ Modules 02–10 are being released progressively. See the [roadmap](#roadmap) be
 
 | Release | Status | Contents |
 |---------|--------|---------|
-| `v0.1` — Foundation | **Current** | Module 01, Lab 01, all templates, prompt starter set, checklists, `.github/` and `.vscode/` config |
-| `v0.2` — Beginner complete | Planned | Modules 02–03, Labs 02–03, additional prompts |
+| `v0.1` — Foundation | ✅ Released | Module 01, Lab 01, all templates, prompt starter set, checklists, `.github/` and `.vscode/` config |
+| `v0.2` — Beginner complete | **Current** | Modules 02–03, Labs 02–03, additional prompts |
 | `v0.3` — Intermediate complete | Planned | Modules 04–05, Labs 04–06, `instructions/` folder |
 | `v0.4` — Advanced complete | Planned | Modules 06–07, Labs 07–08, `agents/` folder |
 | `v1.0` — Full course | Planned | All 10 modules, Labs 09–10, capstone, examples, FAQ |

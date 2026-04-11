@@ -31,3 +31,14 @@
 - [ ] All 4 tests pass via **Tasks: Run Test Task**
 - [ ] The recommended extensions notification appeared when I reopened the `starter/` folder
 - [ ] I reviewed `solution/` and found no configuration I missed
+
+---
+
+## Ready for Module 03?
+
+Complete all sections above, then move to the next module.
+
+- [ ] All 6 tasks complete and configuration files verified
+- [ ] All 4 tests pass via the VS Code test task
+
+→ [Module 03: Token and Premium Request Optimization](../../modules/03-token-optimization/)

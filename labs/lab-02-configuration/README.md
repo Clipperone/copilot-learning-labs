@@ -3,7 +3,7 @@
 > **Difficulty:** Beginner
 > **Estimated time:** 45–60 minutes
 > **Module:** [Module 02 — Configuration](../../modules/02-configuration/)
-> **Prerequisites:** Module 01 completed, Module 02 theory read, Python 3.10+ installed, Ruff extension installed
+> **Prerequisites:** [Module 01 — Foundations](../../modules/01-foundations/) completed, Module 02 theory read, Python 3.10+ installed, Ruff extension installed
 > **Verified:** 2026-04
 
 ---

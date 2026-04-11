@@ -285,18 +285,24 @@ By the end of this lab you will have:
 
 ## Success Criteria
 
-| Criterion | How to verify |
-|-----------|--------------|
-| Inline completion accepted deliberately | `task1.py` has a completed function; you can explain every line |
-| All four chat modes used | Ask, Edit, Plan, and Inline chat each produced a result |
-| Diff reviewed before accepting | Edit mode change was reviewed line by line before accepting |
-| Critical review applied | `task3.py` has written answers for all four Read → Run → Reason → Risk steps |
-| Security flaw named | OWASP A02 (plaintext credential storage) identified |
-| Cost classification correct | 4/5 or 5/5 correct in Task 5 |
+| Criterion | Verified |
+|-----------|----------|
+| Inline completion accepted deliberately — `task1.py` complete and every line explainable | ☐ |
+| All four chat modes used — Ask, Edit, Plan, and Inline chat each produced a result | ☐ |
+| Diff reviewed before accepting — Edit mode change reviewed line by line | ☐ |
+| Critical review applied — `task3.py` has all four Read → Run → Reason → Risk answers as comments | ☐ |
+| Security flaw named — OWASP A02 (plaintext credential storage) identified | ☐ |
+| Cost classification correct — 4/5 or 5/5 correct in Task 5 | ☐ |
 
 ---
 
 → Self-assess with [checklist.md](./checklist.md) before moving on.
+
+---
+
+## Reference Solution
+
+`solution/verify.py` contains a completed reference implementation for Task 2b. Compare your result after finishing Task 2b — not before.
 
 ---
 
