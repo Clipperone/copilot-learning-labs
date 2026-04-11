@@ -223,6 +223,7 @@ The paired lab is [Lab 05 — Write Your Project's Custom Instructions](../../la
 - [theory.md](./theory.md) — Instruction inheritance mechanics, monorepo `applyTo` design, conflict resolution procedure
 - [instructions/](../../instructions/) — Working example files: global, project-wide, path-specific
 - `.github/copilot-instructions.md` — This repository's own instruction file (a live teaching artifact)
+- **Agent mode connection:** The 4 design principles practised here — specific, imperative, bounded, non-contradictory — are the same ones used to write an agent persona in Module 06, applied to a role rather than a file. Active instruction files also reduce agent drift: in-scope instructions are inherited automatically on every agent turn.
 - **Next:** [Module 06 — Agents and Role Specialization](../06-agents/)
 
 ---

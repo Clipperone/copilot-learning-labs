@@ -24,6 +24,7 @@ By the end of this lab you will have:
 2. Open the Copilot Chat panel (`Ctrl+Alt+I` / `Cmd+Alt+I`).
 3. Keep [Module 04 README.md](../../modules/04-prompt-engineering/README.md) open as a reference tab.
 4. Do not open `solution/workbench.py` before completing Task 1.
+5. Open [templates/prompt-template.md](../../templates/prompt-template.md) in a preview tab — you will use this format in Task 4.
 
 ---
 
@@ -160,6 +161,8 @@ Here's my whole utils file. Review it and tell me everything that's wrong with i
 [paste of 250 lines]
 ```
 
+> **Note:** This task covers 3 of the 5 anti-patterns. The remaining two — vague target and missing output format — are in [Module 04 exercises.md](../../modules/04-prompt-engineering/exercises.md) Exercises 1 and 2.
+
 ---
 
 ## Task 4 — Commit Five Prompt Library Entries (5 min)
@@ -191,7 +194,7 @@ You now have five real, tested prompts from this lab. Formalize each one using [
 | `apply_discount` has 4 tests | Run `pytest starter/` — 4 tests pass |
 | `validate_email` has a docstring | Open the function — docstring is present in Google format |
 | `hash_password` uses a secure algorithm | Function body no longer contains `md5`; uses `pbkdf2_hmac` or `bcrypt` |
-| 5 prompt files exist in `prompts/` | Run `dir prompts/testing prompts/documentation prompts/review prompts/security prompts/migration` |
+| 5 prompt files exist in `prompts/` | Open the Explorer panel in VS Code — confirm a file exists in each of: `prompts/testing/`, `prompts/documentation/`, `prompts/review/`, `prompts/security/`, `prompts/migration/` |
 | No template stubs remain | Open each prompt file — no `[PLACEHOLDER]` text remains |
 
 ---

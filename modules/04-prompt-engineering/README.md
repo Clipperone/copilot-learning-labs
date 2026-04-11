@@ -2,7 +2,7 @@
 
 > **Level:** Intermediate
 > **Estimated time:** ~2.5 hours (module theory ~1.5 hrs · lab ~50 min)
-> **Prerequisite:** Level 1 complete — Module 03 in particular. This module extends compact prompting with full structured scenario coverage.
+> **Prerequisite:** [Level 1 complete](../../SYLLABUS.md#level-1--beginner) (Modules 01–03) — Module 03 in particular. This module extends compact prompting with full structured scenario coverage.
 > **Verified:** 2026-04
 
 > ⚠️ **Premium request note:** Most exercises in this module use the default model. Security review exercises recommend o1 or Claude — those are marked at the point of use.
@@ -15,7 +15,7 @@ By the end of this module you will be able to:
 
 1. Decompose any coding task into the 4-component prompt structure: task, role, constraints, output format.
 2. Apply the correct prompt pattern for each of 7 coding scenarios without looking them up.
-3. Identify 5 prompt anti-patterns on sight and rewrite them.
+3. Identify 5 prompt anti-patterns on sight; diagnose and rewrite at least 3 in the lab.
 4. Write a parameterized, reusable prompt template committable to a shared prompt library.
 5. Scope prompts for security review and migration without generating vague or hallucinated output.
 6. Estimate whether a given prompt scenario warrants a premium model.
