@@ -38,12 +38,20 @@ This is a synthesis checklist. It draws on skills from the full course — not j
 
 ## Capstone
 
-- [ ] `capstone/roadmap.md` is committed and all 5 sections are filled in — no stubs remaining
+**Build deliverables (M04–M09 skills applied)**
+
+- [ ] `.github/copilot-instructions.md` committed — ≥5 declarative, verifiable rules (Module 05)
+- [ ] `CONVENTIONS.md` committed — ≥5 rules; `AI-assisted:` and `Reviewed-by:` trailers present (Module 09)
+- [ ] `agents/` — ≥3 definitions each with purpose, constraints, tool permissions table, and handoff (Module 06)
+- [ ] `prompts/` — ≥3 course-template entries each with a filled example (Module 04)
+- [ ] `agents/workflow-[name].md` — all 5 required sections; bounded sub-tasks with single acceptance criteria (Module 07)
+- [ ] `capstone/validation-report.md` — all 5 gates assessed; Gate 4 (SQL injection) BLOCKING; overall result BLOCKED (Module 08/09)
+
+**Planning deliverables (M10 skills applied)**
+
+- [ ] `capstone/roadmap.md` — all 6 sections present; no stubs; 3 KPIs from minimum set; ≥5 governance rules; review date specific
 - [ ] `checklists/adoption-milestones.md` reflects actual current state at each milestone
-- [ ] All gate deliverables in Section 2 of `capstone/roadmap.md` are specific committed files or checklists
-- [ ] All 3 KPIs in Section 3 are from the module's minimum set
-- [ ] Governance policy in Section 4 has at least 5 rules committed in correct location
-- [ ] `capstone/checklist.md` is fully verified
+- [ ] `capstone/checklist.md` fully verified — every row checked
 
 ---
 

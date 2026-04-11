@@ -51,34 +51,20 @@ Use the first section before the Capstone as a readiness gate. Use the second se
 
 ## After Capstone — Capstone Completion
 
-**Capstone artifact 1 — Self-placement**
+**Build deliverables (M04–M09 applied)**
 
-- [ ] I have placed myself on each of the 4 course levels with a specific evidence statement for each.
-- [ ] My self-placement is based on checklist completion, not on time spent or modules read.
+- [ ] `.github/copilot-instructions.md` committed — ≥5 declarative, verifiable rules.
+- [ ] `CONVENTIONS.md` committed — ≥5 rules; `AI-assisted:` and `Reviewed-by:` trailers present.
+- [ ] `agents/` — ≥3 definitions each with purpose, constraints, tool permissions, and handoff.
+- [ ] `prompts/` — ≥3 course-template entries each with a filled example.
+- [ ] `agents/workflow-[name].md` — all 5 required sections; bounded sub-tasks.
+- [ ] `capstone/validation-report.md` — all 5 gates assessed; BLOCKED result; Gate 4 (SQL injection) named as blocking.
 
-**Capstone artifact 2 — Personal roadmap**
+**Planning deliverables (M10 applied)**
 
-- [ ] My 90-day roadmap contains all 4 time horizons.
-- [ ] Each horizon has at least one gate deliverable that is a specific, commitable file.
-- [ ] The roadmap is written for my current context, not an idealized version of myself.
-- [ ] Day 7 tasks are achievable with my current skill level — I have not front-loaded complex tasks.
-
-**Capstone artifact 3 — KPI selection**
-
-- [ ] I have documented exactly 3 KPIs I will use for the next 90 days.
-- [ ] I have written one sentence explaining why I rejected the KPIs I did not choose.
-- [ ] My 3 KPIs are all verifiable from artifacts in the repository — not from memory or self-report.
-
-**Capstone artifact 4 — Governance policy**
-
-- [ ] I have selected a governance policy tier appropriate to my current team size.
-- [ ] My policy has at least 5 rules in declarative format.
-- [ ] The policy is committed to `CONVENTIONS.md` (or documented in `capstone/roadmap.md` if solo context).
-
-**Capstone artifact 5 — Expert-completion self-assessment**
-
-- [ ] `checklists/expert-completion.md` is fully reviewed — every item answered honestly.
-- [ ] Items I cannot check are noted with a specific remediation action, not left blank.
+- [ ] `capstone/roadmap.md` — all 6 sections filled; no stubs; 3 KPIs from minimum set; ≥5 governance rules; review date specific.
+- [ ] `checklists/adoption-milestones.md` reflects actual current state at each milestone.
+- [ ] `checklists/expert-completion.md` every item checked or annotated — none left blank.
 
 ---
 

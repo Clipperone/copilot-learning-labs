@@ -273,7 +273,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 
 **Level 4 completion:** → [checklists/expert-completion.md](./checklists/expert-completion.md)
 
-**Deliverables:** `capstone/roadmap.md` (self-placement + 90-day plan + KPIs + governance policy), completed `checklists/adoption-milestones.md`, and reviewed `checklists/expert-completion.md`
+**Deliverables:** `.github/copilot-instructions.md`, `CONVENTIONS.md`, ≥3 agent definitions, ≥3 prompt entries, one multi-agent workflow file, `capstone/validation-report.md` (5-gate pre-merge result), and `capstone/roadmap.md` (self-placement + 90-day plan + KPIs + governance policy)
 
 ---
 

@@ -183,7 +183,7 @@ You have completed this module when you can:
 - [ ] Describe the governance policy tier that applies to your current team size.
 - [ ] Run the 4-step monthly review cycle on your own repository without referencing this document.
 
-**Next step:** → [Capstone — Adoption Roadmap Capstone](../../capstone/)
+**Next step:** → [Capstone — End-to-End Copilot Workflow Integration](../../capstone/)
 
 ---
 
@@ -191,5 +191,5 @@ You have completed this module when you can:
 
 This is the final module. You have completed the full GitHub Copilot Pro+ Mastery course.
 
-→ Complete the [capstone](../../capstone/) to produce your self-assessed 90-day adoption plan.
+→ Complete the [capstone](../../capstone/) — produce 7 committed deliverables spanning M04–M10.
 → Self-assess with [checklists/expert-completion.md](../../checklists/expert-completion.md) to verify Expert-level readiness.

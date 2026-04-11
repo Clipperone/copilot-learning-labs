@@ -1,6 +1,8 @@
 # Adoption Milestones Tracker
 
-Use this tracker alongside `capstone/roadmap.md` to record your actual progress at each milestone. Update it monthly.
+Use this tracker alongside `capstone/roadmap.md` to record your **actual progress** at each milestone. Update it monthly.
+
+> **Scope:** `capstone/roadmap.md` is the forward-looking plan (what you intend to achieve at each horizon). This file is the rearward-looking tracker (what you actually achieved and when). They are separate documents — keep them that way.
 
 This is a live document — do not fill it in all at once. Record your state at each checkpoint when you reach it.
 
