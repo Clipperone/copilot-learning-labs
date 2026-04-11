@@ -4,41 +4,41 @@ Complete these exercises in order. Each one applies a configuration concept from
 
 ---
 
-## Exercise 1: Write Your First Project-Level Instructions
+## Exercise 1: Extend Your Project-Level Instructions
 
-**Goal:** Create a `.github/copilot-instructions.md` for a minimal Python project and verify Copilot reads it.
+**Goal:** Deepen the `.github/copilot-instructions.md` you wrote in Lab 02 by adding a security constraint and verifying Copilot applies it.
 
-**Before this exercise, complete Task 1 in Lab 02** to have a starter project to work with.
+**Before this exercise, complete Tasks 1–2 in Lab 02** — the settings file and the initial instructions file must both exist.
 
 **Instructions:**
 
-1. In the starter project from Lab 02, create `.github/copilot-instructions.md`.
-2. Add the following content:
+1. Open `.github/copilot-instructions.md` from your Lab 02 `starter/` project.
+2. Add a new `## Security` section after `## Do Not`:
 
 ```markdown
-# Copilot Instructions — my-python-project
-
-## Project Context
-- Language: Python 3.12
-- No external frameworks. Standard library only.
-- Style: PEP 8 with 120 character line limit
-
-## Coding Conventions
-- Use `snake_case` for all function and variable names.
-- Use `PascalCase` for class names.
-- Always include type annotations on function signatures.
-- Raise `ValueError` for invalid inputs; never use `assert` for validation in production code.
-
-## Do Not
-- Suggest `print()` for logging. Use `logging.getLogger(__name__)`.
-- Generate SQL by string concatenation. Use parameterized queries.
+## Security
+- Never concatenate user input into SQL strings. Use parameterized queries.
+- Always validate function arguments at the boundary. Raise `ValueError` for out-of-range inputs.
+- Do not generate code that suppresses exceptions with bare `except:` or `except Exception: pass`.
 ```
 
-3. Ensure `.vscode/settings.json` contains `"github.copilot.chat.codeGeneration.useInstructionFiles": true`.
-4. Open the Copilot chat panel and ask: `What are your coding conventions for this project?`
-5. Verify the response references your instructions.
+3. Save the file.
+4. Open the Copilot chat panel in **Ask** mode and send:
 
-**What to observe:** Copilot should reflect back your naming conventions, type annotation rule, and the logging constraint. If it doesn't, check that `useInstructionFiles` is `true` and the file is in `.github/` (not `.vscode/`).
+```
+What security constraints apply to this project?
+```
+
+5. Verify the response reflects the three new rules.
+6. In **Edit** mode, send:
+
+```
+Add a function called parse_user_id that accepts a string and returns an integer user ID.
+```
+
+7. Inspect the generated code. Does it validate the input and raise `ValueError` for non-integer input?
+
+**What to observe:** Security constraints in instructions propagate to code generation — not just to chat answers. A missing validation or a bare `except` in the output means the instruction needs to be more specific.
 
 ---
 
@@ -83,37 +83,40 @@ If yes, suggest how to split it into focused modules, giving each a descriptive 
 
 ---
 
-## Exercise 4: Configure a Linter
+## Exercise 4: Extend Linting with Security Rules
 
-**Goal:** Install Ruff (Python) or ESLint (JS/TS), configure it for 120-character lines, and wire it to run on save.
+**Goal:** Enable Ruff's security rule set (`S`) in the project you configured in Lab 02 Task 4 and observe the new violation class it surfaces.
+
+**Before this exercise, complete Task 4 in Lab 02** — `pyproject.toml` and the Ruff extension must be active.
 
 **Choose the exercise matching your primary language.**
 
 ### Python (Ruff)
 
-1. Install the [Ruff VS Code extension](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff).
-2. Add `pyproject.toml` to the project root:
+1. Open `pyproject.toml` in the `starter/` project. Confirm the current `select` list.
+2. Add `"S"` to the `select` list if it is not already there:
 
 ```toml
-[tool.ruff]
-line-length = 120
-target-version = "py312"
-
 [tool.ruff.lint]
 select = ["E", "F", "I", "N", "S"]
 ```
 
-3. Add these keys to `.vscode/settings.json`:
+3. Open `src/calculator.py`. Add this function at the end of the file:
 
-```json
-"[python]": {
-  "editor.defaultFormatter": "charliermarsh.ruff",
-  "editor.formatOnSave": true
-},
-"ruff.enable": true
+```python
+def describe(value):
+    print(f"Value is {value}")
 ```
 
-4. Open a Python file, write a function with a 130-character line, and save. Confirm Ruff underlines the violation.
+4. Save. Confirm Ruff surfaces an `S002` violation (use of `print` is flagged as a security concern in production code under some rulesets) or `T201` depending on your Ruff version. If neither appears, the `print` call is not a security rule — instead add:
+
+```python
+import subprocess
+subprocess.run("ls", shell=True)
+```
+
+5. Confirm Ruff surfaces `S602` (subprocess call with `shell=True`).
+6. Remove the added code.
 
 ### JavaScript (ESLint + Prettier)
 
@@ -131,7 +134,7 @@ select = ["E", "F", "I", "N", "S"]
 
 4. Write a JS file with a long line and inconsistent quotes. Save. Confirm formatting applies.
 
-**What to observe:** On-save formatting ensures Copilot's context is always correctly formatted. This improves suggestion quality for subsequent completions.
+**What to observe:** Security rules surface patterns that convention rules miss. Enabling `S` in Ruff adds OWASP-aligned checks — `shell=True`, hardcoded passwords, unsafe `pickle` usage. These are exactly the issues Copilot might generate without a security-aware linter as a safety net.
 
 ---
 
@@ -157,15 +160,16 @@ select = ["E", "F", "I", "N", "S"]
 
 ---
 
-## Exercise 6: Create a Shared Extensions File
+## Exercise 6: Add a Project-Specific Extension to the Recommendations
 
-**Goal:** Add `.vscode/extensions.json` to the starter project so VS Code prompts contributors to install required tools.
+**Goal:** Extend the `.vscode/extensions.json` you created in Lab 02 Task 6 by adding a project-specific extension and documenting the team justification for it.
 
-**Before this exercise, complete Task 6 in Lab 02.**
+**Before this exercise, complete Task 6 in Lab 02** — the base `extensions.json` must exist.
 
 **Instructions:**
 
-1. In the `starter/` project from Lab 02, create `.vscode/extensions.json`:
+1. Open `.vscode/extensions.json` from the `starter/` project.
+2. Add the [Todo Tree](https://marketplace.visualstudio.com/items?itemName=gruntfuss.todo-tree) extension or another extension relevant to your workflow:
 
 ```json
 {
@@ -173,17 +177,33 @@ select = ["E", "F", "I", "N", "S"]
     "github.copilot",
     "github.copilot-chat",
     "charliermarsh.ruff",
-    "editorconfig.editorconfig"
+    "editorconfig.editorconfig",
+    "gruntfuss.todo-tree"
   ]
 }
 ```
 
-2. Close and reopen the `starter/` folder in VS Code.
-3. Observe the notification: **"Do you want to install the recommended extensions for this repository?"**
-4. Dismiss the notification — you have already installed these tools.
-5. Open the Extensions panel (`Ctrl+Shift+X`), click the filter icon, and select **Show Recommended Extensions**. Confirm your extensions appear under **Workspace Recommendations**.
+3. Add a comment block at the top of the file explaining the rationale. Since JSON does not support comments, add it as the first key:
 
-**What to observe:** VS Code displays workspace recommendations separately from global extensions. Any contributor who opens this project sees the same list — the same lint, format, and Copilot toolchain across the team.
+```json
+{
+  "_comment": "These extensions are required for this project. Install all before contributing.",
+  "recommendations": [
+    ...
+  ]
+}
+```
+
+4. Close and reopen `starter/`. Confirm VS Code includes the new extension in the workspace recommendations.
+5. Open the Copilot chat panel in **Ask** mode. Attach `#file:.vscode/extensions.json` and ask:
+
+```
+Based on the extensions in this file, what kind of project is this and what toolchain does the team use?
+```
+
+6. Note how well the extension list communicates project intent to Copilot.
+
+**What to observe:** The extension list itself is context. A well-curated `extensions.json` lets Copilot infer toolchain choices (Ruff → Python, ESLint + Prettier → JS) and tailor suggestions accordingly.
 
 ---
 

@@ -10,7 +10,7 @@
 
 ## Learning Objective
 
-After completing this lab, you will have configured a minimal Python project with a working VS Code workspace, project-level Copilot instructions, a linter, and a task runner — and you will have verified that Copilot uses your instructions.
+Complete this lab and you will have configured a minimal Python project with a working VS Code workspace, project-level Copilot instructions, a linter, a task runner, and a shared extensions recommendations file — and you will have verified that Copilot uses your instructions.
 
 ---
 

@@ -18,6 +18,8 @@ By the end of this module, you will be able to:
 - [ ] Organize files and folders in a way that gives Copilot clean, unambiguous context
 - [ ] Set up linting and formatting so Copilot inherits correct code style automatically
 - [ ] Define VS Code tasks for repeatable build, test, and run workflows
+- [ ] Create a `.vscode/extensions.json` that recommends required tools to contributors
+- [ ] Add type annotations and docstrings to functions and verify the effect on Copilot suggestion quality
 
 ---
 
@@ -139,8 +141,8 @@ See [exercises.md](./exercises.md) for full instructions. Complete [Lab 02](../.
 
 ## Common Mistakes
 
-| Mistake | Why it happens | How to fix it |
-|---------|----------------|---------------|
+| Mistake | Root cause | Fix |
+|---------|------------|-----|
 | Vague instructions ("use best practices") | Developer thinks any instruction is better than none | Replace with specific, verifiable rules: "use `snake_case` for all function names" |
 | Forgetting `useInstructionFiles: true` | Default setting may be `false` | Add `github.copilot.chat.codeGeneration.useInstructionFiles: true` to `.vscode/settings.json` |
 | Monolithic utility files | Legacy habit from non-AI codebases | Split into focused modules; each file should have one clear purpose |
