@@ -10,6 +10,7 @@ Clone this repository, follow the labs, and apply the templates directly to your
 [![VS Code](https://img.shields.io/badge/VS%20Code-1.90%2B-007ACC)](https://code.visualstudio.com/)
 [![Copilot](https://img.shields.io/badge/GitHub%20Copilot-Pro%2B-8957e5)](https://github.com/features/copilot)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](./CONTRIBUTING.md)
+[![Sponsor](https://img.shields.io/badge/Sponsor-%E2%9D%A4-ea4aaa)](https://github.com/sponsors/Clipperone)
 
 ---
 
