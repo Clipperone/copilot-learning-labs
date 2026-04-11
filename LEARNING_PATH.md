@@ -38,15 +38,15 @@ Answer these questions to self-place:
 
 **Entry gate:** None.
 
-```
-Module 01: Foundations                          ~2 hrs
-    └── Lab 01: Getting Started                 ~40 min
-Module 02: Configuration                        ~2 hrs
-    └── Lab 02: Project Configuration Baseline  ~50 min
-Module 03: Token Optimization                   ~1.5 hrs
-    └── Lab 03: Token Audit Exercise            ~35 min
-    └── checklists/beginner-completion.md  ← self-assess before advancing
-```
+| Step | What | Time |
+|------|------|------|
+| 1 | [Module 01 — Foundations](./modules/01-foundations/) | ~2 hrs |
+| 2 | [Lab 01 — Getting Started](./labs/lab-01-getting-started/) | ~40 min |
+| 3 | [Module 02 — Configuration](./modules/02-configuration/) | ~2 hrs |
+| 4 | [Lab 02 — Project Configuration Baseline](./labs/lab-02-configuration/) | ~50 min |
+| 5 | [Module 03 — Token Optimization](./modules/03-token-optimization/) | ~1.5 hrs |
+| 6 | [Lab 03 — Token Audit Exercise](./labs/lab-03-token-audit/) | ~35 min |
+| 7 | [beginner-completion.md](./checklists/beginner-completion.md) ← self-assess before advancing | — |
 
 **Exit deliverables:**
 - Working Copilot Pro+ setup verified across all modes
@@ -73,13 +73,13 @@ Module 03: Token Optimization                   ~1.5 hrs
 
 **Entry gate:** [checklists/beginner-completion.md](./checklists/beginner-completion.md) fully checked.
 
-```
-Module 04: Prompt Engineering                   ~2.5 hrs
-    └── Lab 04: Prompt Engineering Workshop        ~50 min
-Module 05: Custom Instructions                  ~2 hrs
-    └── Lab 05: Write Your Project's Custom Instructions  ~50 min
-    └── checklists/intermediate-completion.md  ← self-assess before advancing
-```
+| Step | What | Time |
+|------|------|------|
+| 1 | [Module 04 — Prompt Engineering](./modules/04-prompt-engineering/) | ~2.5 hrs |
+| 2 | [Lab 04 — Prompt Engineering Workshop](./labs/lab-04-prompt-engineering/) | ~50 min |
+| 3 | [Module 05 — Custom Instructions](./modules/05-custom-instructions/) | ~2 hrs |
+| 4 | [Lab 05 — Write Your Project's Custom Instructions](./labs/lab-05-custom-instructions/) | ~50 min |
+| 5 | [intermediate-completion.md](./checklists/intermediate-completion.md) ← self-assess before advancing | — |
 
 **Exit deliverables:**
 - 5 prompt entries committed to `prompts/` using the course template
@@ -105,13 +105,13 @@ Module 05: Custom Instructions                  ~2 hrs
 
 **Entry gate:** [checklists/intermediate-completion.md](./checklists/intermediate-completion.md) fully checked.
 
-```
-Module 06: Agents and Role Specialization       ~3 hrs
-    └── Lab 06: Agents and Personas                      ~60 min
-Module 07: Multi-Agent Workflows                ~2.5 hrs
-    └── Lab 07: Run a Complete Multi-Agent Workflow      ~70 min
-    └── checklists/advanced-completion.md  ← self-assess before advancing
-```
+| Step | What | Time |
+|------|------|------|
+| 1 | [Module 06 — Agents and Role Specialization](./modules/06-agents/) | ~3 hrs |
+| 2 | [Lab 06 — Agents and Personas](./labs/lab-06-agents-and-personas/) | ~60 min |
+| 3 | [Module 07 — Multi-Agent Workflows](./modules/07-multi-agent-workflows/) | ~2.5 hrs |
+| 4 | [Lab 07 — Run a Complete Multi-Agent Workflow](./labs/lab-07-multi-agent-workflow/) | ~70 min |
+| 5 | [advanced-completion.md](./checklists/advanced-completion.md) ← self-assess before advancing | — |
 
 **Exit deliverables:**
 - All 10 agent definitions in `agents/`
@@ -137,20 +137,20 @@ Module 07: Multi-Agent Workflows                ~2.5 hrs
 
 **Entry gate:** [checklists/advanced-completion.md](./checklists/advanced-completion.md) fully checked.
 
-```
-Module 08: Advanced Features                    ~2.5 hrs
-    └── Lab 08: Advanced Feature Tour           ~60 min
-Module 09: AI-Friendly Repository Engineering   ~2 hrs
-    └── Lab 09: Repository Health Audit         ~60 min
-Module 10: Adoption Roadmap                     ~2 hrs
-    └── Capstone: [/capstone/](./capstone/)
-    └── [checklists/expert-completion.md](./checklists/expert-completion.md)  ← final self-assessment
-```
+| Step | What | Time |
+|------|------|------|
+| 1 | [Module 08 — Advanced Features](./modules/08-advanced-features/) | ~2.5 hrs |
+| 2 | [Lab 08 — Advanced Feature Tour](./labs/lab-08-advanced-feature-tour/) | ~60 min |
+| 3 | [Module 09 — AI-Friendly Repository Engineering](./modules/09-repository-quality/) | ~2 hrs |
+| 4 | [Lab 09 — Repository Health Audit](./labs/lab-09-repository-health-audit/) | ~60 min |
+| 5 | [Module 10 — Adoption Roadmap](./modules/10-adoption-roadmap/) | ~2 hrs |
+| 6 | [Capstone — End-to-End Copilot Workflow Integration](./capstone/) | ~2 hrs |
+| 7 | [expert-completion.md](./checklists/expert-completion.md) ← final self-assessment | — |
 
 **Exit deliverables:**
-- Capstone project complete and self-assessed
+- 7 capstone deliverables committed (instructions, conventions, agents, prompts, workflow, validation report, roadmap)
 - Written 90-day adoption roadmap
-- `checklists/expert-completion.md` fully checked
+- [checklists/expert-completion.md](./checklists/expert-completion.md) fully checked
 
 ---
 
@@ -162,12 +162,9 @@ Use these only if you have genuine prior experience with the skills they skip. I
 
 Prerequisite: Copilot is installed and running.
 
-```
-Module 03: Token Optimization  (compact prompt section only)
-    ↓
-Module 04: Prompt Engineering
-    └── Lab 04: Prompt Engineering Workshop
-```
+1. [Module 03 — Token Optimization](./modules/03-token-optimization/) (compact prompt section only)
+2. [Module 04 — Prompt Engineering](./modules/04-prompt-engineering/)
+3. [Lab 04 — Prompt Engineering Workshop](./labs/lab-04-prompt-engineering/)
 
 Then return to Module 01 to fill any gaps.
 
@@ -177,13 +174,11 @@ Then return to Module 01 to fill any gaps.
 
 Prerequisite: Copilot Pro+ is deployed. You have admin access.
 
-```
-Module 02: Configuration
-    └── Lab 02: Project Configuration Baseline
-Module 05: Custom Instructions
-    └── Lab 05: Write Your Project's Custom Instructions
-Module 10: Adoption Roadmap (team section)
-```
+1. [Module 02 — Configuration](./modules/02-configuration/)
+2. [Lab 02 — Project Configuration Baseline](./labs/lab-02-configuration/)
+3. [Module 05 — Custom Instructions](./modules/05-custom-instructions/)
+4. [Lab 05 — Write Your Project's Custom Instructions](./labs/lab-05-custom-instructions/)
+5. [Module 10 — Adoption Roadmap](./modules/10-adoption-roadmap/) (team section)
 
 ---
 
@@ -191,13 +186,11 @@ Module 10: Adoption Roadmap (team section)
 
 Prerequisite: None.
 
-```
-Module 01: Foundations (critical evaluation section)
-    └── checklists/ai-output-review.md
-    └── checklists/pre-commit.md
-Module 09: Repository Quality for AI (governance section)
-    └── agents/code-reviewer.md  (Path 3 required)
-```
+1. [Module 01 — Foundations](./modules/01-foundations/) (critical evaluation section)
+2. [checklists/ai-output-review.md](./checklists/ai-output-review.md)
+3. [checklists/pre-commit.md](./checklists/pre-commit.md)
+4. [Module 09 — AI-Friendly Repository Engineering](./modules/09-repository-quality/) (governance section)
+5. [agents/code-reviewer.md](./agents/code-reviewer.md) (Path 3 required)
 
 ---
 
@@ -205,10 +198,8 @@ Module 09: Repository Quality for AI (governance section)
 
 Prerequisite: None — this is a good first read.
 
-```
-Module 03: Token and Premium Request Optimization
-    └── Lab 03: Token Audit Exercise
-```
+1. [Module 03 — Token Optimization](./modules/03-token-optimization/)
+2. [Lab 03 — Token Audit Exercise](./labs/lab-03-token-audit/)
 
 Then start Path 1 from the beginning.
 
