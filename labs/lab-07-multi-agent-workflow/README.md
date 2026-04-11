@@ -50,7 +50,7 @@ After completing this lab you can write a workflow file before executing any ses
    - `## Pattern` — Feature Delivery
    - `## Problem statement` — one paragraph: what the feature does, what success looks like, what is out of scope
    - `## Active context` — path to `.github/copilot-instructions.md`; any constraints from that file relevant to Python code
-   - `## Steps` — 4 steps: Planner, Implementer, Code Reviewer, and one final step to close out; for each step name the role, input, output artifact filename, file scope, and verification gate
+   - `## Steps` — 5 steps: one Planner, one Implementer per sub-task (three total), and one Code Reviewer; for each step name the role, input, output artifact filename, file scope, and verification gate
    - `## Outcome` — leave as a template with placeholder comments
 3. Commit the file before moving to Task 2.
 

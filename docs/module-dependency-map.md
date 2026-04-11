@@ -46,7 +46,7 @@ Each module assumes completion of all modules before it in this chain.
 | Lab 04 — Prompt Engineering Workshop | Module 04 | Lab 01 |
 | Lab 05 — Custom Instructions | Module 05 | Lab 04 |
 | Lab 06 — Agents and Personas | Module 06 | Lab 05 |
-| Lab 07 — Multi-Agent Workflow | Module 07 | Lab 06 |
+| Lab 07 — Run a Complete Multi-Agent Workflow | Module 07 | Lab 06 |
 | Lab 08 — Advanced Feature Tour | Module 08 | Lab 07 |
 | Lab 09 — Repository Health Audit | Module 09 | none (standalone) |
 

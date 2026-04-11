@@ -109,7 +109,7 @@ Module 05: Custom Instructions                  ~2 hrs
 Module 06: Agents and Role Specialization       ~3 hrs
     └── Lab 06: Agents and Personas                      ~60 min
 Module 07: Multi-Agent Workflows                ~2.5 hrs
-    └── Lab 07: Run a Complete Multi-Agent Workflow      ~60 min
+    └── Lab 07: Run a Complete Multi-Agent Workflow      ~70 min
     └── checklists/advanced-completion.md  ← self-assess before advancing
 ```
 

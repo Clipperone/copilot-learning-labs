@@ -13,16 +13,15 @@ Complete these exercises in order. Expected answers are provided after each exer
 
 You have received the following feature request:
 
-> **Feature: Notification Preferences**
+> **Feature: Audit Log**
 >
-> Users should be able to opt out of specific notification types.
-> The system currently sends three notification types: `SYSTEM`, `ALERT`, and `ACTIVITY`.
+> All write operations in the system must be recorded for compliance purposes.
 >
 > Requirements:
-> - Add a `get_notification_preferences(user_id)` function to `notifications.py` that returns a dict of `{notification_type: enabled}` for the given user.
-> - Add an `update_notification_preferences(user_id, prefs)` function to the same file.
-> - Ensure `log_event()` respects user preferences before dispatching a notification.
-> - Add at least one test per new function to `tests/test_notifications.py`.
+> - Add a `record_write(resource_type: str, resource_id: str, action: str) -> None` function to `audit_log.py` that appends an entry to an in-memory log.
+> - Add a `get_log(resource_type: str) -> list[dict]` function to `audit_log.py` that returns all entries matching the given resource type.
+> - Guard `delete_record()` in `records.py` so it calls `record_write()` with `action="delete"` before removing the record.
+> - Add at least one test per new function to `tests/test_audit_log.py`.
 
 **Task:**
 
@@ -35,13 +34,13 @@ Produce a valid sub-task breakdown for the Feature Delivery pattern. For each su
 
 | Sub-task | File scope | Acceptance criterion |
 |----------|-----------|----------------------|
-| 1 — Add `get_notification_preferences(user_id)` | `notifications.py` | Function exists; returns `{NotificationType: bool}` for any valid user ID |
-| 2 — Add `update_notification_preferences(user_id, prefs)` | `notifications.py` | Function exists; updates and persists the preference dict for the given user |
-| 3 — Guard `log_event()` against disabled preferences | `notifications.py` | `log_event()` does not dispatch a notification when the user has opted out of that type |
-| 4 — Add tests for sub-tasks 1 and 2 | `tests/test_notifications.py` | At least one test per function; both pass in the test runner |
-| 5 — Add tests for sub-task 3 | `tests/test_notifications.py` | At least one test confirms suppression when opt-out is active |
+| 1 — Add `record_write()` | `audit_log.py` | Function exists; calling it with valid arguments appends one entry to the in-memory log |
+| 2 — Add `get_log()` | `audit_log.py` | Function exists; returns only entries whose `resource_type` matches the argument; returns an empty list when no entries match |
+| 3 — Guard `delete_record()` in `records.py` | `records.py` | `delete_record()` calls `record_write()` with `action="delete"` before removing the record; the audit entry is present in the log after the call |
+| 4 — Add tests for sub-tasks 1 and 2 | `tests/test_audit_log.py` | At least one test per function; both pass in the test runner |
+| 5 — Add tests for sub-task 3 | `tests/test_audit_log.py` | At least one test confirms the audit entry is written before deletion completes |
 
-**Why these boundaries?** Sub-tasks 1 and 2 are separate because they are independent functions with independent acceptance criteria. Sub-tasks 4 and 5 are separate because they test different behaviors and may need to run in different Implementer or Test Engineer sessions.
+**Why these boundaries?** Sub-tasks 1 and 2 are separate because they are independent functions with independent acceptance criteria. Sub-task 3 touches a different file (`records.py`) and depends on sub-task 1 being complete. Sub-tasks 4 and 5 are separate because they test different behaviors and may need to run in different Implementer or Test Engineer sessions.
 
 ---
 

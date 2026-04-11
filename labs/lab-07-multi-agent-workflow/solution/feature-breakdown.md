@@ -10,7 +10,7 @@
 
 Feature: Notification Preferences (opt-out per notification type, per user)
 Branch: `labs/lab-07-multi-agent-workflow/starter/`
-Files in scope: `notifications.py` (implementation), `tests/test_notifications.py` (tests)
+Files in scope: `notifications.py` (implementation)
 Files excluded: `user.py` — read-only reference; do not modify
 
 ---
@@ -41,24 +41,10 @@ Files excluded: `user.py` — read-only reference; do not modify
 
 ---
 
-### Sub-task 4 — Write tests for sub-tasks 1 and 2
-
-**File:** `labs/lab-07-multi-agent-workflow/starter/tests/test_notifications.py`
-
-**Acceptance criterion:** At least one test for `get_notification_preferences()` and at least one test for `update_notification_preferences()` exist in `test_notifications.py`. Both tests pass when executed with `pytest`.
-
----
-
-### Sub-task 5 — Write test for sub-task 3 (opt-out suppression)
-
-**File:** `labs/lab-07-multi-agent-workflow/starter/tests/test_notifications.py`
-
-**Acceptance criterion:** At least one test confirms that `log_event()` does not append to `_queue` when the user has set the relevant notification type to `False`. The test passes when executed with `pytest`.
-
 ---
 
 ## Hand-off Notes
 
 - Sub-tasks 1, 2, and 3 must be completed in order — each session builds on the previous
-- Sub-tasks 4 and 5 may be assigned to a Test Engineer session after all three implementation sub-tasks are complete
 - Do not start sub-task 2 until sub-task 1 is committed — `update_notification_preferences()` writes to `_preferences` and benefits from having `get_notification_preferences()` already defined for validation in tests
+- Test coverage is out of scope for this lab. See the Extension Ideas section of the lab README for guidance on adding a Test Engineer session after all three sub-tasks are complete.
