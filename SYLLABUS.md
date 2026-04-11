@@ -132,7 +132,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Maintenance | Version, audit, and update instructions as the codebase evolves |
 
 **Lab:** [Lab 05 — Write Your Project's Custom Instructions](./labs/lab-05-custom-instructions/)
-**Deliverable:** Complete `instructions/` folder for a sample project with 3 scoped examples
+**Deliverable:** `.github/copilot-instructions.md` (4+ domains, ≤400 words prose) + one path-specific `.instructions.md` file; scope-assignment table completed
 
 **Level 2 completion:** → [checklists/intermediate-completion.md](./checklists/intermediate-completion.md)
 
@@ -175,6 +175,8 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Tool permission model | Allow / conditional / deny — and why each boundary exists |
 | Running a single-agent session | Set scope, execute, evaluate output, know when to stop |
 | Agent session prompts | How to open and close an agent session cleanly |
+| Roles catalogue | 10 specialized roles — scope, core responsibility, and mutual exclusions |
+| Handoff protocol | 3-part structure; close one role cleanly; open the next without context leakage |
 
 **Module:** [modules/06-agents/](./modules/06-agents/)
 **Lab:** [Lab 06 — Agents and Personas](./labs/lab-06-agents-and-personas/)

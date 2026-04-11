@@ -116,4 +116,4 @@ Carry-forward:
 
 ## Related Modules
 
-- [Module 06 — Agents and Role Specialization](../../modules/06-agents/)
+- [Module 06 — Agents and Role Specialization](../../../modules/06-agents/)

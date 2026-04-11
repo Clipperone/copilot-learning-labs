@@ -108,7 +108,7 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | [Lab 02 — Project Configuration Baseline](./labs/lab-02-configuration/) | Module 02 | ✅ Available |
 | [Lab 03 — Token Audit](./labs/lab-03-token-audit/) | Module 03 | ✅ Available |
 | [Lab 04 — Prompt Engineering Workshop](./labs/lab-04-prompt-engineering/) | Module 04 | ✅ Available |
-| [Lab 05 — Custom Instructions](./labs/lab-05-custom-instructions/) | Module 05 | ✅ Available |
+| [Lab 05 — Write Your Project's Custom Instructions](./labs/lab-05-custom-instructions/) | Module 05 | ✅ Available |
 | [Lab 06 — Agents and Personas](./labs/lab-06-agents-and-personas/) | Module 06 | ✅ Available |
 | Lab 07 — Multi-Agent Workflow | Module 07 | Planned — v0.4 |
 | Lab 08 — Advanced Feature Tour | Module 08 | Planned — v1.0 |
@@ -124,7 +124,7 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | [labs/](./labs/) | Hands-on labs — starter files and reference solutions |
 | [prompts/](./prompts/) | Reusable prompt library by category |
 | [instructions/](./instructions/) | Custom instruction examples *(coming in v0.3)* |
-| [agents/](./agents/) | Agent persona definitions *(coming in v0.4)* |
+| [agents/](./agents/) | Agent persona definitions — populated during Lab 06 |
 | [templates/](./templates/) | Authoring templates for all content types |
 | [checklists/](./checklists/) | AI output review, pre-commit, and completion checklists |
 | [docs/](./docs/) | Architecture decisions and design reference |
@@ -142,9 +142,9 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | Release | Status | Contents |
 |---------|--------|---------|
 | `v0.1` — Foundation | ✅ Released | Module 01, Lab 01, all templates, prompt starter set, checklists, `.github/` and `.vscode/` config |
-| `v0.2` — Beginner complete | **Current** | Modules 02–03, Labs 02–03, additional prompts |
-| `v0.3` — Intermediate complete | Planned | Modules 04–05, Labs 04–06, `instructions/` folder |
-| `v0.4` — Advanced complete | Planned | Modules 06–07, Labs 07–08, `agents/` folder |
+| `v0.2` — Beginner complete | ✅ Released | Modules 02–03, Labs 02–03, additional prompts |
+| `v0.3` — Intermediate complete | ✅ Released | Modules 04–05, Labs 04–05, `instructions/` folder |
+| `v0.4` — Advanced complete | **Current** | Module 06, Lab 06, `agents/` folder |
 | `v1.0` — Full course | Planned | All 10 modules, Labs 09–10, capstone, examples, FAQ |
 
 Feature requests and content suggestions are tracked as [GitHub Issues](../../issues). Use the [content suggestion template](./.github/ISSUE_TEMPLATE/content_suggestion.md) to propose new material.
