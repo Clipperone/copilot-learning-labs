@@ -2,7 +2,7 @@
 
 - Module 01 → labs/lab-01-getting-started/
 - Module 02 → labs/lab-02-configuration/
-- Module 03 → labs/lab-03-token-and-premium-request-optimization/
+- Module 03 → labs/lab-03-token-audit/
 - Module 04 → labs/lab-04-prompt-engineering/
 - Module 05 → labs/lab-05-custom-instructions/
 - Module 06 → labs/lab-06-agents-and-personas/

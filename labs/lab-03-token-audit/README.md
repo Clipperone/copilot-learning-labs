@@ -3,20 +3,22 @@
 > **Difficulty:** Beginner
 > **Estimated time:** 30–45 minutes
 > **Module:** [Module 03 — Token and Premium Request Optimization](../../modules/03-token-optimization/)
-> **Type:** Reflective worksheet + deliverable
+> **Prerequisites:** [Module 01](../../modules/01-foundations/), [Module 02](../../modules/02-configuration/), Module 03 theory read
+> **Verified:** 2026-04
 
 ---
 
 ## Learning Objective
 
-After completing this lab, you will have a personal mode/model decision cheat sheet that you can reference for every coding session. You will also have practiced classifying Copilot interactions by cost and rewriting prompts for first-turn completeness.
+Complete this lab and you will have a personal mode/model decision cheat sheet you can reference for every coding session, a classified record of your real Copilot interactions, and three prompts rewritten for first-turn completeness.
 
 ---
 
 ## Prerequisites
 
-- [ ] Module 01 and Module 02 completed
-- [ ] Module 03 theory read and exercises completed
+- [ ] [Module 01 — Foundations](../../modules/01-foundations/) completed
+- [ ] [Module 02 — Configuration](../../modules/02-configuration/) completed
+- [ ] Module 03 theory read
 
 ---
 
@@ -82,6 +84,17 @@ Open `starter/audit-worksheet.md` in VS Code. You will fill it in as you work th
 2. Pick the 2 habits you rate lowest and write one concrete action to change each.
 
 **Success criterion:** Section D is complete with 2 action items identified.
+
+---
+
+## Expected Outputs
+
+| Deliverable | Location | Completed in task |
+|-------------|----------|-------------------|
+| Filled interaction audit (Section A) | `starter/audit-worksheet.md` | Task 1 |
+| Personal mode/model cheat sheet (Section B) | `starter/audit-worksheet.md` | Task 2 |
+| 3 audited and compacted prompts (Section C) | `starter/audit-worksheet.md` | Task 3 |
+| Context hygiene self-assessment (Section D) | `starter/audit-worksheet.md` | Task 4 |
 
 ---
 

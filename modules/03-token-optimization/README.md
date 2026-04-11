@@ -3,7 +3,9 @@
 > **Level:** Beginner
 > **Estimated time:** 1.5 hours
 > **Prerequisites:** [Module 01 — Foundations](../01-foundations/), [Module 02 — Configuration](../02-configuration/)
-> **Verified against:** GitHub Copilot feature set as of 2026-04
+> **Verified:** 2026-04
+
+> ⚠️ **Premium request note:** Mode and model choice is the most direct lever on your premium request budget. Escalating to agent mode or premium models for tasks the default model handles is the single largest source of unnecessary quota spend.
 
 ---
 
@@ -21,7 +23,7 @@ By the end of this module, you will be able to:
 
 ## Essential Theory
 
-See [theory.md](./theory.md) for the full reference. The summary below covers what you need to proceed.
+See [theory.md](./theory.md) for the full reference.
 
 ### What Consumes Requests
 
@@ -78,51 +80,13 @@ A compact prompt:
 **Compact prompt (single response):**
 > `Refactor the `calculate_discount` function in order_utils.py to accept a `Decimal` instead of `float`. Keep the existing function signature as a deprecated alias that calls the new one. Python 3.12.`
 
-> **⚠️ Premium request note:** Every incomplete prompt that requires a follow-up doubles the premium request cost of that task. Writing a complete prompt on the first try is the highest-value skill in this module.
-
----
-
-## Practical Procedure
-
-### Step 1: Audit your current mode habits
-
-Review the last 5 tasks you used Copilot for. For each one, ask:
-
-- Which mode did I use?
-- Was that the minimum sufficient mode?
-- Did I need multiple follow-ups? If so, why?
-
-Record your answers in the Lab 03 worksheet.
-
-### Step 2: Build your personal mode/model cheat sheet
-
-Using the decision table above as a starting point, customize it for your work context. Add rows for the task types you encounter most often. Remove rows that don't apply.
-
-See [Lab 03 — Token Audit Exercise](../../labs/lab-03-token-audit/) for the worksheet template.
-
-### Step 3: Practice compact prompt construction
-
-For your next 5 coding tasks with Copilot, write the prompt before sending it. Check:
-
-1. Does it contain the goal, constraints, and output format?
-2. Can you remove any words without losing meaning?
-3. Is the target file or selection specified?
-
-Send when you can answer "yes" to all three. Track whether the first response was complete.
-
-### Step 4: Apply context hygiene
-
-- Close all irrelevant tabs before starting a multi-file agent session.
-- Start a new chat window for each distinct task.
-- If a session exceeds 10 exchanges without resolution, summarize and restart.
+Apply these skills in [Lab 03: Token Audit Exercise](../../labs/lab-03-token-audit/).
 
 ---
 
 ## Exercises
 
-See [exercises.md](./exercises.md) for full instructions.
-
-**Quick list:**
+See [exercises.md](./exercises.md) for full instructions. Complete [Lab 03](../../labs/lab-03-token-audit/) first — the worksheet from the lab is used in Exercise 5.
 
 1. Request type classification — categorize 10 actions as included or premium
 2. Mode selection drill — match 8 task descriptions to the optimal mode/model
@@ -134,8 +98,8 @@ See [exercises.md](./exercises.md) for full instructions.
 
 ## Common Mistakes
 
-| Mistake | Why it happens | How to fix it |
-|---------|----------------|---------------|
+| Mistake | Root cause | Fix |
+|---------|------------|-----|
 | Using agent mode for single-file edits | "Agent is most powerful, so best" | Agent mode costs 3–10× more than Edit for the same output. Use Edit unless multi-file or multi-step. |
 | Switching to premium models by default | Habit from having quota remaining | Default model handles 80% of tasks. Reserve premium models for reasoning-heavy work. |
 | Leaving all tabs open during agent sessions | Convenience | Each open file may be included in context. Open only what the task needs. |
@@ -144,17 +108,7 @@ See [exercises.md](./exercises.md) for full instructions.
 
 ---
 
-## Best Practices
-
-- **Do:** Classify your task before reaching for Copilot. Choose mode and model before opening the chat panel.
-- **Do:** Write prompts in a text file first, review for completeness, then paste.
-- **Do:** Start a new chat session for each distinct coding task.
-- **Don't:** Ask "Can you help me with X?" — this wastes one turn on an acknowledgment.
-- **Don't:** Include entire files when a selection or a function name would suffice.
-
----
-
-## Token / Premium Request Impact
+## Token and Premium Request Impact
 
 | Scenario | Approximate cost | Notes |
 |----------|-----------------|-------|
@@ -168,11 +122,40 @@ See [exercises.md](./exercises.md) for full instructions.
 
 ## Completion Criteria
 
-Before proceeding to Module 04, confirm:
+You have completed this module when you can:
 
-- [ ] I can explain what triggers a premium request vs. an included request
-- [ ] I have drafted my personal mode/model cheat sheet (Lab 03)
-- [ ] I rewrote at least 3 prompts to be compact and complete on the first turn
-- [ ] All exercises in `exercises.md` are complete
+- [ ] Explain what triggers a premium request and what does not
+- [ ] Apply the mode/model decision framework to any task in under 5 seconds
+- [ ] Write a compact prompt that contains goal, constraints, and output format
+- [ ] Manage context window size by closing irrelevant files and starting new sessions appropriately
+- [ ] Estimate the approximate premium request cost of a given workflow
+- [ ] Produce a personal mode/model cheat sheet you will use in practice
 
-Next: [Module 04 — Prompt Engineering for Coding](../04-prompt-engineering/)
+See [checklist.md](./checklist.md) for the full self-assessment.
+
+---
+
+## Files in This Module
+
+| File | Purpose |
+|------|---------|
+| `README.md` | Module overview (this file) |
+| `theory.md` | Extended theory and reference material |
+| `exercises.md` | All exercises with full instructions |
+| `checklist.md` | Completion checklist and self-assessment |
+
+---
+
+## Related Labs
+
+| Lab | Focus | Time |
+|-----|-------|------|
+| [Lab 03 — Token Audit Exercise](../../labs/lab-03-token-audit/) | Interaction audit, mode/model cheat sheet, prompt compaction, context hygiene | 30–45 min |
+
+See [labs/README.md](../../labs/README.md) for the full lab index.
+
+---
+
+## Next Module
+
+→ [Module 04: Prompt Engineering for Coding](../04-prompt-engineering/)

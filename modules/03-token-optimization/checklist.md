@@ -48,6 +48,11 @@ Use this checklist to self-assess before moving to Module 04.
 
 ---
 
-## Lab Completion
+## Ready for Module 04?
 
-- [ ] Lab 03 completed — token audit worksheet filled in, personal cheat sheet finalized
+Complete all sections above, then move to the next module.
+
+- [ ] [Lab 03](../../labs/lab-03-token-audit/) completed — worksheet filled, personal cheat sheet finalized
+- [ ] All 5 exercises complete
+
+→ [Module 04: Prompt Engineering for Coding](../04-prompt-engineering/)

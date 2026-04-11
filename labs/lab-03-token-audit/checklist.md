@@ -24,3 +24,14 @@
 - [ ] I identified at least one habit that was costing premium requests unnecessarily
 - [ ] I understand the difference between a task that justifies a premium model and one that does not
 - [ ] I reviewed `solution/audit-worksheet-filled.md` and compared my answers
+
+---
+
+## Ready for Module 04?
+
+Complete all sections above, then move to the next module.
+
+- [ ] All 4 tasks complete and worksheet saved
+- [ ] Personal cheat sheet has at least 11 rows
+
+→ [Module 04: Prompt Engineering for Coding](../../modules/04-prompt-engineering/)
