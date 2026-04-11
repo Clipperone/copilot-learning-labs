@@ -26,7 +26,7 @@ By the end of this module you will be able to:
 
 Module 07 taught manual multi-agent orchestration: write the workflow file first, initialize each session explicitly, hand off using the 3-part prompt, close each role session before opening the next. Every mechanism was manual and deliberate.
 
-This module introduces the built-in VS Code features that automate what you did by hand. Plan mode replaces a separate Planner session for many design tasks. Terminal integration brings Copilot assistance to CLI work without switching context. Quality tool integration closes the loop between generation and validation.
+This module introduces the built-in VS Code features that reduce the manual overhead of what you did explicitly. Plan mode replaces a separate Planner session for many design tasks. Terminal integration brings Copilot assistance to CLI work without switching context. Quality tool integration closes the loop between generation and validation.
 
 The module extends beyond VS Code features. Large repositories degrade AI context quality without deliberate management. Sensitive codebases require explicit security hygiene that no default configuration provides. Both are professional requirements at Expert level.
 

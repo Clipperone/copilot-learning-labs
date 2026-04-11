@@ -31,7 +31,7 @@ Four integration points span the full CI/CD lifecycle. Each has a distinct risk 
 | Pipeline step suggestion | A YAML block or shell command | 4-question gate before adding to the pipeline definition |
 | Failure explanation | Prose: what failed and why | Read only — no code change generated from this output |
 
-The failure explanation integration is the safest and most immediately valuable: paste a CI failure log into chat and ask Copilot to explain it before reading the stack trace manually. This add no code risk and saves significant diagnosis time.
+The failure explanation integration is the safest and most immediately valuable: paste a CI failure log into chat and ask Copilot to explain it before reading the stack trace manually. This adds no code risk and saves significant diagnosis time.
 
 Copilot does not replace human code ownership in CI/CD. Every AI-assisted commit that merges needs a named human reviewer on record. An automated pipeline that accepts AI output without a human gate is an unmonitored code path — treat it as a critical security gap.
 

@@ -143,7 +143,8 @@ pytest --version
 
 **Instructions:**
 
-1. Run the corrected pytest command from Task 3 with verbose output:
+1. Build on the corrected command from Task 3.
+2. Run the corrected pytest command from Task 3 with verbose output:
 
    ```bash
    PYTHONPATH=starter pytest starter/tests/ -v
@@ -251,7 +252,7 @@ See [checklist.md](./checklist.md) for the full self-assessment checklist.
 | `README.md` | Lab instructions (this file) |
 | `checklist.md` | Completion checklist |
 | `starter/` | Starter files — begin here |
-| `starter/auth.py` | Authentication helpers with intentional OWASP issues (Tasks 4–5) |
+| `starter/auth.py` | Authentication helpers with intentional OWASP issues (Task 5) |
 | `starter/api/routes.py` | API route stubs with `delete_item()` TODO (Tasks 1–2) |
 | `starter/tests/test_routes.py` | Partial test coverage — GET only (Tasks 3–4) |
 | `solution/plan-output.md` | Reference Plan mode output |
