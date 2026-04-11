@@ -57,7 +57,7 @@ Agent mode is the only Copilot mode that can hold tool calls, run multiple turns
 
 ## The 10 Agent Roles
 
-The course defines 10 specialized roles. Each has a definition file in `agents/` that you will write in Lab 07.
+The course defines 10 specialized roles. Each has a definition file in `agents/` that you will write in Lab 06.
 
 | Role | Scope | Primary output | File write access |
 |------|-------|----------------|------------------|
@@ -298,14 +298,14 @@ exploit path, recommended fix, and one code line showing the corrected call.
 
 Hands-on exercises are in [exercises.md](./exercises.md).
 
-The paired lab is [Lab 07 — Define and Run Your First Agent Session](../../labs/lab-07-first-agent-session/).
+The paired lab is [Lab 06 — Agents and Personas](../../labs/lab-06-agents-and-personas/).
 
 ---
 
 ## Further Reading
 
 - [theory.md](./theory.md) — Session lifecycle mechanics, monorepo agent strategy, context window management per role, when NOT to use agents
-- [agents/](../../agents/) — Agent definition files (populated during Lab 07)
+- [agents/](../../agents/) — Agent definition files (populated during Lab 06)
 - [templates/agent-definition-template.md](../../templates/agent-definition-template.md) — Authoring standard for all 10 persona definitions
 - `.github/copilot-instructions.md` — Active instruction file inherited by every agent session in this repository
 - **Multi-agent connection:** The 10 definitions in `agents/` are Module 07's direct prerequisite. Module 07 teaches how to chain roles in coordinated workflows — not redefine them. A workflow is only as bounded as the weakest persona definition it uses.

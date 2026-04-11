@@ -109,10 +109,10 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | [Lab 03 — Token Audit](./labs/lab-03-token-audit/) | Module 03 | ✅ Available |
 | [Lab 04 — Prompt Engineering Workshop](./labs/lab-04-prompt-engineering/) | Module 04 | ✅ Available |
 | [Lab 05 — Custom Instructions](./labs/lab-05-custom-instructions/) | Module 05 | ✅ Available |
-| Lab 07 — First Agent Session | Module 06 | Planned — v0.4 |
-| Lab 08 — Multi-Agent Workflow | Module 07 | Planned — v0.4 |
-| Lab 09 — Advanced Feature Tour | Module 08 | Planned — v1.0 |
-| Lab 10 — Repository Health Audit | Module 09 | Planned — v1.0 |
+| [Lab 06 — Agents and Personas](./labs/lab-06-agents-and-personas/) | Module 06 | ✅ Available |
+| Lab 07 — Multi-Agent Workflow | Module 07 | Planned — v0.4 |
+| Lab 08 — Advanced Feature Tour | Module 08 | Planned — v1.0 |
+| Lab 09 — Repository Health Audit | Module 09 | Planned — v1.0 |
 
 ---
 

@@ -1,6 +1,6 @@
 # Module 06 — Completion Checklist
 
-Use this checklist after finishing the module reading and all 5 exercises, and before starting Lab 07. If you cannot check an item confidently, revisit the linked section in [README.md](./README.md).
+Use this checklist after finishing the module reading and all 5 exercises, and before starting Lab 06. If you cannot check an item confidently, revisit the linked section in [README.md](./README.md).
 
 ---
 
@@ -49,8 +49,8 @@ Use this checklist after finishing the module reading and all 5 exercises, and b
 
 ---
 
-## Ready for Lab 07?
+## Ready for Lab 06?
 
-All items above checked → proceed to [Lab 07 — Define and Run Your First Agent Session](../../labs/lab-07-first-agent-session/).
+All items above checked → proceed to [Lab 06 — Agents and Personas](../../labs/lab-06-agents-and-personas/).
 
 Not all items checked → return to [exercises.md](./exercises.md) for the concept you want to reinforce.

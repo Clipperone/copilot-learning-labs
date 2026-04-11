@@ -107,9 +107,9 @@ Module 05: Custom Instructions                  ~2 hrs
 
 ```
 Module 06: Agents and Role Specialization       ~3 hrs
-    └── Lab 07: Define and Run Your First Agent Session  ~60 min
+    └── Lab 06: Agents and Personas                      ~60 min
 Module 07: Multi-Agent Workflows                ~2.5 hrs
-    └── Lab 08: Run a Complete Multi-Agent Workflow      ~60 min
+    └── Lab 07: Run a Complete Multi-Agent Workflow      ~60 min
     └── checklists/advanced-completion.md  ← self-assess before advancing
 ```
 
@@ -139,9 +139,9 @@ Module 07: Multi-Agent Workflows                ~2.5 hrs
 
 ```
 Module 08: Advanced Features                    ~2.5 hrs
-    └── Lab 09: Advanced Feature Tour           ~50 min
+    └── Lab 08: Advanced Feature Tour           ~50 min
 Module 09: Repository Quality for AI            ~2 hrs
-    └── Lab 10: Repository Health Audit         ~60 min
+    └── Lab 09: Repository Health Audit         ~60 min
 Module 10: Adoption Roadmap                     ~2 hrs
     └── Capstone: /capstone/
     └── checklists/expert-completion.md  ← final self-assessment

@@ -14,8 +14,8 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 |-------|---------|------|-----------|----------------|
 | 1 — Beginner | 01–03 | 01–03 | ~6 hrs | Use all modes correctly, configure a project, make cost-aware decisions |
 | 2 — Intermediate | 04–05 | 04–05 | ~5 hrs | Write structured prompts for any scenario, maintain persistent custom instructions |
-| 3 — Advanced | 06–07 | 07–08 | ~6 hrs | Define and operate 10 specialized agents, run coordinated multi-agent workflows |
-| 4 — Expert | 08–10 + Capstone | 09–10 | ~7 hrs | Apply all features, govern AI output, build and execute a 90-day adoption roadmap |
+| 3 — Advanced | 06–07 | 06–07 | ~6 hrs | Define and operate 10 specialized agents, run coordinated multi-agent workflows |
+| 4 — Expert | 08–10 + Capstone | 08–09 | ~7 hrs | Apply all features, govern AI output, build and execute a 90-day adoption roadmap |
 
 ---
 
@@ -177,7 +177,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Agent session prompts | How to open and close an agent session cleanly |
 
 **Module:** [modules/06-agents/](./modules/06-agents/)
-**Lab:** [Lab 07 — Define and Run Your First Agent Session](./labs/lab-07-first-agent-session/)
+**Lab:** [Lab 06 — Agents and Personas](./labs/lab-06-agents-and-personas/)
 **Deliverable:** All 10 agent definitions in `/agents/`
 
 ---
@@ -197,7 +197,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Handoff protocols | What to pass between agents, how to summarize, when to stop |
 | Context hygiene | Prevent context pollution and duplicate work across sessions |
 
-**Lab:** [Lab 08 — Run a Complete Multi-Agent Workflow](./labs/lab-08-multi-agent-workflow/)
+**Lab:** [Lab 07 — Run a Complete Multi-Agent Workflow](./labs/lab-07-multi-agent-workflow/)
 **Deliverable:** One documented, repeatable workflow file in `/agents/`
 
 **Level 3 completion:** → [checklists/advanced-completion.md](./checklists/advanced-completion.md)
@@ -228,7 +228,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Large codebase strategies | Scope context effectively in repositories with hundreds of files |
 | Secure usage patterns | Secrets hygiene, sensitive code handling, confidentiality boundaries |
 
-**Lab:** [Lab 09 — Advanced Feature Tour](./labs/lab-09-advanced-feature-tour/)
+**Lab:** [Lab 08 — Advanced Feature Tour](./labs/lab-08-advanced-feature-tour/)
 **Deliverable:** CI/CD integration notes and a completed secure-usage checklist
 
 ---
@@ -247,7 +247,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Naming and structure conventions | Patterns that maximize AI context signal across the codebase |
 | Pre-merge validation | The minimum human check before every AI-assisted commit |
 
-**Lab:** [Lab 10 — Repository Health Audit](./labs/lab-10-repository-health-audit/)
+**Lab:** [Lab 09 — Repository Health Audit](./labs/lab-09-repository-health-audit/)
 **Deliverable:** Completed AI output review checklist applied to a real project
 
 ---

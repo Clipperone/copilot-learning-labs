@@ -1,6 +1,6 @@
 # Module 06 — Exercises
 
-Complete these exercises before starting Lab 07. Each builds one skill from the module learning objectives.
+Complete these exercises before starting Lab 06. Each builds one skill from the module learning objectives.
 
 ---
 
@@ -113,8 +113,8 @@ For each row: name the failure mode, then quote the phrase from the description 
 
 ## Answer Guidance
 
-Confirm your answers against the [README.md](./README.md) sections Risks and Safeguards, Agent Anatomy, and Tool Permissions Model before proceeding to Lab 07.
+Confirm your answers against the [README.md](./README.md) sections Risks and Safeguards, Agent Anatomy, and Tool Permissions Model before proceeding to Lab 06.
 
 If you are uncertain about Exercise 1 or 5, revisit the Risks and Safeguards section. If Exercise 3 is unclear, re-read the Handoff Criteria and the Handoff Prompt section and the Planner example in Agent Anatomy.
 
-Reference solutions are in [`labs/lab-07-first-agent-session/solution/`](../../labs/lab-07-first-agent-session/solution/) — check only after completing the exercises independently.
+Reference solutions are in [`labs/lab-06-agents-and-personas/solution/`](../../labs/lab-06-agents-and-personas/solution/) — check only after completing the exercises independently.

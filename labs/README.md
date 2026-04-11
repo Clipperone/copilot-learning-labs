@@ -15,10 +15,10 @@ Complete labs in order unless you are following a [persona-based shortcut path](
 | [Lab 03 — Token Audit](./lab-03-token-audit/) | [Module 03 — Token Optimization](../modules/03-token-optimization/) | Beginner | 30–45 min | Mode/model decision audit, prompt compaction |
 | [Lab 04 — Prompt Engineering Workshop](./lab-04-prompt-engineering/) | [Module 04 — Prompt Engineering](../modules/04-prompt-engineering/) | Intermediate | ~50 min | Structured prompts across 7 coding scenarios |
 | [Lab 05 — Custom Instructions](./lab-05-custom-instructions/) | [Module 05 — Custom Instructions](../modules/05-custom-instructions/) | Intermediate | ~50 min | Global, project, and path-scoped instructions |
-| Lab 07 — First Agent Session | [Module 06 — Agents and Role Specialization](../modules/06-agents/) | Advanced | ~60 min | Define and run a role-specialized agent *(v0.4)* |
-| Lab 08 — Multi-Agent Workflow | Module 07 — Multi-Agent Workflows | Advanced | ~60 min | Orchestrate agents across a complex task *(v0.4)* |
-| Lab 09 — Advanced Feature Tour | Module 08 — Advanced Features | Expert | ~50 min | Plan mode, AI review, terminal integration *(v0.5)* |
-| Lab 10 — Repository Health Audit | Module 09 — Repository Quality | Expert | ~60 min | AI-friendliness audit, governance protocol *(v0.5)* |
+| [Lab 06 — Agents and Personas](./lab-06-agents-and-personas/) | [Module 06 — Agents and Role Specialization](../modules/06-agents/) | Advanced | ~60 min | Define 10 agent personas, initialize a bounded session, write handoff prompts |
+| Lab 07 — Multi-Agent Workflow | Module 07 — Multi-Agent Workflows | Advanced | ~60 min | Orchestrate agents across a complex task *(v0.4)* |
+| Lab 08 — Advanced Feature Tour | Module 08 — Advanced Features | Expert | ~50 min | Plan mode, AI review, terminal integration *(v0.5)* |
+| Lab 09 — Repository Health Audit | Module 09 — Repository Quality | Expert | ~60 min | AI-friendliness audit, governance protocol *(v0.5)* |
 
 ---
 
