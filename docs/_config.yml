@@ -1,0 +1,35 @@
+title: Copilot Learning Labs
+description: >-
+  Self-paced course on GitHub Copilot Pro+ in VS Code — 10 modules,
+  9 hands-on labs, prompt library, agent personas, and a capstone project.
+
+theme: just-the-docs
+
+url: https://clipperone.github.io
+baseurl: /copilot-learning-labs
+
+permalink: pretty
+
+search_enabled: true
+heading_anchors: true
+
+aux_links:
+  "View on GitHub":
+    - "https://github.com/Clipperone/copilot-learning-labs"
+aux_links_new_tab: true
+
+footer_content: >-
+  Licensed under
+  <a href="https://github.com/Clipperone/copilot-learning-labs/blob/main/LICENSE">MIT</a>.
+  Built with <a href="https://just-the-docs.com">Just the Docs</a>.
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - course-design-brief.md
+  - architecture.md
+  - module-dependency-map.md
+  - module-lab-map.md

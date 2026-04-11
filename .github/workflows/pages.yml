@@ -1,0 +1,119 @@
+name: Deploy GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate module and lab pages
+        run: |
+          set -e
+          REPO_URL="https://github.com/Clipperone/copilot-learning-labs"
+
+          # ── Module pages ──────────────────────────────────────────
+          mkdir -p docs/modules
+          for dir in modules/*/; do
+            slug=$(basename "$dir")
+            num=$(echo "$slug" | cut -d'-' -f1 | sed 's/^0//')
+            title=$(head -1 "$dir/README.md" | sed 's/^# //')
+
+            {
+              echo "---"
+              echo "layout: default"
+              echo "title: \"${title}\""
+              echo "parent: Modules"
+              echo "nav_order: ${num}"
+              echo "---"
+              echo ""
+
+              tail -n +3 "$dir/README.md" | \
+                sed -E "s|(modules/[^/)]+)/README\.md|\1/|g" | \
+                sed -E "s|(labs/[^/)]+)/README\.md|\1/|g" | \
+                sed -E "s|\]\(\.\/(exercises|theory|checklist)\.md([^)]*)\)|](${REPO_URL}/blob/main/modules/${slug}/\1.md\2)|g" | \
+                sed "s|](../../labs/|](PROT_LABS/|g" | \
+                sed "s|](../../modules/|](PROT_MODS/|g" | \
+                sed "s|](../../|](${REPO_URL}/tree/main/|g" | \
+                sed "s|](PROT_LABS/|](../../labs/|g" | \
+                sed "s|](PROT_MODS/|](../../modules/|g"
+            } > "docs/modules/${slug}.md"
+          done
+
+          # ── Lab pages ─────────────────────────────────────────────
+          mkdir -p docs/labs
+          for dir in labs/lab-*/; do
+            slug=$(basename "$dir")
+            num=$(echo "$slug" | sed 's/lab-//' | cut -d'-' -f1 | sed 's/^0//')
+            title=$(head -1 "$dir/README.md" | sed 's/^# //')
+
+            {
+              echo "---"
+              echo "layout: default"
+              echo "title: \"${title}\""
+              echo "parent: Labs"
+              echo "nav_order: ${num}"
+              echo "---"
+              echo ""
+
+              tail -n +3 "$dir/README.md" | \
+                sed -E "s|(modules/[^/)]+)/README\.md|\1/|g" | \
+                sed -E "s|(labs/[^/)]+)/README\.md|\1/|g" | \
+                sed -E "s|\]\(\.\/(starter|solution)([^)]*)\)|](${REPO_URL}/tree/main/labs/${slug}/\1\2)|g" | \
+                sed -E "s|\]\(\.\/checklist\.md([^)]*)\)|](${REPO_URL}/blob/main/labs/${slug}/checklist.md\1)|g" | \
+                sed "s|](../README.md)|](${REPO_URL}/blob/main/labs/README.md)|g" | \
+                sed "s|](../../labs/|](PROT_LABS/|g" | \
+                sed "s|](../../modules/|](PROT_MODS/|g" | \
+                sed "s|](../../|](${REPO_URL}/tree/main/|g" | \
+                sed "s|](PROT_LABS/|](../../labs/|g" | \
+                sed "s|](PROT_MODS/|](../../modules/|g"
+            } > "docs/labs/${slug}.md"
+          done
+
+          echo "Generated $(ls docs/modules/*.md 2>/dev/null | grep -cv index) module pages"
+          echo "Generated $(ls docs/labs/lab-*.md 2>/dev/null | wc -l) lab pages"
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+          working-directory: docs
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Build site
+        working-directory: docs
+        run: bundle exec jekyll build -d ../_site
+        env:
+          JEKYLL_ENV: production
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
