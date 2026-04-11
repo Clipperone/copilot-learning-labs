@@ -13,7 +13,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Level | Modules | Labs | Est. time | Graduates can… |
 |-------|---------|------|-----------|----------------|
 | 1 — Beginner | 01–03 | 01–03 | ~6 hrs | Use all modes correctly, configure a project, make cost-aware decisions |
-| 2 — Intermediate | 04–05 | 04–06 | ~5 hrs | Write structured prompts for any scenario, maintain persistent custom instructions |
+| 2 — Intermediate | 04–05 | 04–05 | ~5 hrs | Write structured prompts for any scenario, maintain persistent custom instructions |
 | 3 — Advanced | 06–07 | 07–08 | ~6 hrs | Define and operate 10 specialized agents, run coordinated multi-agent workflows |
 | 4 — Expert | 08–10 + Capstone | 09–10 | ~7 hrs | Apply all features, govern AI output, build and execute a 90-day adoption roadmap |
 
@@ -176,6 +176,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | Running a single-agent session | Set scope, execute, evaluate output, know when to stop |
 | Agent session prompts | How to open and close an agent session cleanly |
 
+**Module:** [modules/06-agents/](./modules/06-agents/)
 **Lab:** [Lab 07 — Define and Run Your First Agent Session](./labs/lab-07-first-agent-session/)
 **Deliverable:** All 10 agent definitions in `/agents/`
 
