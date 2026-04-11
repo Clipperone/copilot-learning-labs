@@ -126,7 +126,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 |-------|-----------|
 | Global instructions | User-level configuration that applies across all projects |
 | Repository-wide instructions | `.github/copilot-instructions.md` at project scope |
-| Path-specific instructions | `.github/copilot-instructions/*.md` for different codebase areas |
+| Path-specific instructions | `.github/instructions/[name].instructions.md` with `applyTo` frontmatter |
 | Instruction design principles | Specific, bounded, imperative, non-contradictory |
 | Testing instructions | Verify Copilot reads and applies them; fix when they are ignored |
 | Maintenance | Version, audit, and update instructions as the codebase evolves |

@@ -43,6 +43,8 @@ Repo:   Use snake_case for all Python identifiers.
 
 **Objective:** Assign each constraint to the correct scope and give a one-sentence reason.
 
+> **Note:** Lab Task 1 uses the same structure. Here you classify abstract constraints. In the lab you classify constraints drawn from a real project with real files to inspect first.
+
 For each constraint, choose: **Global**, **Repository-wide**, or **Path-specific (src/api/**)**.
 
 | Constraint | Your answer | Reason |

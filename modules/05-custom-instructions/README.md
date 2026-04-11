@@ -2,7 +2,7 @@
 
 > **Level:** Intermediate
 > **Estimated time:** ~2 hours (module theory ~1 hr · lab ~50 min)
-> **Prerequisite:** Level 1 complete · Module 04 complete. Writing effective instructions requires the same structural thinking as prompt engineering.
+> **Prerequisite:** [Level 1 complete](../../SYLLABUS.md#level-1--beginner) (Modules 01–03) · Module 04 complete. Writing effective instructions requires the same structural thinking as prompt engineering.
 > **Verified:** 2026-04
 
 > ⚠️ **Premium request note:** No task in this module requires a premium model. Instruction authoring is the lowest-cost Copilot workflow. Well-written instruction files reduce total premium consumption across all future sessions by encoding constraints that would otherwise be typed into every prompt.

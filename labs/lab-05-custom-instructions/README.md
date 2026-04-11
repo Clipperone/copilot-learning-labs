@@ -31,11 +31,9 @@ By the end of this lab you will have:
 
 ## Setup
 
-1. Open this repository root in VS Code.
-2. Navigate to `labs/lab-05-custom-instructions/starter/` — this is the project you will write instructions for.
-3. Open the Copilot Chat panel (`Ctrl+Alt+I` / `Cmd+Alt+I`).
-4. Keep [Module 05 README.md](../../modules/05-custom-instructions/README.md) open as a reference tab.
-5. Do not open the `solution/` folder before completing Task 3.
+1. Open the starter project as its own workspace root: **File → Open Folder** → select `labs/lab-05-custom-instructions/starter/`. Do not open the full repository root — `applyTo` globs in instruction files are evaluated relative to the VS Code workspace root, and `src/api/**` will only match the right files if `starter/` is the root.
+2. Open the Copilot Chat panel (`Ctrl+Alt+I` / `Cmd+Alt+I`).
+3. Keep [Module 05 README.md](../../modules/05-custom-instructions/README.md) open as a reference tab.
 
 ---
 
@@ -60,7 +58,7 @@ Read through the starter project files in `starter/`. Then classify each constra
 
 A completed table with each constraint assigned to one of: global, repo-wide, or path-specific — with reasoning you can state aloud.
 
-Reference answers are in [solution/README.md](./solution/README.md). Do not open it until you have completed your own classification.
+Reference answers are in [solution/README.md](./solution/README.md). Do not open it until you have written your own answers above.
 
 ---
 
@@ -86,6 +84,7 @@ Reference answers are in [solution/README.md](./solution/README.md). Do not open
    - **Documentation:** Google-style docstrings with Args, Returns, and Raises on every public function.
 4. Apply the 4 design principles to every statement: specific, imperative, bounded, non-contradictory.
 5. Keep total prose under 400 words.
+6. After writing the file, state one condition that would require you to update it within the next 6 months (for example: a dependency upgrade, a security convention change, a codebase restructure).
 
 **Expected output:**
 
@@ -155,7 +154,7 @@ A Copilot response that applies at least four instruction rules automatically, c
 By the end of this lab, you will have produced:
 
 - [ ] A scope-assignment table with all six constraints correctly classified (Task 1)
-- [ ] `starter/.github/copilot-instructions.md` — five domains, ≤400 words prose, Verified comment dated (Task 2)
+- [ ] `starter/.github/copilot-instructions.md` — at least four domains, ≤400 words prose, Verified comment dated (Task 2)
 - [ ] `starter/.github/instructions/api-layer.instructions.md` — `applyTo` frontmatter, API-specific constraints only (Task 3)
 - [ ] Verification evidence: at least four rules applied in diagnostic output without prompting (Task 4)
 

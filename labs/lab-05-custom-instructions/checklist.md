@@ -54,4 +54,4 @@ Use this checklist after completing all four tasks. Each item maps to a specific
 
 ## Completed?
 
-All items above checked → proceed to [Module 06 — Agents and Role Specialization](../../modules/06-agents/).
+All items above checked → proceed to Module 06 — Agents and Role Specialization (see [SYLLABUS.md](../../SYLLABUS.md) for availability).
