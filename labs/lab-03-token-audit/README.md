@@ -3,7 +3,7 @@
 > **Difficulty:** Beginner
 > **Estimated time:** 30–45 minutes
 > **Module:** [Module 03 — Token and Premium Request Optimization](../../modules/03-token-optimization/)
-> **Prerequisites:** [Module 01](../../modules/01-foundations/), [Module 02](../../modules/02-configuration/), Module 03 theory read
+> **Prerequisites:** [Module 01 — Foundations](../../modules/01-foundations/), [Module 02 — Configuration](../../modules/02-configuration/), Module 03 README and theory read
 > **Verified:** 2026-04
 
 ---
@@ -18,7 +18,7 @@ Complete this lab and you will have a personal mode/model decision cheat sheet y
 
 - [ ] [Module 01 — Foundations](../../modules/01-foundations/) completed
 - [ ] [Module 02 — Configuration](../../modules/02-configuration/) completed
-- [ ] Module 03 theory read
+- [ ] [Module 03 — Token and Premium Request Optimization](../../modules/03-token-optimization/) README and theory read
 
 ---
 

@@ -17,7 +17,7 @@ By the end of this module, you will be able to:
 - [ ] Select the appropriate mode and model for any given coding task
 - [ ] Write compact prompts that produce complete, focused results without multiple follow-ups
 - [ ] Manage context window size to keep sessions efficient
-- [ ] Apply a decision framework to make consistent mode/model choices
+- [ ] Estimate the approximate premium request cost of a workflow before starting
 
 ---
 
@@ -49,13 +49,15 @@ Match the tool to the task. Escalate only when necessary.
 | Quick question or explanation | Ask (chat) | Default | Conversational; no file edits |
 | Apply a specific change to one file | Edit | Default | Targeted; default model is sufficient |
 | Design a solution before coding | Plan | Default | Planning requires logic, not large-scale tool use |
-| Simple single-file scaffold | Edit | Default | Agent overkill for a single file |
+| New file from scratch (single file) | Edit | Default | File creation does not require tool calls |
 | Refactor across multiple files | Agent | Default or GPT-4o | Needs tool use; premium justified |
 | Complex debugging across codebase | Agent | Claude or GPT-4o | Deep reasoning; premium justified |
 | Security review or code audit | Ask or Agent | o1 or Claude | Reasoning-heavy; premium investment worthwhile |
 | Generate documentation | Ask | Default | Language task; default model is fully capable |
 
 **Key rule:** Do not use agent mode for tasks that Edit mode can complete. Do not use premium models for tasks the default model handles correctly.
+
+The decision table in [Lab 03, Section B](../../labs/lab-03-token-audit/) uses this framework as its starting template. You will add rows for your own task types during the lab.
 
 ### Context Window Discipline
 
@@ -75,10 +77,10 @@ A compact prompt:
 3. Specifies the **output format** if it matters (function signature, full file, explanation only)
 
 **Verbose prompt (3 follow-ups required):**
-> `I have a Python function. Can you help me improve it?`
+> I have a Python function. Can you help me improve it?
 
 **Compact prompt (single response):**
-> `Refactor the `calculate_discount` function in order_utils.py to accept a `Decimal` instead of `float`. Keep the existing function signature as a deprecated alias that calls the new one. Python 3.12.`
+> Refactor the `calculate_discount` function in `order_utils.py` to accept a `Decimal` instead of `float`. Keep the existing function signature as a deprecated alias that calls the new one. Python 3.12.
 
 Apply these skills in [Lab 03: Token Audit Exercise](../../labs/lab-03-token-audit/).
 
@@ -86,7 +88,7 @@ Apply these skills in [Lab 03: Token Audit Exercise](../../labs/lab-03-token-aud
 
 ## Exercises
 
-See [exercises.md](./exercises.md) for full instructions. Complete [Lab 03](../../labs/lab-03-token-audit/) first — the worksheet from the lab is used in Exercise 5.
+See [exercises.md](./exercises.md) for full instructions. Exercises use curated examples with reference answers. Complete [Lab 03](../../labs/lab-03-token-audit/) before Exercise 5 — the lab applies the same skills to your own Copilot history, and Exercise 5 builds on the lab worksheet.
 
 1. Request type classification — categorize 10 actions as included or premium
 2. Mode selection drill — match 8 task descriptions to the optimal mode/model
@@ -109,6 +111,8 @@ See [exercises.md](./exercises.md) for full instructions. Complete [Lab 03](../.
 ---
 
 ## Token and Premium Request Impact
+
+Use these scenarios to calibrate your daily quota use. See [theory.md](./theory.md) for detailed cost heuristics and model-specific estimates.
 
 | Scenario | Approximate cost | Notes |
 |----------|-----------------|-------|
