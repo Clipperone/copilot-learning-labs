@@ -49,7 +49,7 @@ Each module assumes completion of all modules before it in this chain.
 | Lab 07 — Run a Complete Multi-Agent Workflow | Module 07 | Lab 06 |
 | Lab 08 — Advanced Feature Tour | Module 08 | Lab 07 |
 | Lab 09 — Repository Health Audit | Module 09 | none (standalone) |
-| Capstone — 90-Day Adoption Roadmap | Module 10 | Labs 01–09 |
+| Capstone — End-to-End Copilot Workflow Integration | Module 10 | Labs 01–09 |
 
 ---
 
@@ -64,7 +64,6 @@ Each module assumes completion of all modules before it in this chain.
 | `checklists/pre-commit.md` | Module 02 |
 | `checklists/adoption-milestones.md` | Module 10 |
 | `capstone/` | Module 10 |
-| `examples/` | Module 07 |
 
 ---
 
@@ -73,8 +72,8 @@ Each module assumes completion of all modules before it in this chain.
 | If you want to… | Jump to |
 |----------------|---------|
 | Just get the AI output review checklist | `checklists/ai-output-review.md` |
-| Copy a custom instruction example immediately | `instructions/` *(v0.3)* |
+| Copy a custom instruction example immediately | `instructions/` |
 | Use a prompt right now | `prompts/generation/generate-function.md` |
-| Understand agent mode without the full course | `agents/README.md` *(v0.4)* |
+| Understand agent mode without the full course | `agents/README.md` |
 
 These are useful for experienced practitioners. For learners, follow the linear chain above.

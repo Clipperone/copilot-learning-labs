@@ -25,10 +25,7 @@ This document records the key design decisions for the `copilot-learning-labs` r
 | `agents/` | Agent/persona definitions with handoffs | Course author |
 | `templates/` | Structure templates for all content types | Course author (locked) |
 | `checklists/` | Quality gates and self-assessment tools | Course author |
-| `examples/` | Real-world scenario files (non-lab) | Course author + contributors |
 | `capstone/` | Final project tying all skills together | Course author |
-| `assets/` | Images, diagrams, non-text assets | Course author |
-| `faq/` | Frequently asked questions | Course author + contributors |
 | `docs/` | Design documents, not learner content | Course author |
 | `.github/` | Community infrastructure | Course author |
 | `.vscode/` | Editor config for this repository | Course author |

@@ -15,7 +15,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | 1 — Beginner | 01–03 | 01–03 | ~6 hrs | Use all modes correctly, configure a project, make cost-aware decisions |
 | 2 — Intermediate | 04–05 | 04–05 | ~5 hrs | Write structured prompts for any scenario, maintain persistent custom instructions |
 | 3 — Advanced | 06–07 | 06–07 | ~6 hrs | Define and operate 10 specialized agents, run coordinated multi-agent workflows |
-| 4 — Expert | 08–10 + Capstone | 08–09 | ~7 hrs | Apply all features, govern AI output, build and execute a 90-day adoption roadmap |
+| 4 — Expert | 08–10 + Capstone | 08–09 | ~7 hrs | Apply all features, govern AI output, produce 7 committed deliverables spanning the full course |
 
 ---
 
@@ -306,5 +306,3 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 Dependencies are **strict and linear.** No module can be skipped. Each module's exercises require the skills from all previous modules.
 
 For persona-based navigation and shortcut paths, see [LEARNING_PATH.md](./LEARNING_PATH.md).
-
-→ For a persona-based navigation, see [LEARNING_PATH.md](./LEARNING_PATH.md).

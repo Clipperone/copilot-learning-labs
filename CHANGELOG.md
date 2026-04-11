@@ -108,10 +108,3 @@ No changes pending.
 - `docs/architecture.md`
 - `docs/module-dependency-map.md`
 
----
-
-## Maintainers
-
-| Name | Role | Since |
-|------|------|-------|
-| *(your name)* | Course author & maintainer | 2026-04-10 |

@@ -6,7 +6,7 @@ An open, self-paced course on **GitHub Copilot Pro+** in **Visual Studio Code**.
 Clone this repository, follow the labs, and apply the templates directly to your own projects — no registration, no LMS, no cost beyond your Copilot subscription.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Release](https://img.shields.io/badge/release-v0.1--foundation-green)](./CHANGELOG.md)
+[![Release](https://img.shields.io/badge/release-v1.0--full--course-green)](./CHANGELOG.md)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](./CONTRIBUTING.md)
 
 ---
@@ -98,8 +98,6 @@ The course is organized into **10 progressive modules** across 4 levels, each pa
 | 09 | [AI-Friendly Repository Engineering](./modules/09-repository-quality/) | Expert | AI-friendly project structure, governance, review protocols |
 | 10 | [Adoption Roadmap](./modules/10-adoption-roadmap/) | Expert | 7/30/60/90-day personal and team adoption plan |
 
-Modules 04–10 are being released progressively. See the [roadmap](#roadmap) below.
-
 ### Labs
 
 | Lab | Paired module | Status |
@@ -123,12 +121,12 @@ Modules 04–10 are being released progressively. See the [roadmap](#roadmap) be
 | [modules/](./modules/) | Learning modules — theory, exercises, and checklists |
 | [labs/](./labs/) | Hands-on labs — starter files and reference solutions |
 | [prompts/](./prompts/) | Reusable prompt library by category |
-| [instructions/](./instructions/) | Custom instruction examples *(coming in v0.3)* |
+| [instructions/](./instructions/) | Custom instruction examples (global, project, path-scoped) |
 | [agents/](./agents/) | Agent persona definitions — populated during Lab 06 |
 | [templates/](./templates/) | Authoring templates for all content types |
 | [checklists/](./checklists/) | AI output review, pre-commit, and completion checklists |
 | [docs/](./docs/) | Architecture decisions and design reference |
-| [capstone/](./capstone/) | Final project — 90-day adoption roadmap capstone |
+| [capstone/](./capstone/) | Final project — End-to-End Copilot Workflow Integration |
 | [COURSE_OVERVIEW.md](./COURSE_OVERVIEW.md) | Scope, audience, and key outcomes |
 | [SYLLABUS.md](./SYLLABUS.md) | Full 10-module curriculum detail |
 | [LEARNING_PATH.md](./LEARNING_PATH.md) | Guided navigation by level and persona |

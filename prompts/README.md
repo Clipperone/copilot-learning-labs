@@ -8,7 +8,7 @@ A curated collection of reusable, tested prompts for common coding scenarios.
 |----------|-------|---------|
 | [generation/](./generation/) | Writing new code from a specification | Function, class, API endpoint |
 | [debugging/](./debugging/) | Diagnosing and fixing problems | Symptom-based debug, explain error |
-| refactoring/ | Improving structure without changing behavior | *(coming in v0.3)* |
+| [refactoring/](./refactoring/) | Improving structure without changing behavior | [refactor-for-clarity.md](./refactoring/refactor-for-clarity.md), [extract-function.md](./refactoring/extract-function.md) |
 | [testing/](./testing/) | Writing tests for existing code | [write-tests.md](./testing/write-tests.md) |
 | [documentation/](./documentation/) | Writing and improving docs | [write-docstring.md](./documentation/write-docstring.md) |
 | [review/](./review/) | Reviewing code for quality, style, and correctness | [code-review.md](./review/code-review.md) |

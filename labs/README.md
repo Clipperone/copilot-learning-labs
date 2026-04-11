@@ -19,7 +19,7 @@ Complete labs in order unless you are following a [persona-based shortcut path](
 | [Lab 07 — Run a Complete Multi-Agent Workflow](./lab-07-multi-agent-workflow/) | [Module 07 — Multi-Agent Workflows](../modules/07-multi-agent-workflows/) | Advanced | ~70 min | Execute the Feature Delivery workflow end-to-end with clean handoffs |
 | [Lab 08 — Advanced Feature Tour](./lab-08-advanced-feature-tour/) | [Module 08 — Advanced Features](../modules/08-advanced-features/) | Expert | ~60 min | Plan mode, AI review, terminal integration, quality gate, secure usage |
 | [Lab 09 — Repository Health Audit](./lab-09-repository-health-audit/) | [Module 09 — AI-Friendly Repository Engineering](../modules/09-repository-quality/) | Expert | ~60 min | AI-friendliness audit, README restructuring, pre-merge governance protocol, `.copilotignore`, `CONVENTIONS.md` |
-| [Capstone — 90-Day Adoption Roadmap](../capstone/) | [Module 10 — Adoption Roadmap](../modules/10-adoption-roadmap/) | Expert | ~60 min | Self-placement, personal 90-day roadmap, KPI selection, governance policy, expert self-assessment |
+| [Capstone — End-to-End Copilot Workflow Integration](../capstone/) | [Module 10 — Adoption Roadmap](../modules/10-adoption-roadmap/) | Expert | ~2 hrs | Build 7 deliverables spanning M04–M10: custom instructions, conventions, agents, prompts, workflow, validation report, 90-day roadmap |
 
 ---
 
@@ -33,8 +33,6 @@ checklist.md    ← completion self-assessment
 starter/        ← files the learner begins with
 solution/       ← reference answers
 ```
-
-Labs marked *(v0.x)* are planned for a future release. See [CHANGELOG.md](../CHANGELOG.md) for the release schedule.
 
 ---
 
