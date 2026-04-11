@@ -48,7 +48,7 @@ Add a function called parse_user_id that accepts a string and returns an integer
 
 **Instructions:**
 
-1. In the same project, open the Copilot chat panel (Edit mode).
+1. In the same project, open the Copilot chat panel (Agent mode).
 2. Send this prompt: `Add a function called validate_age that takes an integer and returns True if it is between 0 and 150. Raise an appropriate error if not.`
 3. Observe the generated code. Check:
    - Is the function named in `snake_case`? ✓

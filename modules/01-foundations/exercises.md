@@ -55,9 +55,9 @@ def hash_password(password: str) -> str:
 
 ---
 
-## Exercise 3: Edit Mode — Rename a Variable
+## Exercise 3: Agent Mode — Rename a Variable
 
-**Goal:** Use Edit mode to apply a targeted change across a file.
+**Goal:** Use Agent mode to apply a targeted change across a file.
 
 **Instructions:**
 
@@ -70,12 +70,11 @@ function processData(d) {
 }
 ```
 
-2. Open the Copilot chat panel and switch to **Edit** mode.
-3. Add `exercise3.js` to the working set if it is not already there.
-4. Send this prompt: `Rename the parameter 'd' to 'dataItems' and update all usages.`
-5. Review the proposed diff before accepting. Check: does every `d` that referred to the parameter get renamed? Did it accidentally rename anything else?
+2. Open the Copilot chat panel and switch to **Agent** mode.
+3. Send this prompt: `Rename the parameter 'd' to 'dataItems' and update all usages in exercise3.js.`
+4. Review the proposed diff before accepting. Check: does every `d` that referred to the parameter get renamed? Did it accidentally rename anything else?
 
-**What to observe:** Edit mode proposes a diff — you review and accept or reject it. Always review before accepting.
+**What to observe:** Agent mode proposes a diff — you review and accept or reject it. Always review before accepting.
 
 ---
 
@@ -101,7 +100,7 @@ Plan the implementation for Python — do not write code yet.
    - Where to write the output
 
 4. Follow up: `What edge cases should I consider?`
-5. Only after reviewing the plan, switch to Edit mode and ask Copilot to implement it.
+5. Only after reviewing the plan, switch to Agent mode and ask Copilot to implement it.
 
 **What to observe:** Planning before coding catches design gaps before they become bugs. The plan is also context for the implementation step.
 
@@ -140,15 +139,15 @@ def divide(a, b)
 
 **Instructions:**
 
-For each task below, decide: is this an **included request** (inline completion or Ask/Edit with the default model) or a **premium request** (premium model, agent session, or large-context operation)? Write one sentence explaining your reasoning.
+For each task below, decide: is this an **included request** (inline completion or Ask with the default model) or a **premium request** (premium model, agent session, or large-context operation)? Write one sentence explaining your reasoning.
 
 | # | Task description | Your classification | Your reasoning |
-|---|-----------------|--------------------|-----------------|
+|---|-----------------|--------------------|------------------|
 | 1 | Accept a ghost text completion that suggests a loop body | | |
 | 2 | Ask the default model to explain a 20-line Python function | | |
 | 3 | Run an agent session to scaffold a new FastAPI project across 5 files | | |
 | 4 | Use Ask with GPT-4o to review the architecture of a microservices design | | |
-| 5 | Use Edit mode with the default model to rename a variable in one file | | |
+| 5 | Use Agent mode with the default model to rename a variable in one file | | |
 
 Check your answers against [modules/01-foundations/theory.md](../../modules/01-foundations/theory.md) — see the Chat Mode Tool Access Reference table.
 

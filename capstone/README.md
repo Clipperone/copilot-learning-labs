@@ -33,7 +33,7 @@ This is not a planning exercise. It is a build exercise that ends with a plan.
 - **Option A — Provided scenario:** Use the scenario in the Project Brief below. All deliverables go in this course repository under the paths in the Deliverables table.
 - **Option B — Real project:** Apply the capstone to an active project from your work. Commit configuration deliverables (items 1–5) to that repository. Commit `capstone/validation-report.md` and `capstone/roadmap.md` to this course repository either way. Record the external repository URL in `capstone/roadmap.md` Section 1.
 
-**Step 2 — Verify Copilot Pro+ is active** and all 6 modes are accessible in VS Code.
+**Step 2 — Verify Copilot Pro+ is active** and all 5 modes are accessible in VS Code.
 
 **Step 3 — Confirm** `checklists/advanced-completion.md` is fully checked before opening any session.
 

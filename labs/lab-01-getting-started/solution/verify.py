@@ -1,6 +1,6 @@
 # verify.py — Lab 01 solution
 
-# This solution shows the expected result after applying Edit mode (Task 2b)
+# This solution shows the expected result after applying Agent mode (Task 2b)
 # and the inline chat validation improvement (Task 2c).
 # Use this as a reference only — complete the lab using Copilot before consulting this file.
 

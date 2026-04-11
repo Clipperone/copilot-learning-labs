@@ -55,30 +55,29 @@ If the icon shows a warning:
 | Signed in as wrong account | Multiple GitHub accounts | **Accounts** icon → sign out → re-sign in |
 | Completions appear then stop | Firewall / proxy blocking | Contact IT; see VS Code proxy docs |
 
-### The Six Interaction Modes
+### The Five Interaction Modes
 
 | Mode | Trigger | Best for |
 |------|---------|----------|
 | **Inline completion** | Editor, as you type | Short completions, boilerplate, next lines |
 | **Chat (ask)** | Chat panel / `Ctrl+Alt+I` | Questions, explanations, short generation |
-| **Edit** | Chat panel → Edit mode | Apply changes to one or more open files |
 | **Plan** | Chat panel → Plan mode | Design a solution before writing code |
-| **Agent** | Chat panel → Agent mode | Multi-step tasks, tool use, file operations |
+| **Agent** | Chat panel → Agent mode | Apply changes, multi-step tasks, tool use, file operations |
 | **Inline chat** | Editor, `Ctrl+I` | Quick ask or edit in context |
 
 **Mode decision — three questions:**
 
 1. Does the task require changes to files? → **No** → Use Ask. **Yes** → go to 2
-2. Is it one file or a targeted change? → **Yes** → Use Edit or Inline chat. **No** → go to 3
-3. Does it require multi-step execution across files? → **No** → Plan then Edit. **Yes** → Agent
+2. Is it a quick, localized change on the current line? → **Yes** → Use Inline chat. **No** → go to 3
+3. Do you need a design before implementation? → **Yes** → Plan first, then Agent. **No** → Agent
 
-**Beginners:** Default to Ask and Edit. Defer Agent mode until Module 06 — agent sessions accumulate context and cost, and mid-session mistakes are harder to reverse. The one exception: Agent mode is appropriate from the start when scaffolding a new, empty project.
+**Beginners:** Default to Ask and Inline chat. Use Agent mode when you need file changes applied. The one exception: Agent mode is appropriate from the start when scaffolding a new, empty project.
 
 | Task type | Recommended mode | Why |
 |-----------|-----------------|-----|
 | Autocomplete a method signature | Inline completion | Lowest cost, fastest |
 | Explain a confusing function | Ask | Conversational, no file edits |
-| Refactor a single file | Edit | Targeted, creates a reviewable diff |
+| Refactor a single file | Agent | Targeted, creates a reviewable diff |
 | Design a solution before coding | Plan | Prevents premature implementation |
 | Scaffold a new feature across files | Agent | Multi-file, multi-step |
 | Quick fix on the current line | Inline chat | No context switch |
@@ -147,7 +146,7 @@ See [exercises.md](./exercises.md) for full instructions.
 
 1. First inline completion — accept, reject, and cycle alternatives
 2. Ask mode — explain a function and identify a security issue
-3. Edit mode — rename a variable and review the diff before accepting
+3. Agent mode — rename a variable and review the diff before accepting
 4. Plan mode — design a utility before writing any code
 5. Inline chat — fix a syntax error and a logic issue
 6. Request classification — classify 5 tasks as included or premium
@@ -159,7 +158,7 @@ See [exercises.md](./exercises.md) for full instructions.
 | Mistake | Root cause | Fix |
 |---------|------------|-----|
 | Pressing `Tab` before reading ghost text | The gesture is reflexive; completions look plausible | Read first, then accept. One wrong Tab costs a revert and a re-prompt. |
-| Using Agent mode for a one-file change | "More capable = better" | For single-file changes, Edit mode is faster and cheaper |
+| Using Agent mode for a one-line change | "More capable = better" | For single-line changes, inline chat (`Ctrl+I`) is faster and lighter |
 | Switching to premium model for every question | "Premium is better, why not always?" | Escalate only after the included model gives an insufficient answer |
 | Accepting an explanation without running the code | Copilot explains confidently even when wrong | Always run or trace code before trusting the explanation |
 | Ignoring the status bar icon | Easy to miss when focused on code | When completions stop, check the icon first |
@@ -173,7 +172,7 @@ See [exercises.md](./exercises.md) for full instructions.
 You have completed this module when you can:
 
 - [ ] Confirm Copilot Pro+ is active in VS Code
-- [ ] Demonstrate all six modes and explain in one sentence when you would use each
+- [ ] Demonstrate all five modes and explain in one sentence when you would use each
 - [ ] Apply Read → Run → Reason → Risk to a piece of AI-generated code and identify at least one issue
 - [ ] Classify 5 task types correctly as included or premium requests
 - [ ] Name the three first-session productivity habits from memory
@@ -197,7 +196,7 @@ See [checklist.md](./checklist.md) for the full self-assessment.
 
 | Lab | Focus | Time |
 |-----|-------|------|
-| [Lab 01 — Getting Started](../../labs/lab-01-getting-started/) | All six modes on real tasks, critical review, productivity habits | 40–50 min |
+| [Lab 01 — Getting Started](../../labs/lab-01-getting-started/) | All five modes on real tasks, critical review, productivity habits | 40–50 min |
 
 See [labs/README.md](../../labs/README.md) for the full lab index.
 

@@ -47,15 +47,15 @@ Match the tool to the task. Escalate only when necessary.
 |----------------|-----------------|-------|-----|
 | Next line or small snippet | Inline completion | Default | Lowest cost; fastest |
 | Quick question or explanation | Ask (chat) | Default | Conversational; no file edits |
-| Apply a specific change to one file | Edit | Default | Targeted; default model is sufficient |
+| Apply a specific change to one file | Agent | Default | Targeted; default model is sufficient |
 | Design a solution before coding | Plan | Default | Planning requires logic, not large-scale tool use |
-| New file from scratch (single file) | Edit | Default | File creation does not require tool calls |
+| New file from scratch (single file) | Agent | Default | File creation does not require premium models |
 | Refactor across multiple files | Agent | Default or GPT-4o | Needs tool use; premium justified |
 | Complex debugging across codebase | Agent | Claude or GPT-4o | Deep reasoning; premium justified |
 | Security review or code audit | Ask or Agent | o1 or Claude | Reasoning-heavy; premium investment worthwhile |
 | Generate documentation | Ask | Default | Language task; default model is fully capable |
 
-**Key rule:** Do not use agent mode for tasks that Edit mode can complete. Do not use premium models for tasks the default model handles correctly.
+**Key rule:** Do not use premium models for tasks the default model handles correctly. Use inline chat (`Ctrl+I`) for quick, localized changes that do not need a full Agent session.
 
 The decision table in [Lab 03, Section B](../../labs/lab-03-token-audit/) uses this framework as its starting template. You will add rows for your own task types during the lab.
 

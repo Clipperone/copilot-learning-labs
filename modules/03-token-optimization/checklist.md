@@ -16,7 +16,7 @@ Use this checklist to self-assess before moving to Module 04.
 
 - [ ] I default to inline completion for short, ephemeral suggestions
 - [ ] I default to Ask (default model) for explanations and questions
-- [ ] I use Edit mode for single-file targeted changes
+- [ ] I use inline chat for single-file targeted changes
 - [ ] I reserve agent mode for tasks that require tool use or span multiple files
 - [ ] I can justify in one sentence why I would choose a premium model over the default
 

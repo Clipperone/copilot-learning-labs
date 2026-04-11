@@ -66,7 +66,7 @@ The `starter/` directory contains a small Python project with intentional struct
 **Instructions:**
 
 1. Read the current `starter/README.md`. Note what information is present and what is missing.
-2. Open Copilot Chat in Edit mode, scoped to `starter/README.md`.
+2. Open Copilot Chat in Agent mode, scoped to `starter/README.md`.
 3. Instruct Copilot to restructure the README using the 6-section AI-useful format:
    - `## What this does`
    - `## Setup`

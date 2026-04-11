@@ -68,9 +68,9 @@ A Security Reviewer session spanning 20 files is not more thorough — it is ove
 | Scenario | Better tool | Reason |
 |----------|------------|--------|
 | Write one function | Ask mode + structured prompt | One turn, no multi-file dependency |
-| Fix a single bug | Edit mode | Surgical change; agent adds overhead |
+| Fix a single bug | Inline chat (`Ctrl+I`) | Surgical change; agent adds overhead |
 | Explain how a module works | Ask mode | Information retrieval, not execution |
-| Draft a docstring for one function | Ask or Edit | Language task, resolved in one turn |
+| Draft a docstring for one function | Ask or Inline chat | Language task, resolved in one turn |
 | Produce a design without making changes | Plan mode | No tool calls needed |
 | Run a security check on one function | Ask mode with security scope prompt | Single-turn output; no file editing needed |
 

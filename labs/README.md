@@ -10,7 +10,7 @@ Complete labs in order unless you are following a [persona-based shortcut path](
 
 | Lab | Module | Level | Estimated time | Key skill practised |
 |-----|--------|-------|---------------|-------------------|
-| [Lab 01 — Getting Started](./lab-01-getting-started/) | [Module 01 — Foundations](../modules/01-foundations/) | Beginner | 40–50 min | All six modes, critical review, productivity habits |
+| [Lab 01 — Getting Started](./lab-01-getting-started/) | [Module 01 — Foundations](../modules/01-foundations/) | Beginner | 40–50 min | All five modes, critical review, productivity habits |
 | [Lab 02 — Project Configuration Baseline](./lab-02-configuration/) | [Module 02 — Configuration](../modules/02-configuration/) | Beginner | 45–60 min | VS Code settings, instruction files, linting, tasks |
 | [Lab 03 — Token Audit](./lab-03-token-audit/) | [Module 03 — Token Optimization](../modules/03-token-optimization/) | Beginner | 30–45 min | Mode/model decision audit, prompt compaction |
 | [Lab 04 — Prompt Engineering Workshop](./lab-04-prompt-engineering/) | [Module 04 — Prompt Engineering](../modules/04-prompt-engineering/) | Intermediate | ~50 min | Structured prompts across 7 coding scenarios |

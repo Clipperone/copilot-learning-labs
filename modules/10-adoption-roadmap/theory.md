@@ -9,7 +9,7 @@
 
 Four patterns explain virtually every failed Copilot adoption:
 
-**1. Feature orientation without skill depth.** Teams explore all six modes in week one, use none reliably by week four. The fix is depth before breadth: achieve consistent results with inline completion and Ask before touching Agent mode.
+**1. Feature orientation without skill depth.** Teams explore all five modes in week one, use none reliably by week four. The fix is depth before breadth: achieve consistent results with inline completion and Ask before touching Agent mode.
 
 **2. Solo adoption without shared conventions.** One engineer adopts fully. Three others adopt inconsistently. The result is a codebase with four different norms for AI-assisted commits. The fix is `CONVENTIONS.md` before the second person enables Copilot.
 

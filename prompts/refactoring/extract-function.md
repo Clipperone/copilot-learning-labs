@@ -2,7 +2,7 @@
 
 > **Category:** refactoring
 > **Difficulty:** basic
-> **Works best with:** edit mode | inline chat
+> **Works best with:** agent mode | inline chat
 > **Premium model recommended:** no
 > **Verified:** 2026-04
 

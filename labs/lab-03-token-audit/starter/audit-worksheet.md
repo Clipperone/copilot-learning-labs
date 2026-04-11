@@ -19,7 +19,7 @@ Classify your last 5 Copilot interactions. If you cannot recall 5, use the sampl
 **Sample interactions (use if needed):**
 
 1. "Write a function to parse a date string" — Ask mode, default model
-2. "Refactor this class to use dataclasses" — Edit mode, GPT-4o
+2. "Refactor this class to use dataclasses" — Agent mode, GPT-4o
 3. "Scaffold a new REST endpoint with tests" — Agent mode, Claude 3.5
 4. "What does this function do?" — Ask mode, default model
 5. "Fix all lint errors in the project" — Agent mode, default model

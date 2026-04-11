@@ -10,7 +10,7 @@
 
 ## Learning Objective
 
-Complete this lab and you will have used GitHub Copilot Pro+ deliberately across five of the six interaction modes on real coding tasks (Agent mode is introduced in Module 06), applied the Read → Run → Reason → Risk critical review workflow to AI-generated code, and established the three first-session productivity habits.
+Complete this lab and you will have used GitHub Copilot Pro+ deliberately across four of the five interaction modes on real coding tasks (Agent mode is introduced fully in Module 06, but used here for a targeted change), applied the Read → Run → Reason → Risk critical review workflow to AI-generated code, and established the three first-session productivity habits.
 
 ---
 
@@ -38,7 +38,7 @@ If any prerequisite is unmet, complete the setup steps in [Module 01 — Foundat
 
 ### Task 1: Your First Deliberate Inline Completion
 
-**Covers:** Module 01 §3 (The Six Interaction Modes) — inline completion
+**Covers:** Module 01 §3 (The Five Interaction Modes) — inline completion
 
 **Goal:** Experience the accept / reject / cycle workflow consciously, not reflexively.
 
@@ -95,10 +95,10 @@ Before each sub-task: state which mode you are using and why (one sentence in yo
 
 ---
 
-**2b — Edit mode: targeted code change**
+**2b — Agent mode: targeted code change**
 
 1. Open `starter/verify.py`.
-2. Switch the chat panel to **Edit** mode. Add `verify.py` to the working set.
+2. Switch the chat panel to **Agent** mode.
 3. Send this prompt:
 
    ```
@@ -259,7 +259,7 @@ Without looking at your notes, classify each task below as **included** or **pre
 | 1 | Accept a ghost text completion for a function body | |
 | 2 | Ask the default model to explain a 15-line function | |
 | 3 | Run an agent session to scaffold a Django app across 8 files | |
-| 4 | Use Edit mode with Claude Sonnet to refactor a class | |
+| 4 | Use Agent mode with Claude Sonnet to refactor a class | |
 | 5 | Use Plan mode with the default model to design a database schema | |
 
 Check your answers against [modules/01-foundations/theory.md — Chat Mode Tool Access Reference](../../modules/01-foundations/theory.md).
@@ -288,8 +288,8 @@ By the end of this lab you will have:
 | Criterion | Verified |
 |-----------|----------|
 | Inline completion accepted deliberately — `task1.py` complete and every line explainable | ☐ |
-| All four chat modes used — Ask, Edit, Plan, and Inline chat each produced a result | ☐ |
-| Diff reviewed before accepting — Edit mode change reviewed line by line | ☐ |
+| All four chat modes used — Ask, Agent, Plan, and Inline chat each produced a result | ☐ |
+| Diff reviewed before accepting — Agent mode change reviewed line by line | ☐ |
 | Critical review applied — `task3.py` has all four Read → Run → Reason → Risk answers as comments | ☐ |
 | Security flaw named — OWASP A02 (plaintext credential storage) identified | ☐ |
 | Cost classification correct — 4/5 or 5/5 correct in Task 5 | ☐ |
@@ -311,7 +311,7 @@ By the end of this lab you will have:
 | Symptom | Likely cause | Fix |
 |---------|-------------|-----|
 | Ghost text never appears | Extension disabled or not authenticated | Click the Copilot status bar icon and sign in |
-| Edit mode diff is blank | File not added to the working set | Click **+** in the Edit mode header to add the file |
+| Agent mode produces no changes | File not referenced in the prompt | Mention the file name explicitly in your prompt |
 | Plan mode writes code immediately | Mode not set to Plan before sending | Discard; switch to Plan mode explicitly first |
 | Task 3 security flaw not identified | Prompt accepted without running Risk step | Return to Task 3; ask Copilot: "What security risks does this function have?" |
 | Agent mode unavailable | Plan does not include Pro+ | Verify at [github.com/settings/copilot](https://github.com/settings/copilot) |
@@ -321,7 +321,7 @@ By the end of this lab you will have:
 
 ## Extension Ideas
 
-- Run Task 2c (Plan) and then immediately implement the plan using Edit mode — observe how planning first changes the quality of the generated code.
+- Run Task 2c (Plan) and then immediately implement the plan using Agent mode — observe how planning first changes the quality of the generated code.
 - Compare the default model and a premium model (e.g., Claude Sonnet) on the exact same Task 3 prompt. Are the security risks identified more clearly by one model?
 - Take the `task1.py` BMI function through the full pre-commit checklist at [checklists/pre-commit.md](../../checklists/pre-commit.md).
 - Redo Task 3 with a different AI failure mode category — try prompting for code that might produce a hallucinated API, then verify it in the documentation.

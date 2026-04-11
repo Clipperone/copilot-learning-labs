@@ -15,11 +15,11 @@ Use this checklist to self-assess before moving to Module 02. Every item must be
 
 ## Mode Knowledge
 
-- [ ] I can switch between Ask, Edit, Plan, and Agent modes in the chat panel
+- [ ] I can switch between Ask, Plan, and Agent modes in the chat panel
 - [ ] I can trigger inline chat with `Ctrl+I` while the cursor is in the editor
-- [ ] I can explain in one sentence when I would use each of the six modes
+- [ ] I can explain in one sentence when I would use each of the five modes
 - [ ] I know the keyboard shortcut to cycle through alternative inline completions (`Alt+]` / `Alt+[`)
-- [ ] I understand why beginners should default to Ask and Edit and defer Agent mode
+- [ ] I understand why beginners should default to Ask and Inline chat for lightweight tasks
 
 ---
 
@@ -27,7 +27,7 @@ Use this checklist to self-assess before moving to Module 02. Every item must be
 
 - [ ] Exercise 1 completed — accepted and dismissed ghost text, cycled alternatives
 - [ ] Exercise 2 completed — used Ask mode to explain a function and identify the MD5 security issue
-- [ ] Exercise 3 completed — used Edit mode to rename a variable and reviewed the diff before accepting
+- [ ] Exercise 3 completed — used Agent mode to rename a variable and reviewed the diff before accepting
 - [ ] Exercise 4 completed — used Plan mode before writing code and identified at least one edge case
 - [ ] Exercise 5 completed — used inline chat to fix a syntax error and add a division-by-zero guard
 - [ ] Exercise 6 completed — classified 5 tasks as included or premium requests with written reasoning

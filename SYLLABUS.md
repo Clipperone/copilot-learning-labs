@@ -29,14 +29,14 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 
 ### Module 01: Foundations
 
-**Goal:** Install and verify GitHub Copilot Pro+, understand all six interaction modes, and build the habit of critical AI output evaluation.
+**Goal:** Install and verify GitHub Copilot Pro+, understand all five interaction modes, and build the habit of critical AI output evaluation.
 
 **Prerequisite:** Active Copilot subscription. VS Code installed.
 
 | Topic | Key skills |
 |-------|-----------|
 | Installation and authentication | Activate Copilot Pro+ in VS Code, verify status bar |
-| Copilot modes overview | Inline completion, Ask, Edit, Plan, Agent, Inline Chat — what each does |
+| Copilot modes overview | Inline completion, Ask, Plan, Agent, Inline Chat — what each does |
 | When to use each mode | Decision criteria based on task type and complexity |
 | Evaluating AI output critically | Four-question review gate; never commit unreviewed AI code |
 | Key VS Code settings | Essential Copilot settings to configure immediately |

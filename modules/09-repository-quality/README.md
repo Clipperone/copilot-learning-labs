@@ -233,7 +233,7 @@ See [exercises.md](./exercises.md) for full instructions.
 | Action | Cost level | Notes |
 |--------|-----------|-------|
 | Repository audit (Ask mode) | Low | One Ask session per property in the 6-property checklist; no agent overhead |
-| README reconstruction | Low | Edit mode on a specific file; bounded context |
+| README reconstruction | Low | Agent mode on a specific file; bounded context |
 | `CONVENTIONS.md` authoring | Low–Medium | Plan mode recommended for multi-language repos; Ask mode sufficient for single-language |
 | `.copilotignore` authoring | Low | One Ask session from a file tree; deterministic output |
 | Governance protocol setup | None | Documentation task; no Copilot session required beyond reference lookup |

@@ -2,7 +2,7 @@
 
 > **Category:** generation
 > **Difficulty:** basic
-> **Works best with:** ask mode | edit mode
+> **Works best with:** ask mode | agent mode
 > **Premium model recommended:** no
 > **Verified:** 2026-04
 

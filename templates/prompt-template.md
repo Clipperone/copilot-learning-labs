@@ -2,7 +2,7 @@
 
 > **Category:** generation | refactoring | debugging | testing | documentation | review | security | migration
 > **Difficulty:** basic | intermediate | advanced
-> **Works best with:** inline chat | ask mode | edit mode | agent mode
+> **Works best with:** inline chat | ask mode | agent mode
 > **Premium model recommended:** yes | no
 > **Verified:** YYYY-MM
 

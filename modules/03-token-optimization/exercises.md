@@ -21,7 +21,7 @@ Classify each action below. Write "Included", "Premium", or "Depends" (and expla
 | 5 | Open Plan mode and design a database schema | |
 | 6 | Use o1 to review a security-sensitive function | |
 | 7 | Dismiss an inline completion with Esc | |
-| 8 | Use Edit mode with the default model to rename a variable | |
+| 8 | Use Agent mode with the default model to rename a variable | |
 | 9 | Use agent mode with Claude 3.5 to scaffold a new feature | |
 | 10 | Ask the included model for a code review of a 500-line file | |
 

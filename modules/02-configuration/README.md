@@ -158,7 +158,7 @@ See [exercises.md](./exercises.md) for full instructions. Complete [Lab 02](../.
 | Writing copilot-instructions.md | Low | One chat turn; one-time effort |
 | Applying instructions to every session | Zero additional | Instructions are injected automatically |
 | Asking Copilot to audit instructions for contradictions | Low | Short context, single ask |
-| Asking Copilot to reorganize a file structure | Medium | Multi-file read; use Edit mode |
+| Asking Copilot to reorganize a file structure | Medium | Multi-file read; use Agent mode |
 | Agent mode: scaffold `.vscode/` config files | Low–Medium | Few small files; limited tool calls |
 
 ---

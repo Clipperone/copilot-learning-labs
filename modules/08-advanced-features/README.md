@@ -5,7 +5,7 @@
 > **Prerequisite:** [Module 07 — Multi-Agent Workflows](../07-multi-agent-workflows/) · One documented, repeatable workflow file must exist in `agents/` before this module.
 > **Verified:** 2026-04
 
-> ⚠️ **Premium request note:** Plan mode, terminal integration, and quality gate work run effectively on the default model. Escalate to Claude or o1 only for Security Reviewer sessions that require OWASP exploit-path reasoning. A common waste pattern at Expert level is opening a premium Agent session for a task that Plan mode or Edit mode handles equally well.
+> ⚠️ **Premium request note:** Plan mode, terminal integration, and quality gate work run effectively on the default model. Escalate to Claude or o1 only for Security Reviewer sessions that require OWASP exploit-path reasoning. A common waste pattern at Expert level is opening a premium Agent session for a task that Plan mode or inline chat handles equally well.
 
 ---
 
@@ -65,7 +65,7 @@ The module extends beyond VS Code features. Large repositories degrade AI contex
 
 If the Plan output does not contain all five elements, it is incomplete. Add constraints and re-run Plan mode before moving to implementation.
 
-> **Critical rule:** Plan mode output is a proposal, not code. Pass it to an Implementer session or Edit mode. Never copy Plan output directly to production without review and implementation.
+> **Critical rule:** Plan mode output is a proposal, not code. Pass it to an Implementer session or Agent mode. Never copy Plan output directly to production without review and implementation.
 
 ---
 
@@ -235,7 +235,7 @@ See [exercises.md](./exercises.md) for full instructions.
 
 | Mistake | Why it happens | How to fix it |
 |---------|---------------|---------------|
-| Treating Plan mode output as final code | Conflating design with implementation | Plan output is a proposal; pass it to an Implementer session or Edit mode |
+| Treating Plan mode output as final code | Conflating design with implementation | Plan output is a proposal; pass it to an Implementer session or Agent mode |
 | Accepting AI findings without severity and location | Treating AI review as infallible | Reject findings with no severity, file, or exploit path; require re-generation |
 | Pasting credentials into terminal context | "Just a test key" reasoning | Any credential in context can leak; use `<placeholder>` values in all examples |
 | Running AI suggestions in CI without a human gate | Assuming automation validates quality | Pipeline AI output gets the same 4-question review gate as inline completions |
