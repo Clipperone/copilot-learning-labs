@@ -1,4 +1,4 @@
-# copilot-learning-labs
+# GitHub Copilot Learning Labs
 
 > **From first autocomplete to production-grade AI-assisted workflows.**
 
@@ -7,7 +7,23 @@ Clone this repository, follow the labs, and apply the templates directly to your
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Release](https://img.shields.io/badge/release-v1.0--full--course-green)](./CHANGELOG.md)
+[![VS Code](https://img.shields.io/badge/VS%20Code-1.90%2B-007ACC)](https://code.visualstudio.com/)
+[![Copilot](https://img.shields.io/badge/GitHub%20Copilot-Pro%2B-8957e5)](https://github.com/features/copilot)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen)](./CONTRIBUTING.md)
+
+---
+
+## Contents
+
+- [Getting Started](#getting-started)
+- [Who This Course Is For](#who-this-course-is-for)
+- [What You Will Learn](#what-you-will-learn)
+- [Quick Navigation](#quick-navigation)
+- [Course Structure](#course-structure)
+- [Repository Contents](#repository-contents)
+- [Contributing](#contributing)
+- [Feature Verification](#feature-verification)
+- [License](#license)
 
 ---
 
@@ -26,6 +42,7 @@ Open the folder in VS Code, install the recommended extensions when prompted, an
 
 Or jump straight to the first lab → [labs/lab-01-getting-started/](./labs/lab-01-getting-started/) · [Browse all labs](./labs/)
 
+> [!NOTE]
 > Most beginner and intermediate content works on any paid Copilot plan. Agent mode and premium model access require **Pro+**. Plan-specific restrictions are noted at the module level.
 
 ---
@@ -41,20 +58,19 @@ Or jump straight to the first lab → [labs/lab-01-getting-started/](./labs/lab-
 
 **Prerequisite knowledge:** Basic familiarity with VS Code and at least one programming language. No prior Copilot experience required.
 
-**Plan requirement:** Most beginner and intermediate content applies to all paid Copilot plans. Agent mode, premium model access, and some advanced features require **GitHub Copilot Pro+**. Plan-specific restrictions are noted at the module level.
-
 ---
 
 ## What You Will Learn
 
-- Configure GitHub Copilot Pro+ and VS Code for maximum productivity
-- Choose the right Copilot mode — inline completion, chat, ask, edit, plan, agent — for any task
-- Write effective, repeatable prompts for code generation, refactoring, debugging, testing, documentation, and security review
-- Design persistent custom instructions that guide Copilot consistently across a project
-- Define role-specialized agents with clear responsibilities, tool permissions, and handoff protocols
-- Orchestrate multi-agent workflows on complex, multi-step tasks without wasting context or requests
-- Make cost-aware decisions about models and modes to minimize premium request consumption
-- Apply a structured 7/30/60/90-day personal adoption roadmap
+| Skill area | What you will be able to do |
+|------------|----------------------------|
+| **Setup and modes** | Configure Copilot Pro+ and VS Code for maximum productivity; choose the right mode — inline completion, chat, ask, edit, plan, agent — for any task |
+| **Prompt engineering** | Write effective, repeatable prompts for code generation, refactoring, debugging, testing, documentation, and security review |
+| **Custom instructions** | Design persistent instructions that guide Copilot consistently across a project at global, project, and path scope |
+| **Agent workflows** | Define role-specialized agents with clear responsibilities, tool permissions, and handoff protocols |
+| **Multi-agent orchestration** | Orchestrate agents across complex, multi-step tasks without wasting context or premium requests |
+| **Cost awareness** | Make cost-aware decisions about models and modes to minimize premium request consumption |
+| **Adoption planning** | Apply a structured 7/30/60/90-day personal and team adoption roadmap |
 
 ---
 
@@ -74,43 +90,20 @@ Or jump straight to the first lab → [labs/lab-01-getting-started/](./labs/lab-
 
 ## Course Structure
 
-The course is organized into **10 progressive modules** across 4 levels, each paired with a hands-on lab and a self-assessment checklist.
+**10 progressive modules** across 4 levels, each paired with a hands-on lab and a self-assessment checklist.
 
-| Level | Modules | Focus |
-|-------|---------|-------|
-| **Beginner** | 01 — 03 | Setup, configuration, token and cost awareness |
-| **Intermediate** | 04 — 05 | Prompt engineering, custom instructions |
-| **Advanced** | 06 — 07 | Agent personas, multi-agent workflows |
-| **Expert** | 08 — 10 | Advanced features, repository quality, adoption planning |
-
-### Modules
-
-| # | Module | Level | Key skill |
-|---|--------|-------|-----------|
-| 01 | [Foundations](./modules/01-foundations/) | Beginner | Install, verify, understand all modes, evaluate AI output |
-| 02 | [Configuration](./modules/02-configuration/) | Beginner | Optimize VS Code and project structure for AI context |
-| 03 | [Token Optimization](./modules/03-token-optimization/) | Beginner | Mode/model decision framework, cost-aware workflows |
-| 04 | [Prompt Engineering](./modules/04-prompt-engineering/) | Intermediate | Structured prompts for every coding scenario |
-| 05 | [Custom Instructions](./modules/05-custom-instructions/) | Intermediate | Persistent guidance at global, project, and path scope |
-| 06 | [Agents and Role Specialization](./modules/06-agents/) | Advanced | 10 role-specialized personas with tool permissions and handoffs |
-| 07 | [Multi-Agent Workflows](./modules/07-multi-agent-workflows/) | Advanced | Orchestrate agents across complex, multi-step tasks |
-| 08 | [Advanced Features](./modules/08-advanced-features/) | Expert | Plan mode, AI review, terminal integration, CI/CD |
-| 09 | [AI-Friendly Repository Engineering](./modules/09-repository-quality/) | Expert | AI-friendly project structure, governance, review protocols |
-| 10 | [Adoption Roadmap](./modules/10-adoption-roadmap/) | Expert | 7/30/60/90-day personal and team adoption plan |
-
-### Labs
-
-| Lab | Paired module | Status |
-|-----|--------------|--------|
-| [Lab 01 — Getting Started](./labs/lab-01-getting-started/) | Module 01 | ✅ Available |
-| [Lab 02 — Project Configuration Baseline](./labs/lab-02-configuration/) | Module 02 | ✅ Available |
-| [Lab 03 — Token Audit](./labs/lab-03-token-audit/) | Module 03 | ✅ Available |
-| [Lab 04 — Prompt Engineering Workshop](./labs/lab-04-prompt-engineering/) | Module 04 | ✅ Available |
-| [Lab 05 — Write Your Project's Custom Instructions](./labs/lab-05-custom-instructions/) | Module 05 | ✅ Available |
-| [Lab 06 — Agents and Personas](./labs/lab-06-agents-and-personas/) | Module 06 | ✅ Available |
-| [Lab 07 — Run a Complete Multi-Agent Workflow](./labs/lab-07-multi-agent-workflow/) | Module 07 | ✅ Available |
-| [Lab 08 — Advanced Feature Tour](./labs/lab-08-advanced-feature-tour/) | Module 08 | ✅ Available |
-| [Lab 09 — Repository Health Audit](./labs/lab-09-repository-health-audit/) | Module 09 | ✅ Available |
+| # | Module | Level | Lab | Key skill |
+|---|--------|-------|-----|-----------|
+| 01 | [Foundations](./modules/01-foundations/) | Beginner | [Lab 01 — Getting Started](./labs/lab-01-getting-started/) | Install, verify, understand all modes, evaluate AI output |
+| 02 | [Configuration](./modules/02-configuration/) | Beginner | [Lab 02 — Project Configuration Baseline](./labs/lab-02-configuration/) | Optimize VS Code and project structure for AI context |
+| 03 | [Token Optimization](./modules/03-token-optimization/) | Beginner | [Lab 03 — Token Audit](./labs/lab-03-token-audit/) | Mode/model decision framework, cost-aware workflows |
+| 04 | [Prompt Engineering](./modules/04-prompt-engineering/) | Intermediate | [Lab 04 — Prompt Engineering Workshop](./labs/lab-04-prompt-engineering/) | Structured prompts for every coding scenario |
+| 05 | [Custom Instructions](./modules/05-custom-instructions/) | Intermediate | [Lab 05 — Write Your Project's Custom Instructions](./labs/lab-05-custom-instructions/) | Persistent guidance at global, project, and path scope |
+| 06 | [Agents and Role Specialization](./modules/06-agents/) | Advanced | [Lab 06 — Agents and Personas](./labs/lab-06-agents-and-personas/) | 10 role-specialized personas with tool permissions and handoffs |
+| 07 | [Multi-Agent Workflows](./modules/07-multi-agent-workflows/) | Advanced | [Lab 07 — Run a Complete Multi-Agent Workflow](./labs/lab-07-multi-agent-workflow/) | Orchestrate agents across complex, multi-step tasks |
+| 08 | [Advanced Features](./modules/08-advanced-features/) | Expert | [Lab 08 — Advanced Feature Tour](./labs/lab-08-advanced-feature-tour/) | Plan mode, AI review, terminal integration, CI/CD |
+| 09 | [AI-Friendly Repository Engineering](./modules/09-repository-quality/) | Expert | [Lab 09 — Repository Health Audit](./labs/lab-09-repository-health-audit/) | AI-friendly project structure, governance, review protocols |
+| 10 | [Adoption Roadmap](./modules/10-adoption-roadmap/) | Expert | [Capstone](./capstone/) | 7/30/60/90-day personal and team adoption plan |
 
 ---
 
@@ -132,21 +125,6 @@ The course is organized into **10 progressive modules** across 4 levels, each pa
 | [LEARNING_PATH.md](./LEARNING_PATH.md) | Guided navigation by level and persona |
 | [CONTRIBUTING.md](./CONTRIBUTING.md) | How to contribute |
 | [CHANGELOG.md](./CHANGELOG.md) | Release history |
-
----
-
-## Roadmap
-
-| Release | Status | Contents |
-|---------|--------|---------|
-| `v0.1` — Foundation | ✅ Released | Module 01, Lab 01, all templates, prompt starter set, checklists, `.github/` and `.vscode/` config |
-| `v0.2` — Beginner complete | ✅ Released | Modules 02–03, Labs 02–03, additional prompts |
-| `v0.3` — Intermediate complete | ✅ Released | Modules 04–05, Labs 04–05, `instructions/` folder |
-| `v0.4` — Advanced complete | ✅ Released | Module 06–07, Lab 06, `agents/` folder |
-| `v0.5` — Expert phase (partial) | ✅ Released | Modules 08–09, Labs 08–09 |
-| `v1.0` — Full course | **Current** | All 10 modules, Labs 01–09, capstone, examples, FAQ |
-
-Feature requests and content suggestions are tracked as [GitHub Issues](../../issues). Use the [content suggestion template](./.github/ISSUE_TEMPLATE/content_suggestion.md) to propose new material.
 
 ---
 
