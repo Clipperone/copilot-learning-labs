@@ -45,7 +45,7 @@ jobs:
               tail -n +3 "$dir/README.md" | \
                 sed -E "s|(modules/[^/)]+)/README\.md|\1/|g" | \
                 sed -E "s|(labs/[^/)]+)/README\.md|\1/|g" | \
-                sed -E "s|\]\(\.\/(exercises|theory|checklist)\.md([^)]*)\)|](${REPO_URL}/blob/main/modules/${slug}/\1.md\2)|g" | \
+                sed -E "s@\]\(\.\/(exercises|theory|checklist)\.md([^)]*)\)@](${REPO_URL}/blob/main/modules/${slug}/\1.md\2)@g" | \
                 sed "s|](../../labs/|](PROT_LABS/|g" | \
                 sed "s|](../../modules/|](PROT_MODS/|g" | \
                 sed "s|](../../|](${REPO_URL}/tree/main/|g" | \
@@ -73,7 +73,7 @@ jobs:
               tail -n +3 "$dir/README.md" | \
                 sed -E "s|(modules/[^/)]+)/README\.md|\1/|g" | \
                 sed -E "s|(labs/[^/)]+)/README\.md|\1/|g" | \
-                sed -E "s|\]\(\.\/(starter|solution)([^)]*)\)|](${REPO_URL}/tree/main/labs/${slug}/\1\2)|g" | \
+                sed -E "s@\]\(\.\/(starter|solution)([^)]*)\)@](${REPO_URL}/tree/main/labs/${slug}/\1\2)@g" | \
                 sed -E "s|\]\(\.\/checklist\.md([^)]*)\)|](${REPO_URL}/blob/main/labs/${slug}/checklist.md\1)|g" | \
                 sed "s|](../README.md)|](${REPO_URL}/blob/main/labs/README.md)|g" | \
                 sed "s|](../../labs/|](PROT_LABS/|g" | \
