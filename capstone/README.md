@@ -53,6 +53,8 @@ You are configuring GitHub Copilot Pro+ for a 3-person Python team starting a ne
 - Primary language: Python; secondary: SQL, shell scripts
 - Deliverable: a REST API with authentication; data is user-sensitive
 
+There are no starter files for this capstone. Begin from an empty directory or your own project.
+
 ---
 
 ## Required Deliverables

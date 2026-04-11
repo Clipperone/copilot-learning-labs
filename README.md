@@ -144,7 +144,7 @@ The course is organized into **10 progressive modules** across 4 levels, each pa
 | `v0.3` — Intermediate complete | ✅ Released | Modules 04–05, Labs 04–05, `instructions/` folder |
 | `v0.4` — Advanced complete | ✅ Released | Module 06–07, Lab 06, `agents/` folder |
 | `v0.5` — Expert phase (partial) | ✅ Released | Modules 08–09, Labs 08–09 |
-| `v1.0` — Full course | **Current** | All 10 modules, Labs 09–10, capstone, examples, FAQ |
+| `v1.0` — Full course | **Current** | All 10 modules, Labs 01–09, capstone, examples, FAQ |
 
 Feature requests and content suggestions are tracked as [GitHub Issues](../../issues). Use the [content suggestion template](./.github/ISSUE_TEMPLATE/content_suggestion.md) to propose new material.
 
