@@ -111,7 +111,7 @@ See [checklists/ai-output-review.md](../../checklists/ai-output-review.md) and [
 
 Three habits to establish from session one:
 
-1. **Choose the mode before writing the prompt.** Prevents mode-switching mid-session, which resets context and wastes requests. Decide: Ask, Edit, Plan, or Agent — then open the panel.
+1. **Choose the mode before writing the prompt.** Switching modes mid-flow can reduce context continuity and often requires re-orientation. Some history may carry over, but do not assume full carryover of intent, scope, and constraints. Decide first: Ask, Plan, or Agent — then open the panel.
 
 2. **Write your acceptance criteria first.** One sentence: *"I will accept this if it does X."* Prevents accepting plausible-looking wrong answers because you forgot what you actually needed.
 
@@ -126,14 +126,14 @@ Two request types govern Copilot usage:
 | Type | Examples | Cost |
 |------|---------|------|
 | **Included** | Inline completion, Ask with default model | Unlimited on most plans |
-| **Premium** | Ask/Edit/Agent with a premium model, agent sessions | Counts against monthly quota |
+| **Premium** | Ask/Plan/Agent with a premium model, agent sessions | Counts against monthly quota |
 
 **The cost-aware decision rule:** Use the cheapest mode that can handle the task. Escalate only when the cheaper option gives an incorrect or incomplete result.
 
 | Guideline | Rationale |
 |-----------|-----------|
 | Default model handles 80% of questions | Switch to premium only for hard reasoning or architecture design |
-| Agent mode is expensive per turn | If a task fits in two Edit prompts, use Edit |
+| Agent mode is expensive per turn | If a task is localized, use Inline chat instead of Agent. |
 | Large open files increase cost per turn | Close files not needed for the current task |
 
 After your first session, note one thing: did you use the right mode, or did you escalate unnecessarily? That's your first token audit.

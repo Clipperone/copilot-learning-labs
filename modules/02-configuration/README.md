@@ -46,7 +46,7 @@ Clean, well-configured projects give Copilot stronger signals. Poorly organized 
 | Workspace settings | `.vscode/settings.json` | This project only | Medium |
 | Copilot instructions | `.github/copilot-instructions.md` | Copilot behavior in this repo | Applied on top |
 
-Always prefer workspace settings over user settings for project-specific configuration. Instructions in `.github/copilot-instructions.md` are applied automatically to every Copilot session in the repository.
+Always prefer workspace settings over user settings for project-specific configuration. Instructions in `.github/copilot-instructions.md` are applied automatically to chat sessions when instruction files are enabled in settings.
 
 ### Project-Level Copilot Instructions
 
@@ -144,7 +144,7 @@ See [exercises.md](./exercises.md) for full instructions. Complete [Lab 02](../.
 | Mistake | Root cause | Fix |
 |---------|------------|-----|
 | Vague instructions ("use best practices") | Developer thinks any instruction is better than none | Replace with specific, verifiable rules: "use `snake_case` for all function names" |
-| Forgetting `useInstructionFiles: true` | Default setting may be `false` | Add `github.copilot.chat.codeGeneration.useInstructionFiles: true` to `.vscode/settings.json` |
+| Assuming instruction files are active by default | Setting not enabled at workspace level or overridden by existing config | Add `github.copilot.chat.codeGeneration.useInstructionFiles: true` to `.vscode/settings.json` and verify with a test prompt |
 | Monolithic utility files | Legacy habit from non-AI codebases | Split into focused modules; each file should have one clear purpose |
 | No type annotations or docstrings | "Copilot will add them later" | Add them upfront — they are primary context signals |
 | Contradictory instructions | Instructions added incrementally without review | Review the full instructions file before adding. Remove obsolete rules. |

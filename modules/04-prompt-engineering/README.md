@@ -218,12 +218,11 @@ Use [templates/prompt-template.md](../../templates/prompt-template.md) as the st
 
 | Mistake | Root cause | Fix |
 |---|---|---|
-| "Improve this function" | Assumes Copilot infers intent | Name the change explicitly |
-| Two tasks in one prompt | Seems efficient | Split; output from first becomes context for second |
-| Pasting only the error message | Error seems self-explanatory | Paste code + expected + actual; diagnose before fix |
-| Testing prompt with no edge cases | "Copilot will think of them" | List edge cases explicitly: null, empty, negative, maximum |
-| Security review of entire file | "More scope = more thorough" | Scope to one function or one OWASP category per prompt |
-| Using o1 for a docstring | "Premium always performs better" | Docstrings are language tasks; default model is sufficient |
+| "Reusing one long chat for unrelated tasks" | Assumes more history always helps | Start a new session per task and paste a 3-5 bullet summary if needed |
+| Reviewing too much code at once | Equates larger scope with better quality | Review one function or one concern per prompt |
+| Skipping the expected vs actual behavior in debugging prompts | Assumes the error message is enough | Always provide expected output, actual output, and one failing input |
+| Escalating to premium models before trying default | Habit or fear of weak output | Try default first, then escalate only if reasoning quality is insufficient |
+| Accepting first output without validation | Treats model output as final | Run tests or check acceptance criteria before adopting changes |
 
 ---
 

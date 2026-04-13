@@ -69,15 +69,15 @@ Inline completions are generated as you pause typing. VS Code sends:
 
 ---
 
-## Chat Mode Architecture
+## Chat Mode Architecture (Panel Modes)
 
-In chat modes (ask, edit, plan, agent), Copilot operates as a **conversation** with tool access:
+In panel chat modes (Ask, Plan, Agent), Copilot operates as a **conversation** with different capabilities.
+Inline completion and Inline chat are editor interactions and are not listed in this table.
 
 | Mode | Tool access | File edits | Multi-step |
 |------|-------------|-----------|-----------|
-| Ask | Read-only reference | No | No |
-| Edit | Current file(s) | Yes, direct | No |
-| Plan | Read-only | No | No (plans only) |
+| Ask | Context-aware answers only | No | No |
+| Plan | Read-only planning context | No | No (plans only) |
 | Agent | Read, write, terminal, search | Yes | Yes |
 
 **Agent mode** is the most powerful but also the most expensive in terms of premium requests. It can loop through multiple steps, run commands, read and write files, and use web search if configured.
@@ -109,7 +109,7 @@ For a full review protocol, see [checklists/ai-output-review.md](../../checklist
 
 **Habit 1 — Choose the mode before writing the prompt**
 
-When you switch modes mid-session, VS Code discards the current context and starts a new one. Requests spent re-orienting a new session on the same problem are wasted. Deciding the mode first takes two seconds and saves one re-prompt.
+When you switch modes mid-flow, context continuity can degrade and you often need to re-orient the new turn. In many cases, mode changes keep part of the chat history, but you should not assume full carryover of intent, scope, and constraints. Decide the mode first to minimize re-prompting and avoid spending requests on repeated setup.
 
 **Habit 2 — Write your acceptance criteria first**
 

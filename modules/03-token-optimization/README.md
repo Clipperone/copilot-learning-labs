@@ -32,7 +32,7 @@ GitHub Copilot distinguishes between **included requests** (unlimited on most pl
 | Action | Request type | Notes |
 |--------|-------------|-------|
 | Inline completion (ghost text) | Included | Triggered continuously as you type |
-| Chat with default model | Included | Ask, Edit, Plan modes |
+| Chat with default model | Included | Ask, Plan modes |
 | Chat with premium model (GPT-4o, Claude, o1) | Premium | Each message to the model consumes quota |
 | Agent mode session | Premium | Each tool call + model call counts |
 | Long-context operations | Higher premium cost | Files > ~10k tokens cost proportionally more |
@@ -102,22 +102,27 @@ See [exercises.md](./exercises.md) for full instructions. Exercises use curated 
 
 | Mistake | Root cause | Fix |
 |---------|------------|-----|
-| Using agent mode for single-file edits | "Agent is most powerful, so best" | Agent mode costs 3–10× more than Edit for the same output. Use Edit unless multi-file or multi-step. |
-| Switching to premium models by default | Habit from having quota remaining | Default model handles 80% of tasks. Reserve premium models for reasoning-heavy work. |
-| Leaving all tabs open during agent sessions | Convenience | Each open file may be included in context. Open only what the task needs. |
-| Expecting Copilot to extract requirements from a vague prompt | "It'll figure out what I mean" | Vague prompts produce vague results and required follow-ups. State the goal explicitly. |
-| Never starting a new chat session | "The history helps" | Long history causes early context to drop silently. New sessions are cheaper and cleaner. |
+| Using Agent mode for single-file edits | "Agent is seen as the default for every change" | For localized changes, use Inline chat. Use Agent only for multi-file or multi-step work. |
+| Switching to premium models by default | Habit from having quota remaining | Default model handles most tasks. Reserve premium models for reasoning-heavy work. |
+| Leaving all tabs open during agent sessions | Convenience | Open only files relevant to the task to reduce context noise and cost. |
+| Expecting Copilot to extract requirements from a vague prompt | "It'll figure out what I mean" | State goal, constraints, and expected output format explicitly. |
+| Never starting a new chat session | "The history helps" | Long history drops early context. Start a new focused session when topic changes. |
 
 ---
 
 ## Token and Premium Request Impact
 
+This section helps you estimate how everyday Copilot usage affects your monthly quota.
+The examples show relative cost levels, not exact billing values, so you can choose the right mode and model quickly.
+Use the default model for routine tasks, reserve premium models for complex reasoning, and keep context focused on only the files you need.
+
 Use these scenarios to calibrate your daily quota use. See [theory.md](./theory.md) for detailed cost heuristics and model-specific estimates.
+
 
 | Scenario | Approximate cost | Notes |
 |----------|-----------------|-------|
 | 5 inline completions | Included | Counted but not against premium quota |
-| 10 default-model chat turns | Included | Standard Ask/Edit/Plan |
+| 10 default-model chat turns | Included | Standard Ask/Plan |
 | 1 agent session (5 tool calls, default model) | Low premium | Depends on context size |
 | 1 agent session (5 tool calls, Claude 3.5) | Higher premium | Premium model multiplier applies |
 | Entire-codebase context, premium model | High | Avoid unless necessary; scope context first |

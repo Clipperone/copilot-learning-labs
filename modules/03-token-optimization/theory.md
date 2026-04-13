@@ -146,6 +146,6 @@ These are estimates. Check your actual usage at [github.com/settings/copilot](ht
 ## Official Resources
 
 - [GitHub Copilot subscription plans and quotas](https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot)
-- [Premium requests documentation](https://docs.github.com/en/copilot/using-github-copilot/using-github-copilot-in-your-ide/using-premium-requests)
+- [Premium requests documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests)
 - [GitHub Copilot model selection (VS Code)](https://code.visualstudio.com/docs/copilot/copilot-chat#_use-a-specific-chat-model)
 - [Understanding context in Copilot](https://code.visualstudio.com/docs/copilot/copilot-chat#_use-chat-variables)

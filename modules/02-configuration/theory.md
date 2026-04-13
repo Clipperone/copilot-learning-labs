@@ -46,7 +46,7 @@ To disable Copilot for a specific language (e.g., plaintext):
 
 ### How instructions are applied
 
-Instructions in `.github/copilot-instructions.md` are injected into the system prompt of every Copilot chat session (Ask, Edit, Plan, Agent) when `useInstructionFiles` is `true`. They are **not** applied to inline completions.
+Instructions in `.github/copilot-instructions.md` are injected into the system prompt of every Copilot chat session (Ask, Plan, Agent) when `useInstructionFiles` is `true`. They are **not** applied to inline completions.
 
 Instructions are applied in addition to Copilot's built-in behavior — they extend it, they do not replace it. Copilot will not violate safety rules or generate clearly harmful code regardless of instructions.
 
@@ -123,6 +123,12 @@ Each file has a single responsibility. Copilot receives unambiguous context when
 
 ## Linting and Formatting Tools Reference
 
+This section explains which quality tools to configure so Copilot receives consistent signals from your codebase and generates suggestions that match team standards.
+
+Linting tools detect errors and rule violations early. Formatting tools keep style consistent automatically. Type-checking tools validate contracts and reduce ambiguous suggestions. Security linting tools flag risky patterns before review. For each tool, the table shows its role and the configuration file where the rule set lives, so contributors can reproduce the same behavior across environments.
+
+Use this section as a baseline reference: pick one toolchain per language, commit the config files, and make the checks part of your normal edit-run-review loop.
+
 ### Python
 
 | Tool | Role | Config file |
@@ -154,6 +160,8 @@ select = ["E", "F", "I", "N", "S", "UP"]
 ---
 
 ## VS Code Tasks — Deep Reference
+
+This section explains how to define repeatable, repository-scoped commands in VS Code so build, test, and run workflows are consistent across contributors and agent sessions. Tasks in .vscode/tasks.json provide a shared execution contract: the same command, same flags, and same expected output every time. This improves reliability in AI-assisted workflows because Copilot Agent can invoke known tasks instead of guessing shell commands. Use this section to standardize common operations, mark a default test task, and ensure command output is visible and reviewable during troubleshooting.
 
 Tasks are defined in `.vscode/tasks.json`. They appear in **Terminal → Run Task** and are accessible from agent mode via the terminal tool.
 
