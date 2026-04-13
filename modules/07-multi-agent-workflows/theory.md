@@ -98,3 +98,12 @@ In a 2-session workflow, a slightly imprecise handoff is recoverable. In a 4-ses
 - State the step number explicitly: "This is Step 3 of 4 in the Feature Delivery workflow."
 - Explicitly exclude prior-step artifacts that the current role does not need.
 - Re-read the workflow file before writing any handoff prompt after step 3.
+
+---
+
+## Official Resources
+
+- [GitHub Copilot agents documentation](https://docs.github.com/en/copilot/concepts/agents)
+- [Agent mode in VS Code](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
+- [Copilot customization in VS Code](https://code.visualstudio.com/docs/copilot/copilot-customization)
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot)

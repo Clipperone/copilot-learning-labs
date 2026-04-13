@@ -96,3 +96,12 @@ The course ends at the capstone. Mastery does not. The practices installed acros
 - Better governance (M10) makes all improvements persistent
 
 Each module you revisit with experience from the others produces a qualitatively different result. The adoption roadmap's 90-day gate is a checkpoint, not a terminus. At 90 days, evaluate each layer and upgrade the weakest one first.
+
+---
+
+## Official Resources
+
+- [GitHub Copilot plans for organizations and enterprises](https://docs.github.com/en/copilot/concepts/billing/organizations-and-enterprises)
+- [Managing your company's spending on GitHub Copilot](https://docs.github.com/en/copilot/how-tos/manage-and-track-spending/manage-company-spending)
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot)
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)

@@ -201,3 +201,12 @@ A repository that satisfies all 6 properties today may degrade over time without
 **CONVENTIONS.md drift:** The conventions file documents the rules in place when it was written. As the codebase evolves — new frameworks, new team members, new languages — the documented conventions become inaccurate. Fix: treat `CONVENTIONS.md` changes the same as configuration changes; require a brief comment explaining what changed and why.
 
 **`.copilotignore` inventory gap:** The `.copilotignore` file excludes files present at the time it was written. New files with sensitive or noisy content added later are not automatically excluded. Fix: include a `.copilotignore` audit step in the repository onboarding checklist; run the audit whenever the file inventory grows significantly.
+
+---
+
+## Official Resources
+
+- [Configuring ignored files for Copilot](https://docs.github.com/en/copilot/managing-copilot/configure-personal-settings/configuring-ignored-files)
+- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot)
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)

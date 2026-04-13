@@ -93,8 +93,9 @@ Instruction files are not a substitute for every type of guidance.
 
 ---
 
-## Navigation
+## Official Resources
 
-← [README.md](./README.md) — Module overview, design principles, domain templates
-
-→ [exercises.md](./exercises.md) — 5 exercises to build instruction authoring fluency
+- [Copilot customization in VS Code](https://code.visualstudio.com/docs/copilot/copilot-customization)
+- [Custom instructions for GitHub Copilot](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
+- [Prompt files and reusable prompts (VS Code)](https://code.visualstudio.com/docs/copilot/customization/prompt-files)
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot)

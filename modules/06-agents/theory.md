@@ -78,8 +78,9 @@ The cost of a wrong tool choice is real: an unnecessary agent session consumes 5
 
 ---
 
-## Navigation
+## Official Resources
 
-← [README.md](./README.md) — Module overview, role table, anatomy, permissions, handoff protocol
-
-→ [exercises.md](./exercises.md) — 5 exercises building persona authoring and session discipline
+- [Agent mode in VS Code](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
+- [GitHub Copilot agents documentation](https://docs.github.com/en/copilot/concepts/agents)
+- [Custom agents in GitHub Copilot](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-custom-agents)
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot)

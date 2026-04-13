@@ -65,3 +65,12 @@ Module 07 introduced the workflow file (`agents/workflow-*.md`) as the artifact 
 | Code Reviewer findings | Committed markdown | Human reviewer; next session via handoff | Yes — if explicitly committed |
 
 The implication: when Plan mode produces a design that will be consumed by a subsequent Implementer session, commit it before closing the tab. Use the workflow file pattern from Module 07 rather than copying from chat history.
+
+---
+
+## Official Resources
+
+- [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
+- [Use chat in VS Code](https://code.visualstudio.com/docs/copilot/copilot-chat)
+- [Copilot customization in VS Code](https://code.visualstudio.com/docs/copilot/copilot-customization)
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot)

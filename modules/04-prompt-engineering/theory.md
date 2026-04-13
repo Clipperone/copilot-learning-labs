@@ -94,8 +94,9 @@ Output: Test file content only — starting from the import line.
 
 ---
 
-## Navigation
+## Official Resources
 
-← [README.md](./README.md) — Module overview and scenario reference
-
-→ [exercises.md](./exercises.md) — Apply each concept with a short exercise
+- [GitHub Copilot documentation](https://docs.github.com/en/copilot)
+- [GitHub Copilot Chat in your IDE](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide)
+- [Prompt engineering for Copilot Chat (VS Code)](https://code.visualstudio.com/docs/copilot/copilot-chat#_prompt-engineering-with-copilot-chat)
+- [GitHub Copilot model selection (VS Code)](https://code.visualstudio.com/docs/copilot/copilot-chat#_use-a-specific-chat-model)
