@@ -5,7 +5,7 @@
 > **Prerequisite:** [Module 07 — Multi-Agent Workflows](../07-multi-agent-workflows/) · One documented, repeatable workflow file must exist in `agents/` before this module.
 > **Verified:** 2026-04
 
-> ⚠️ **Premium request note:** Plan mode, terminal integration, and quality gate work run effectively on the default model. Escalate to Claude or o1 only for Security Reviewer sessions that require OWASP exploit-path reasoning. A common waste pattern at Expert level is opening a premium Agent session for a task that Plan mode or inline chat handles equally well.
+> ⚠️ **Premium request note:** Plan mode, terminal integration, and quality gate work run effectively on the default model. Escalate to Claude or o1 only for Security Reviewer sessions that require OWASP exploit-path reasoning. See [Model Selection Reference](../../docs/model-selection-reference.md) for current tier guidance. A common waste pattern at Expert level is opening a premium Agent session for a task that Plan mode or inline chat handles equally well.
 
 ---
 

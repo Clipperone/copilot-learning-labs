@@ -1,6 +1,7 @@
-# Module 03: Token and Premium Request Optimization — Extended Theory
+# Module 03: Token and Premium Request Optimization — Theory Reference
 
-> Reference material to supplement the module README. Read this for deeper context or when the README summary is insufficient.
+> Extended reference for [README.md](./README.md). Read the module overview first.
+> Prose sections are capped at 500 words; tables and code blocks are excluded from that limit.
 
 ---
 
@@ -14,7 +15,7 @@ Copilot's billing model has two tiers:
 - Short completions in standard modes
 
 **Premium requests** — count against the monthly quota:
-- Any message using a premium model (GPT-4o, Claude 3.5/3.7, o1, o3, Gemini)
+- Any message using a premium model (GPT-4o, Claude Sonnet, o1, o3, Gemini)
 - Agent mode sessions (each model call within a session counts)
 - Requests that involve very large context windows (cost multiplier applies)
 
@@ -28,9 +29,12 @@ Copilot's billing model has two tiers:
 |-------|-----------|---------|---------------|
 | Default (included) | General coding, completions | 80% of daily tasks | Included |
 | GPT-4o | Speed + reasoning, strong code | Multi-file refactors, API integration | Medium premium |
-| Claude 3.5/3.7 Sonnet | Long context, instruction following | Large codebase analysis, documentation | Medium premium |
+| Claude Sonnet | Long context, instruction following | Large codebase analysis, documentation | Medium premium |
 | o1 / o3 | Deep multi-step reasoning | Algorithm design, security audit, complex debugging | High premium |
 | Gemini | Multimodal, long context | Large-scale analysis, document-heavy tasks | Medium premium |
+
+> Model names reflect availability as of the `Verified` date in the module header.
+> Check [github.com/features/copilot](https://github.com/features/copilot) for current model options.
 
 **Default first, premium when justified.** If the default model gives you 90% of the answer and one targeted follow-up closes the gap, you spent zero premium requests.
 
@@ -44,7 +48,7 @@ The context window determines what the model "sees" in a given request. Its size
 |-------|--------------------------|
 | Default Copilot model | ~10k–16k tokens |
 | GPT-4o | ~128k tokens |
-| Claude 3.5/3.7 | ~200k tokens |
+| Claude Sonnet | ~200k tokens |
 | o1/o3 | ~128k tokens |
 
 **One token ≈ 4 characters** of code or text.
@@ -87,6 +91,8 @@ OUTPUT FORMAT        Return only the modified function, not the full file.
 ```
 
 **Role** is optional when the context already establishes expertise (e.g., you are in a Python project with a configured instruction file).
+
+> This 4-component structure is introduced fully in [Module 04 — Prompt Engineering](../04-prompt-engineering/). The compact prompt in the README is a simplified preview of this architecture.
 
 **Task** must be one clear action: refactor, generate, explain, review, fix.
 

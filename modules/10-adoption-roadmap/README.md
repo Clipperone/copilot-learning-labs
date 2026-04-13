@@ -40,7 +40,7 @@ An adoption roadmap is a commitment to a sequence of behaviors, not a list of fe
 |-----------|-------|-----------------|
 | **7 days** | Setup, verification, first real usage | All 5 modes verified; `Module 01` checklist done; cheat sheet drafted |
 | **30 days** | Prompt discipline, custom instructions live | Personal prompt library (≥5 entries) + `instructions/` folder on a real project |
-| **60 days** | Agent workflows, advanced features in production | 10 agent definitions committed; first multi-agent workflow run; `Module 08` checklist done |
+| **60 days** | Agent workflows, advanced features in production | 10 agent definitions committed (Module 06); first multi-agent workflow run (Module 07); Advanced Features checklist done (Module 08) |
 | **90 days** | Full mastery, governance, team rollout ready | Capstone complete; `checklists/expert-completion.md` self-assessed; adoption plan documented |
 
 **The most important rule:** each gate is a binary artifact check, not a self-impression. Either the file exists and passes the checklist, or the gate is not met.

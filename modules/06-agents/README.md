@@ -13,7 +13,7 @@
 
 By the end of this module you will be able to:
 
-1. Explain what an agent session is and state the 3 conditions that make it the correct mode over Ask, Edit, or Plan.
+1. Explain what an agent session is and state the 3 conditions that make it the correct mode over Ask or Plan.
 2. Design a role-based persona using the 4-field agent anatomy: purpose, constraints, tool permissions, handoff criteria.
 3. Write a valid initialization prompt for each of the 10 core agent roles without referencing their definition files.
 4. Build a tool permissions matrix (✅ Allow / ⚠️ Conditional / ❌ Deny) for any agent role and justify each boundary.
@@ -42,11 +42,11 @@ Agent mode is the only Copilot mode that can hold tool calls, run multiple turns
 2. The output cannot be determined in a single turn.
 3. The role has a defined deliverable and a named exit condition.
 
-**Use Ask, Edit, or Plan instead when:**
+**Use Ask or Plan instead when:**
 
 | Condition | Better mode |
 |-----------|-------------|
-| Single file, single change | Edit |
+| Single file, single change | Ask |
 | Design, plan, or diagnosis — no code changes | Plan or Ask |
 | The task has a one-turn prose answer | Ask |
 | Inline completion is sufficient | Inline |
@@ -265,8 +265,8 @@ exploit path, recommended fix, and one code line showing the corrected call.
 
 | Mistake | Root cause | Fix |
 |---------|------------|-----|
-| Agent mode for a single-turn task | "Agent is more capable" reasoning | Use Ask or Edit; agents add startup overhead and context cost without benefit on bounded tasks |
-| Vague initialization: "Act as a senior developer" | Carrying M04 bad habits into persona design | Apply the 4-field anatomy; a persona without exit conditions never terminates cleanly |
+| Agent mode for a single-turn task | "Agent is more capable" reasoning | Use Ask; agents add startup overhead and context cost without benefit on bounded tasks |
+| Vague initialization: "Act as a senior developer" | Carrying Module 04 bad habits into persona design | Apply the 4-field anatomy; a persona without exit conditions never terminates cleanly |
 | Running Planner + Implementer + Reviewer in one session | "More efficient to keep context" | Context pollution; use separate sessions with 3-part handoff prompts |
 | No exit condition in the persona definition | Forgetting that sessions do not self-terminate | Every definition needs at least one named handoff criterion |
 | Repeating instruction file rules in the init prompt | Not knowing `.github/copilot-instructions.md` is inherited | Reference the file in the carry-forward block; never duplicate its content |
@@ -292,27 +292,56 @@ exploit path, recommended fix, and one code line showing the corrected call.
 
 **Rule:** Escalate to a premium model only when the task requires multi-step causal reasoning that the default model demonstrably cannot complete correctly. Try default first.
 
+> For the latest model tier assignments, see [Model Selection Reference](../../docs/model-selection-reference.md).
+
 ---
 
 ## Exercises
 
 Hands-on exercises are in [exercises.md](./exercises.md).
 
-The paired lab is [Lab 06 — Agents and Personas](../../labs/lab-06-agents-and-personas/).
+> See also: [agents/](../../agents/) — Agent definition files (populated during Lab 06) · [templates/agent-definition-template.md](../../templates/agent-definition-template.md) — Authoring standard for all 10 persona definitions.
 
 ---
 
-## Further Reading
+## Completion Criteria
 
-- [theory.md](./theory.md) — Session lifecycle mechanics, monorepo agent strategy, context window management per role, when NOT to use agents
-- [agents/](../../agents/) — Agent definition files (populated during Lab 06)
-- [templates/agent-definition-template.md](../../templates/agent-definition-template.md) — Authoring standard for all 10 persona definitions
-- `.github/copilot-instructions.md` — Active instruction file inherited by every agent session in this repository
-- **Multi-agent connection:** The 10 definitions in `agents/` are Module 07's direct prerequisite. Module 07 teaches how to chain roles in coordinated workflows — not redefine them. A workflow is only as bounded as the weakest persona definition it uses.
-- **Next:** [Module 07 — Multi-Agent Workflows](../07-multi-agent-workflows/)
+You have completed this module when you can:
+
+- [ ] State the 3 conditions that make Agent mode the correct choice over Ask or Plan.
+- [ ] Write a 4-field persona definition for any of the 10 core agent roles without referencing the definition file.
+- [ ] Build a tool permissions matrix for a given role and justify each boundary.
+- [ ] Write a 3-part handoff prompt that closes one role and opens the next.
+- [ ] Recognize and intervene on each of the 3 failure modes: context pollution, over-delegation, unbounded scope.
+- [ ] Select the correct model (default vs premium) for each of the 10 agent roles.
+
+See [checklist.md](./checklist.md) for the full self-assessment.
 
 ---
 
-## Completion Checklist
+## Files in This Module
 
-→ [checklist.md](./checklist.md)
+| File | Purpose |
+|------|---------|
+| `README.md` | Module overview (this file) |
+| `theory.md` | Extended theory and reference material |
+| `exercises.md` | All exercises with full instructions |
+| `checklist.md` | Completion checklist and self-assessment |
+
+> See also: [theory.md](./theory.md) — Session lifecycle mechanics, monorepo agent strategy, context window management per role, and when NOT to use agents · `.github/copilot-instructions.md` — Active instruction file inherited by every agent session.
+
+> **Multi-agent connection:** The 10 definitions in `agents/` are Module 07's direct prerequisite. Module 07 teaches how to chain roles in coordinated workflows — not redefine them. A workflow is only as bounded as the weakest persona definition it uses.
+
+---
+
+## Paired Lab
+
+| Lab | Focus | Time |
+|-----|-------|------|
+| [Lab 06 — Agents and Personas](../../labs/lab-06-agents-and-personas/) | Write all 10 agent persona definitions with tool permissions and handoff criteria | 60 min |
+
+---
+
+## Next Module
+
+→ [Module 07: Multi-Agent Workflows](../07-multi-agent-workflows/)

@@ -256,10 +256,18 @@ See [checklist.md](./checklist.md) for the full self-assessment.
 
 ---
 
+## Terminology Note
+
+> **Severity terminology note:** Lab 07 uses **BLOCKING / NON-BLOCKING** to classify Code Reviewer findings.
+> Module 08 uses the 4-level scale **Critical / High / Medium / Low** — the
+> standard vocabulary in professional code review tooling. Both schemas are
+> valid; Module 08 adopts the richer scale to support prioritization across
+> finding types.
+
+---
+
 ## Next Module
 
 [Module 08 — Advanced Features](../08-advanced-features/) · Complete Module 07 and pass [checklists/advanced-completion.md](../../checklists/advanced-completion.md) before advancing.
 
 Module 07 taught you to orchestrate roles manually: one initialization prompt per session, one handoff prompt between each step. Module 08 introduces Plan mode, terminal integration, and CI/CD connections that automate the mechanics you just learned to do explicitly.
-
-> **Severity terminology note:** Lab 07 uses **BLOCKING / NON-BLOCKING** to classify Code Reviewer findings. Module 08 uses the 4-level scale **Critical / High / Medium / Low** — the standard vocabulary in professional code review tooling. Both schemas are valid; Module 08 adopts the richer scale to support prioritization across finding types.

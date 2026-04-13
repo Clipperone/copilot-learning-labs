@@ -230,19 +230,46 @@ Use [templates/prompt-template.md](../../templates/prompt-template.md) as the st
 
 Hands-on exercises are in [exercises.md](./exercises.md).
 
-The paired lab is [Lab 04 — Prompt Engineering Workshop](../../labs/lab-04-prompt-engineering/).
+> See also: [templates/prompt-template.md](../../templates/prompt-template.md) — Prompt authoring standard · [prompts/](../../prompts/) — Working prompt library by category.
 
 ---
 
-## Further Reading
+## Completion Criteria
 
-- [theory.md](./theory.md) — Extended reference: migration scenario, prompt chaining, advanced parameterization
-- [prompts/](../../prompts/) — Working prompt library by category
-- [templates/prompt-template.md](../../templates/prompt-template.md) — Prompt authoring standard
-- **Next:** [Module 05 — Persistent Custom Instructions](../05-custom-instructions/)
+You have completed this module when you can:
+
+- [ ] Decompose a coding task into the 4-component prompt structure without referencing the module.
+- [ ] Apply the correct prompt pattern for at least 5 of the 7 coding scenarios.
+- [ ] Identify and rewrite 3 prompt anti-patterns.
+- [ ] Write a parameterized prompt template that passes the template validation checklist.
+- [ ] Scope a security review prompt anchored to a specific OWASP category with exploit-path-first output.
+- [ ] Justify whether a given scenario warrants a premium model.
+
+See [checklist.md](./checklist.md) for the full self-assessment.
 
 ---
 
-## Completion Checklist
+## Files in This Module
 
-→ [checklist.md](./checklist.md)
+| File | Purpose |
+|------|---------|
+| `README.md` | Module overview (this file) |
+| `theory.md` | Extended theory and reference material |
+| `exercises.md` | All exercises with full instructions |
+| `checklist.md` | Completion checklist and self-assessment |
+
+> See also: [theory.md](./theory.md) — Migration scenario, prompt chaining, and advanced parameterization reference.
+
+---
+
+## Paired Lab
+
+| Lab | Focus | Time |
+|-----|-------|------|
+| [Lab 04 — Prompt Engineering Workshop](../../labs/lab-04-prompt-engineering/) | Structured prompts across all 7 scenarios, anti-pattern diagnosis, prompt library | 50 min |
+
+---
+
+## Next Module
+
+→ [Module 05: Persistent Custom Instructions](../05-custom-instructions/)

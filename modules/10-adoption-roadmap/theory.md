@@ -1,7 +1,7 @@
 # Module 10: Adoption Roadmap, Governance, and Capstone — Theory Reference
 
-> Extended reference for Module 10. For the summary and practical procedures, see [README.md](./README.md).
-> Max prose: 500 words. Tables and code blocks excluded from the count.
+> Extended reference for [README.md](./README.md). Read the module overview first.
+> Prose sections are capped at 500 words; tables and code blocks are excluded from that limit.
 
 ---
 

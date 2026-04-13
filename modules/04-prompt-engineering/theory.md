@@ -1,6 +1,7 @@
-# Module 04 — Theory Reference
+# Module 04: Prompt Engineering for Coding — Theory Reference
 
-> **Word limit discipline:** Prose sections are capped at 500 words total. Tables and code blocks are excluded from this count.
+> Extended reference for [README.md](./README.md). Read the module overview first.
+> Prose sections are capped at 500 words; tables and code blocks are excluded from that limit.
 
 This page extends the README with three topics not covered there: the migration scenario, prompt chaining between scenarios, and advanced parameterization for shared prompt libraries.
 

@@ -1,6 +1,7 @@
-# Module 05 — Theory Reference
+# Module 05: Persistent Custom Instructions — Theory Reference
 
-> **Word limit discipline:** Prose sections are capped at 500 words total. Tables and code blocks are excluded from this count.
+> Extended reference for [README.md](./README.md). Read the module overview first.
+> Prose sections are capped at 500 words; tables and code blocks are excluded from that limit.
 
 This page extends the README with three topics not covered there: instruction inheritance and override mechanics, designing instructions for monorepos with multiple `applyTo` scopes, and a step-by-step conflict resolution procedure.
 

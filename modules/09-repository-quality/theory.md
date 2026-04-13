@@ -1,6 +1,7 @@
-# Module 09: AI-Friendly Repository Engineering — Theory
+# Module 09: AI-Friendly Repository Engineering — Theory Reference
 
-This document extends the README with technical reference material. Read the README first — this file assumes that content.
+> Extended reference for [README.md](./README.md). Read the module overview first.
+> Prose sections are capped at 500 words; tables and code blocks are excluded from that limit.
 
 ---
 

@@ -1,6 +1,7 @@
-# Module 02: Configuration — Extended Theory
+# Module 02: Configuration — Theory Reference
 
-> Reference material to supplement the module README. Read this for deeper context or when the README summary is insufficient.
+> Extended reference for [README.md](./README.md). Read the module overview first.
+> Prose sections are capped at 500 words; tables and code blocks are excluded from that limit.
 
 ---
 

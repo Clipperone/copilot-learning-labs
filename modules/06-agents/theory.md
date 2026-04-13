@@ -1,6 +1,7 @@
-# Module 06 — Theory Reference
+# Module 06: Agents and Role Specialization — Theory Reference
 
-> **Word limit discipline:** Prose sections are capped at 500 words total. Tables and code blocks are excluded from this count.
+> Extended reference for [README.md](./README.md). Read the module overview first.
+> Prose sections are capped at 500 words; tables and code blocks are excluded from that limit.
 
 This page extends the README with four topics not covered there: session lifecycle mechanics, monorepo agent strategy, context window management per role, and the cases where agents should not be used at all.
 

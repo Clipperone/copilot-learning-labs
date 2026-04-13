@@ -1,6 +1,7 @@
-# Module 01: Foundations — Extended Theory
+# Module 01: Foundations — Theory Reference
 
-> Reference material to supplement the module README. Read this for deeper context or when the README summary is insufficient. Prose sections are capped at 500 words; tables and code are excluded from that limit.
+> Extended reference for [README.md](./README.md). Read the module overview first.
+> Prose sections are capped at 500 words; tables and code blocks are excluded from that limit.
 
 ---
 
@@ -39,7 +40,7 @@ The prompt VS Code sends contains:
 | Custom instruction files | All modes (if configured) |
 | Referenced files (`#file:`) | Chat modes, when you add them |
 
-The model has no access to anything outside what VS Code passes. It does not retain state between sessions. Restarting VS Code clears the conversation.
+The model has no access to anything outside what VS Code passes. It does not retain state between sessions. Starting a new chat session clears the conversation.
 
 ### What "context window" means in practice
 

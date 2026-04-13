@@ -1,7 +1,7 @@
-# Module 07: Multi-Agent Workflows — Extended Reference
+# Module 07: Multi-Agent Workflows — Theory Reference
 
-> This document extends [README.md](./README.md). Read the module overview first.
-> **Prose word limit:** ≤ 500 words (tables and code blocks excluded).
+> Extended reference for [README.md](./README.md). Read the module overview first.
+> Prose sections are capped at 500 words; tables and code blocks are excluded from that limit.
 
 ---
 

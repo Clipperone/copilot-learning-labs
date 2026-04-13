@@ -59,6 +59,8 @@ Match the tool to the task. Escalate only when necessary.
 
 The decision table in [Lab 03, Section B](../../labs/lab-03-token-audit/) uses this framework as its starting template. You will add rows for your own task types during the lab.
 
+> For the latest model tier assignments, see [Model Selection Reference](../../docs/model-selection-reference.md).
+
 ### Context Window Discipline
 
 The context window is finite. What you include matters:
@@ -75,6 +77,8 @@ A compact prompt:
 1. States the **goal** in one sentence
 2. Names the **constraints** (language, framework, file to edit)
 3. Specifies the **output format** if it matters (function signature, full file, explanation only)
+
+> **Preview:** Module 04 formalizes this as the **4-component prompt structure** — task, role, constraints, output format — with scenario-specific patterns. The compact prompt you practise here is the foundation that Module 04 extends.
 
 **Verbose prompt (3 follow-ups required):**
 > I have a Python function. Can you help me improve it?
@@ -124,7 +128,7 @@ Use these scenarios to calibrate your daily quota use. See [theory.md](./theory.
 | 5 inline completions | Included | Counted but not against premium quota |
 | 10 default-model chat turns | Included | Standard Ask/Plan |
 | 1 agent session (5 tool calls, default model) | Low premium | Depends on context size |
-| 1 agent session (5 tool calls, Claude 3.5) | Higher premium | Premium model multiplier applies |
+| 1 agent session (5 tool calls, Claude Sonnet) | Higher premium | Premium model multiplier applies |
 | Entire-codebase context, premium model | High | Avoid unless necessary; scope context first |
 
 ---

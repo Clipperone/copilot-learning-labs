@@ -15,7 +15,7 @@ By the end of this module, you will be able to:
 
 - [ ] Describe what GitHub Copilot Pro+ is, how it differs from other plans, and what premium requests are
 - [ ] Install, authenticate, and verify Copilot Pro+ in VS Code
-- [ ] Identify the six Copilot interaction modes and choose the right one for each task type
+- [ ] Identify the five Copilot interaction modes and choose the right one for each task type
 - [ ] Apply the **Read → Run → Reason → Risk** critical review workflow to every AI suggestion
 - [ ] Recognize the five most common AI output failure modes
 - [ ] Apply the three first-session productivity habits
@@ -95,15 +95,7 @@ Never accept AI output without review. Apply this workflow to every suggestion:
 
 **The explain rule:** If you cannot explain a line of AI-generated code in your own words, ask Copilot to explain it before committing. Never commit code you do not understand.
 
-**Five common AI failure modes:**
-
-| Failure | Example | How to detect |
-|---------|---------|--------------|
-| Hallucinated API | Calls a method that does not exist in the installed version | Run the code; check the docs |
-| Stale knowledge | Uses a deprecated function or removed argument | Search current official documentation |
-| Missing error handling | Happy path only; exceptions will crash | Ask: "What can go wrong here?" |
-| Security anti-pattern | Concatenates user input into a SQL query | Check against OWASP A03 (injection) |
-| Correct pattern, wrong context | Adds `async/await` in a synchronous framework | Understand the framework before accepting |
+See [theory.md — AI Failure Mode Reference](./theory.md#ai-failure-mode-reference) for the five common failure modes and how to detect each one.
 
 See [checklists/ai-output-review.md](../../checklists/ai-output-review.md) and [checklists/pre-commit.md](../../checklists/pre-commit.md) for the full review gates.
 

@@ -214,20 +214,48 @@ Review instruction files when:
 
 Hands-on exercises are in [exercises.md](./exercises.md).
 
-The paired lab is [Lab 05 — Write Your Project's Custom Instructions](../../labs/lab-05-custom-instructions/).
+> See also: [instructions/](../../instructions/) — Working example files: global, project-wide, path-specific · `.github/copilot-instructions.md` — This repository's own instruction file (a live teaching artifact).
 
 ---
 
-## Further Reading
+## Completion Criteria
 
-- [theory.md](./theory.md) — Instruction inheritance mechanics, monorepo `applyTo` design, conflict resolution procedure
-- [instructions/](../../instructions/) — Working example files: global, project-wide, path-specific
-- `.github/copilot-instructions.md` — This repository's own instruction file (a live teaching artifact)
-- **Agent mode connection:** The 4 design principles practised here — specific, imperative, bounded, non-contradictory — are the same ones used to write an agent persona in Module 06, applied to a role rather than a file. Active instruction files also reduce agent drift: in-scope instructions are inherited automatically on every agent turn.
-- **Next:** [Module 06 — Agents and Role Specialization](../06-agents/)
+You have completed this module when you can:
+
+- [ ] Explain the 3 instruction scopes and select the correct scope for a given constraint.
+- [ ] Write instruction statements that satisfy all 4 design principles.
+- [ ] Build an instruction file for each of the 5 domains.
+- [ ] Configure a path-specific instruction file with correct `applyTo` frontmatter.
+- [ ] Verify instructions are active using the diagnostic test prompt.
+- [ ] Audit and update instruction files when conventions change.
+
+See [checklist.md](./checklist.md) for the full self-assessment.
 
 ---
 
-## Completion Checklist
+## Files in This Module
 
-→ [checklist.md](./checklist.md)
+| File | Purpose |
+|------|---------|
+| `README.md` | Module overview (this file) |
+| `theory.md` | Extended theory and reference material |
+| `exercises.md` | All exercises with full instructions |
+| `checklist.md` | Completion checklist and self-assessment |
+
+> See also: [theory.md](./theory.md) — Instruction inheritance mechanics, monorepo `applyTo` design, conflict resolution procedure.
+
+> **Agent mode connection:** The 4 design principles practised here — specific, imperative, bounded, non-contradictory — are the same ones used to write an agent persona in Module 06, applied to a role rather than a file. Active instruction files also reduce agent drift: in-scope instructions are inherited automatically on every agent turn.
+
+---
+
+## Paired Lab
+
+| Lab | Focus | Time |
+|-----|-------|------|
+| [Lab 05 — Write Your Project's Custom Instructions](../../labs/lab-05-custom-instructions/) | Global, project-wide, and path-specific instruction authoring and verification | 50 min |
+
+---
+
+## Next Module
+
+→ [Module 06: Agents and Role Specialization](../06-agents/)
