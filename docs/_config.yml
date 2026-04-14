@@ -51,6 +51,13 @@ callouts:
     title: Important
     color: purple
 
+# ─── Plugins (all are on the GitHub Pages whitelist) ─────────────────────────
+# jekyll-seo-tag  → injects <title>, <meta description>, OG tags, etc.
+# jekyll-sitemap  → auto-generates /sitemap.xml for Google Search Console
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
 footer_content: >-
   Licensed under
   <a href="https://github.com/Clipperone/copilot-learning-labs/blob/main/LICENSE">MIT</a>.
