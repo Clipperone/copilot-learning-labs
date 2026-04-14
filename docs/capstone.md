@@ -10,7 +10,7 @@ Apply every skill from the course to a single project context. Configure the ful
 
 **Level:** Expert · **Estimated time:** ~2 hours
 
-**Prerequisites:** All 10 modules and Labs 01–09 complete.
+**Prerequisites:** All 11 modules and Labs 01–09 complete.
 
 ---
 
@@ -25,6 +25,7 @@ Apply every skill from the course to a single project context. Configure the ful
 | 5 | `agents/workflow-[name].md` — one multi-agent workflow with all 5 required sections | M07 |
 | 6 | `capstone/validation-report.md` — gate-by-gate pre-merge validation | M08/M09 |
 | 7 | `capstone/roadmap.md` — 90-day adoption plan with milestones and KPIs | M10 |
+| 8 | `capstone/platform-artifact.md` — one platform artifact (Option A: coding-agent PR + review notes; Option B: `copilot-setup-steps.yml` + rewritten PR summary) | M11 |
 
 ---
 

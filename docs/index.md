@@ -6,7 +6,7 @@ nav_order: 1
 
 <div class="hero">
   <h1 class="hero-title">GitHub Copilot Learning Labs</h1>
-  <p class="hero-subtitle">From first autocomplete to production-grade AI-assisted workflows. 10 progressive modules · 9 hands-on labs · a reusable prompt library · agent personas · capstone project.</p>
+  <p class="hero-subtitle">From first autocomplete to production-grade AI-assisted workflows. 11 progressive modules · 9 hands-on labs · a reusable prompt library · agent personas · capstone project.</p>
   <div class="hero-actions">
     <a href="{{ '/modules/' | relative_url }}" class="btn btn-primary">Start Learning →</a>
     <a href="https://github.com/Clipperone/copilot-learning-labs" class="btn btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
@@ -28,6 +28,7 @@ nav_order: 1
 | **Multi-agent orchestration** | Orchestrate complex, multi-step tasks without wasting context |
 | **Cost awareness** | Minimize premium request consumption with informed mode/model decisions |
 | **Adoption planning** | Apply a 7/30/60/90-day personal and team adoption roadmap |
+| **Platform integration** | Use Copilot beyond the IDE: coding agent (issue → PR), Copilot in github.com, `gh copilot` CLI |
 
 ---
 
@@ -45,6 +46,7 @@ nav_order: 1
 | 08 | [Advanced Features](modules/08-advanced-features) | <span class="badge-expert">Expert</span> | [Lab 08](labs/lab-08-advanced-feature-tour) |
 | 09 | [Repository Engineering](modules/09-repository-quality) | <span class="badge-expert">Expert</span> | [Lab 09](labs/lab-09-repository-health-audit) |
 | 10 | [Adoption Roadmap](modules/10-adoption-roadmap) | <span class="badge-expert">Expert</span> | [Capstone](capstone) |
+| 11 | [Platform & GitHub.com Integration](modules/11-platform-integration) | <span class="badge-expert">Expert</span> | [Capstone](capstone) (Deliverable 8) |
 
 ---
 
@@ -68,5 +70,5 @@ nav_order: 1
 | [Modules](modules) | All 11 learning modules |
 | [Labs](labs) | 9 hands-on labs with starter files and solutions |
 | [Prompt Library](prompt-library) | Reusable prompts by category |
-| [Capstone](capstone) | Final integration project with 7 deliverables |
+| [Capstone](capstone) | Final integration project with 8 deliverables |
 | [GitHub Repository](https://github.com/Clipperone/copilot-learning-labs) | Source code, starter files, and solutions |

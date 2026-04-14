@@ -87,6 +87,7 @@ Templates in `/templates/` are the single source of truth for structure. Changin
 | `v0.3` | Intermediate complete — Modules 04–05 |
 | `v0.4` | Advanced complete — Modules 06–07, agents/ |
 | `v1.0` | Full course — all 10 modules, capstone, examples |
+| `v1.1` | Module 11 added (Platform & GitHub.com Integration); capstone Deliverable 8; audit remediation sweep |
 
 Patch versions (`v0.1.1`) are used for typo fixes, broken links, and date refreshes.
 
