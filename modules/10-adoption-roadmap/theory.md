@@ -86,6 +86,101 @@ A completed monthly review takes 20–30 minutes and produces at least one updat
 
 ---
 
+## Reading the Copilot Usage Dashboard
+
+Copilot exposes usage data on three surfaces: the individual usage page (any plan), the Business/Enterprise admin dashboard, and per-repo activity views. A governance plan that ignores these is flying blind.
+
+### What lives where
+
+| Surface | Audience | Granularity | What it shows |
+|---------|---------|-------------|---------------|
+| Individual usage (`github.com/settings/copilot/usage`) | The user themself | Daily / monthly | Premium-request count, model breakdown, quota burn |
+| Org admin dashboard (Business/Enterprise) | Org admin | Per-user, per-repo, per-day | Active users, suggestions, acceptance rate, chat usage, agent sessions, content-exclusion hits |
+| Enterprise insights / API | Enterprise admin | Org-wide aggregates | Trend data, cross-org comparison, exportable for BI tools |
+
+### Three signals worth tracking
+
+1. **Engagement breadth.** *What fraction of seats had at least one Copilot interaction this week?* Distinguishes "deployed" from "adopted." Below 60% breadth at week 4 is an adoption-failure signal — return to the M10 onboarding sequence rather than buying more seats.
+2. **Agent-vs-inline ratio.** *What fraction of premium requests come from Agent sessions vs. inline/chat?* A team with a sudden Agent-mode spike is either solving harder problems (good) or has lost discipline on mode selection (M03/M06 problem). Investigate the spike before re-budgeting.
+3. **Premium quota burn rate.** *At current rate, when does the team exhaust its monthly premium allotment?* Linear projection from week 1 against the monthly cap. Burning faster than 1/4 the cap per week means a model-selection conversation is overdue.
+
+### Three metrics that mislead
+
+These appear on the dashboard but should not drive decisions:
+
+- **Raw acceptance %.** A rigorous reviewer rejects more than a passive user; high acceptance can indicate under-scrutiny.
+- **Lines accepted.** Volume metric; a single well-placed completion can outperform 100 boilerplate lines.
+- **"Time saved."** Almost always derived from a missing baseline. Treat as marketing, not measurement.
+
+### Org-level vs. individual-level
+
+- **Individual surface:** sees only their own data.
+- **Admin surface:** sees per-user data — this is the data-handling boundary that drives the privacy conversation in onboarding. State explicitly in `CONVENTIONS.md` what the admin can see and why.
+
+> Verify dashboard URLs and feature availability against the [GitHub Copilot dashboard docs](https://docs.github.com/en/copilot/managing-copilot/managing-github-copilot-in-your-organization/reviewing-activity-related-to-github-copilot-in-your-organization) — fields and access controls evolve.
+
+---
+
+## Content Exclusions — Admin Controls Beyond `.copilotignore`
+
+`.copilotignore` (Module 08) is workspace-scope and developer-controlled. **Content exclusions** are admin-controlled rules that prevent matching files from being sent to Copilot at all — for suggestions and for chat — across every developer's machine.
+
+### Three scopes
+
+| Scope | Set by | Applies to |
+|-------|--------|-----------|
+| Repository | Repo admin | One repository |
+| Organization | Org admin | All repos in the org |
+| Enterprise | Enterprise admin | All orgs in the enterprise |
+
+**Precedence:** Wider scope wins on inclusion; narrower scope wins on additional exclusion. An enterprise-level exclusion cannot be overridden at org or repo level.
+
+### Configuration
+
+Set at: org settings → Copilot → Content exclusions. Format: glob patterns, one per line, with optional comment.
+
+```text
+# Restricted by data classification
+**/secrets/**
+**/.env
+**/.env.*
+
+# Regulated client data
+clients/regulated/**
+
+# Generated code we don't want surfaced as suggestions
+**/generated/**
+```
+
+After saving, the status bar Copilot icon shows an "exclusion active" state in any matching file, and `Copilot: Diagnostics` lists why context is reduced.
+
+### Mapping to sensitivity classes from Module 08
+
+| Sensitivity (M08) | Exclusion treatment |
+|-------------------|---------------------|
+| Restricted | **Always exclude** at org or enterprise scope |
+| Confidential | Consider exclusion; if not excluded, document the rationale |
+| Internal | Allow with `.copilotignore` developer overrides for specific files |
+| Public | Allow |
+
+### Limits — what exclusions do not solve
+
+- **Best-effort, not airtight.** Exclusions reduce risk; they are not a DLP system. Combine with secret scanning and regular audits.
+- **Not a replacement for `.gitignore`.** Both exist for different reasons; an excluded file can still be committed if not also gitignored.
+- **No retroactive removal.** Excluding a file today does not remove its content from any model that has already trained on it.
+- **Exclusions can break workflows.** Excluding `**/migrations/**` may make Copilot unable to help with database changes — review with users before rolling out.
+
+### Anti-patterns
+
+- **Relying on `.copilotignore` for compliance-mandated exclusions.** It is a developer tool, not an admin control. Compliance requires admin-level enforcement.
+- **Granular per-developer exceptions that nobody maintains.** Two-month-old exception lists become security gaps. Sunset every exception with a date.
+- **Exclusions without documented rationale.** When the next admin reviews the list, "why is this excluded?" must be answerable from the comment, not from oral history.
+- **Treating exclusions as one-time setup.** They drift like any other policy. Add to the M10 monthly review cycle: confirm the active exclusion list still matches the sensitive-file inventory.
+
+> Verify configuration UI and behavior against the [GitHub content exclusions docs](https://docs.github.com/en/copilot/how-tos/configure-content-exclusion) — both location and matching semantics have changed in past releases.
+
+---
+
 ## The Mastery Loop
 
 The course ends at the capstone. Mastery does not. The practices installed across 10 modules interact:
@@ -105,3 +200,7 @@ Each module you revisit with experience from the others produces a qualitatively
 - [Managing your company's spending on GitHub Copilot](https://docs.github.com/en/copilot/how-tos/manage-and-track-spending/manage-company-spending)
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot)
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+
+---
+
+← [Back to Module 10 README](./README.md)

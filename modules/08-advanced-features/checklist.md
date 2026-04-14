@@ -45,6 +45,28 @@ Use the first section before Lab 08 as a readiness gate. Use the second section 
 - [ ] I can apply the 5-category OWASP minimum check to any AI-generated function.
 - [ ] I know when a `.copilotignore` entry alone is insufficient for compliance requirements.
 
+**Plan → Implementer handoff (Exercise 6)**
+
+- [ ] I completed Exercise 6 — converted a 5-element Plan output into a bounded Implementer initialization prompt.
+- [ ] My initialization prompt names the file allowlist, exit condition, and explicit exclusions.
+- [ ] I wrote a 3-item verification checklist, each item tied to a specific element of the plan.
+- [ ] I correctly diagnosed plan drift in the scenario and chose reject-or-replan over silent acceptance.
+
+**Edits-style workflows in Agent mode (Exercise 7)**
+
+- [ ] I know that Edit mode was consolidated into Agent mode in VS Code 1.110 and can describe how to do "edits-style" multi-file coordinated changes in Agent mode today.
+- [ ] I can scope an Agent session to act like the old Edits flow (explicit `#file:` set, no terminal, per-file review).
+- [ ] I can choose between Agent (default), a custom agent (reusable scoped persona), and inline chat (single-file local edit).
+- [ ] I completed Exercise 7 — coordinated rename across 3 files in Agent mode with discipline rules enforced; the test still passed.
+
+**Model Context Protocol (Exercise 8)**
+
+- [ ] I can explain in one sentence what MCP is and why it is the durable extensibility surface for Copilot.
+- [ ] I configured one MCP server (`@modelcontextprotocol/server-filesystem`) at `.vscode/mcp.json` scoped to a sub-directory, not repo root.
+- [ ] I can name the 4 fields of an MCP tool call from a trace: server, tool, arguments, result.
+- [ ] I verified the scope boundary by attempting an out-of-scope read and confirming the server refused.
+- [ ] I can choose between MCP, a custom agent, an instruction file, and a prompt file given a need.
+
 ---
 
 ## After Lab 08 — Lab Completion

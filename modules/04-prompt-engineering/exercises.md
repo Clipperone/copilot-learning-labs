@@ -140,6 +140,42 @@ For each task below, state: **Default** or **Premium** — and give a one-senten
 
 ---
 
+## Exercise 6 — Promote a Markdown Prompt to a `.prompt.md` File
+
+**Objective:** Convert one prompt from the [`prompts/`](../../prompts/) library into a runnable `.prompt.md` file with variables; invoke it twice with different inputs; verify substitution.
+
+**Pick one source prompt** (any will do):
+
+- [`prompts/refactoring/extract-function.md`](../../prompts/refactoring/extract-function.md)
+- [`prompts/testing/write-tests.md`](../../prompts/testing/write-tests.md)
+- [`prompts/documentation/write-docstring.md`](../../prompts/documentation/write-docstring.md)
+
+**Task:**
+
+1. Copy the prompt body to `.github/prompts/[verb-object].prompt.md`.
+2. Convert each `[PLACEHOLDER]` to `${input:placeholderName}`. Use camelCase for the variable names.
+3. Add frontmatter:
+   - `mode` — `ask` or `agent`, matching the source prompt's recommended mode.
+   - `description` — one sentence shown in the `/` picker.
+   - `model` — only if the source prompt explicitly recommends a premium model.
+   - `tools` — only if `mode: agent` and you need to scope tools.
+4. Invoke the prompt in chat with `/[name]`. Provide one set of inputs.
+5. Invoke it again with a different set of inputs. Confirm both runs produced output appropriate to their inputs.
+
+**Self-check:**
+
+- [ ] The frontmatter has `mode` and `description` at minimum.
+- [ ] Every `${input:...}` matches a variable that actually changes between the two runs.
+- [ ] The two runs produced visibly different output (proving substitution worked).
+- [ ] No secrets, internal hostnames, or temporary task context in the body.
+- [ ] The description clearly states the action; a teammate could pick it from the `/` list without opening the file.
+
+**Deliverable:** Commit the new `.prompt.md` file plus a short note (in the commit message or a `RUN.md`) showing the two invocations and their inputs.
+
+> **Anti-pattern check:** If you find yourself writing a prompt body longer than ~150 lines or describing two unrelated objectives, split it. One prompt file = one named action.
+
+---
+
 ## Navigation
 
 ← [README.md](./README.md) — Module overview and scenario reference

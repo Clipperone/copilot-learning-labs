@@ -32,7 +32,7 @@ No prior Copilot experience is required. Familiarity with VS Code and at least o
 After completing this course, you will be able to:
 
 - Configure GitHub Copilot Pro+ and VS Code for maximum productivity
-- Choose the right Copilot mode — inline completion, chat, ask, edit, plan, agent — for any task
+- Choose the right Copilot mode — inline completion, inline chat, Ask, Plan, Agent — for any task (Edit mode was consolidated into Agent mode in VS Code 1.110)
 - Write effective, repeatable prompts for code generation, refactoring, debugging, testing, documentation, and security review
 - Design persistent custom instructions that guide Copilot consistently across a project
 - Define role-specialized agents with clear responsibilities, tool boundaries, and handoff protocols
@@ -40,12 +40,13 @@ After completing this course, you will be able to:
 - Minimize premium request consumption while maximizing output quality
 - Maintain architectural quality and enforce human governance of AI-generated code
 - Follow a structured 7/30/60/90-day personal adoption roadmap
+- Use Copilot beyond the IDE — coding agent (issue → PR), Copilot in github.com (PR summaries, review, issue triage), and the `gh copilot` CLI
 
 ---
 
 ## Course Structure
 
-The course is organized into **10 modules** across **4 progressive levels**, each paired with hands-on labs and reusable assets.
+The course is organized into **11 modules** across **4 progressive levels**, each paired with hands-on labs and reusable assets.
 
 | Level | Modules | Estimated time | Key skill unlocked |
 |-------|---------|---------------|-------------------|
@@ -59,6 +60,7 @@ The course is organized into **10 modules** across **4 progressive levels**, eac
 | **Expert** | 08 — Advanced Features | 3h | Leverage AI review, planning, terminal, and CI/CD integration |
 | **Expert** | 09 — Repository Quality | 2h | Keep repositories AI-friendly and architecturally sound |
 | **Expert** | 10 — Adoption Roadmap | 2h | Build and execute a 7/30/60/90-day adoption plan |
+| **Expert** | 11 — Platform & GitHub.com Integration | 2h | Use Copilot beyond the IDE: coding agent, github.com, `gh copilot` CLI |
 
 ---
 

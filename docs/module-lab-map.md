@@ -9,4 +9,5 @@
 - Module 07 → labs/lab-07-multi-agent-workflow/
 - Module 08 → labs/lab-08-advanced-feature-tour/
 - Module 09 → labs/lab-09-repository-health-audit/
-- Module 10 → capstone/README.md
+- Module 10 → capstone/README.md (Deliverables 1–7)
+- Module 11 → in-module exercises only (no separate lab; coding-agent / github.com / CLI work happens outside a local repo). Capstone Deliverable 8 ties M11 work into the capstone.

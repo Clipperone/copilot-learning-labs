@@ -29,6 +29,8 @@ This document shows which modules depend on which, and in what order the full co
                                                     │
                                           10-adoption-roadmap
                                                     │
+                                          11-platform-integration
+                                                    │
                                                capstone/
 ```
 
@@ -49,7 +51,8 @@ Each module assumes completion of all modules before it in this chain.
 | Lab 07 — Run a Complete Multi-Agent Workflow | Module 07 | Lab 06 |
 | Lab 08 — Advanced Feature Tour | Module 08 | Lab 07 |
 | Lab 09 — Repository Health Audit | Module 09 | none (standalone) |
-| Capstone — End-to-End Copilot Workflow Integration | Module 10 | Labs 01–09 |
+| Module 11 — Platform & GitHub.com Integration | Module 11 (in-module exercises only — no separate lab; coding-agent / github.com / CLI work happens outside a local repo, so a lab folder would be artificial) | Module 10 |
+| Capstone — End-to-End Copilot Workflow Integration | Module 11 | Labs 01–09 + Module 11 in-module exercises |
 
 ---
 
@@ -63,7 +66,11 @@ Each module assumes completion of all modules before it in this chain.
 | `checklists/ai-output-review.md` | Module 01 |
 | `checklists/pre-commit.md` | Module 02 |
 | `checklists/adoption-milestones.md` | Module 10 |
-| `capstone/` | Module 10 |
+| `.vscode/mcp.json` (example) | Module 08 |
+| `.github/prompts/*.prompt.md` | Module 04 |
+| `.github/agents/*.agent.md` (custom agents) | Module 08 |
+| `.github/copilot-setup-steps.yml` | Module 11 |
+| `capstone/` | Module 10 (D1–D7) + Module 11 (D8) |
 
 ---
 

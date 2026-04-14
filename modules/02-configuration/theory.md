@@ -181,3 +181,7 @@ Task properties relevant to Copilot agent mode:
 - [copilot-instructions.md documentation](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
 - [EditorConfig specification](https://editorconfig.org/)
 - [Ruff documentation](https://docs.astral.sh/ruff/)
+
+---
+
+← [Back to Module 02 README](./README.md)

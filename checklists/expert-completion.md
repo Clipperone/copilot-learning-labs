@@ -53,6 +53,10 @@ This is a synthesis checklist. It draws on skills from the full course — not j
 - [ ] `checklists/adoption-milestones.md` reflects actual current state at each milestone
 - [ ] `capstone/checklist.md` fully verified — every row checked
 
+**Platform deliverable (M11 skills applied)**
+
+- [ ] `capstone/platform-artifact.md` committed — Option A (coding-agent PR + 5-step review notes + decision) OR Option B (`copilot-setup-steps.yml` + before/after PR summary with all 4 properties)
+
 ---
 
 ## Cross-Level Synthesis

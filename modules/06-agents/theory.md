@@ -85,3 +85,7 @@ The cost of a wrong tool choice is real: an unnecessary agent session consumes 5
 - [GitHub Copilot agents documentation](https://docs.github.com/en/copilot/concepts/agents)
 - [Custom agents in GitHub Copilot](https://docs.github.com/en/copilot/concepts/agents/cloud-agent/about-custom-agents)
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot)
+
+---
+
+← [Back to Module 06 README](./README.md)

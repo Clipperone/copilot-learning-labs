@@ -47,6 +47,21 @@ Use the first section before the Capstone as a readiness gate. Use the second se
 - [ ] I can state conditions that should trigger a `CONVENTIONS.md` update.
 - [ ] I understand that the capstone is a checkpoint, not a graduation.
 
+**Reading the Copilot usage dashboard (Exercise 6)**
+
+- [ ] I can name where dashboard data lives at the individual, org-admin, and enterprise tiers.
+- [ ] I can name the 3 trustworthy signals (engagement breadth, agent-vs-inline ratio, premium quota burn rate) and what each tells me.
+- [ ] I can name the 3 misleading metrics (raw acceptance %, lines accepted, "time saved") and explain why each misleads.
+- [ ] I completed Exercise 6 — read a dashboard snapshot, separated signals from noise, and chose one immediate action vs. one deferred conversation.
+
+**Content exclusions — admin controls (Exercise 7)**
+
+- [ ] I can distinguish `.copilotignore` (developer, workspace) from content exclusions (admin, org/enterprise).
+- [ ] I know the 3 scopes (repo, org, enterprise) and the precedence rule.
+- [ ] I can map a Module 08 sensitivity class (Restricted / Confidential / Internal / Public) to an exclusion treatment.
+- [ ] I can name 3 things exclusions do NOT solve (retroactive removal, copy-paste bypass, replacement for `.gitignore`).
+- [ ] I completed Exercise 7 — drafted 5 patterns tied to sensitivity classes and named 2 risks not solved by exclusions alone.
+
 ---
 
 ## After Capstone — Capstone Completion
@@ -65,6 +80,10 @@ Use the first section before the Capstone as a readiness gate. Use the second se
 - [ ] `capstone/roadmap.md` — all 6 sections filled; no stubs; 3 KPIs from minimum set; ≥5 governance rules; review date specific.
 - [ ] `checklists/adoption-milestones.md` reflects actual current state at each milestone.
 - [ ] `checklists/expert-completion.md` every item checked or annotated — none left blank.
+
+**Platform deliverable (M11 applied)**
+
+- [ ] `capstone/platform-artifact.md` — Option A (coding-agent PR + 5-step review notes + decision) OR Option B (`copilot-setup-steps.yml` + before/after PR summary with all 4 properties).
 
 ---
 

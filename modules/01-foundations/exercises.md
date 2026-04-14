@@ -160,6 +160,6 @@ After completing all six exercises, answer these in your own words (no submissio
 1. Which mode would you use to understand a 200-line function you've never seen before?
 2. Which mode would you use to scaffold a new API endpoint across three files?
 3. What's the cost difference between Exercise 2 (Ask, default model) and a full Agent session?
-4. In Exercise 3 (Edit), why is reviewing the diff before accepting it important?
+4. In Exercise 3 (Agent), why is reviewing the diff before accepting it important?
 5. In Exercise 4 (Plan), what would have gone wrong if you had skipped to coding immediately?
 6. In Exercise 6, which tasks were the hardest to classify, and why?

@@ -7,7 +7,7 @@ Use this checklist after completing Modules 01–03 and Labs 01–03 to confirm 
 ## Module 01: Foundations
 
 - [ ] Copilot Pro+ is active — no status bar errors
-- [ ] Can switch between Ask, Edit, Plan, and Agent modes
+- [ ] Can switch between Ask, Plan, and Agent modes (Edit mode was consolidated into Agent in VS Code 1.110)
 - [ ] Can trigger and dismiss inline completions and inline chat
 - [ ] Can explain — in one sentence each — when to use each mode
 - [ ] Applies the four critical review questions to AI-generated code

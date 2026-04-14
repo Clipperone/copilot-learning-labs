@@ -1,6 +1,6 @@
 # Capstone Completion Checklist
 
-Use this checklist to confirm all 7 deliverables are complete and committed before marking the course done.
+Use this checklist to confirm all 8 deliverables are complete and committed before marking the course done.
 
 ---
 
@@ -15,6 +15,7 @@ Use this checklist to confirm all 7 deliverables are complete and committed befo
 | 5 | `agents/workflow-[name].md` — all 5 required sections; no compound sub-tasks | ☐ | ☐ |
 | 6 | `capstone/validation-report.md` — all 5 gates; BLOCKED result; Gate 4 SQL injection named | ☐ | ☐ |
 | 7 | `capstone/roadmap.md` — all 6 sections; no stubs; 3 KPIs; ≥5 governance rules; review date specific | ☐ | ☐ |
+| 8 | `capstone/platform-artifact.md` — Option A (coding-agent PR + 5-step review notes + decision) OR Option B (`copilot-setup-steps.yml` + before/after PR summary with all 4 properties) | ☐ | ☐ |
 
 ---
 
@@ -39,9 +40,17 @@ Use this checklist to confirm all 7 deliverables are complete and committed befo
 
 ---
 
+## capstone/platform-artifact.md Gate
+
+- [ ] One option is fully completed (A or B — not a partial mix)
+- [ ] **Option A:** PR URL + 5-step review notes (pull, read, run, scope-check, commits) + merge/reject decision with reasoning
+- [ ] **Option B:** `.github/copilot-setup-steps.yml` committed + before-and-after PR summaries showing all 4 properties (what changed, why, what did NOT change, risk surface)
+
+---
+
 ## Final Verification
 
-- [ ] All 7 deliverable files are committed — not just saved locally
+- [ ] All 8 deliverable files are committed — not just saved locally
 - [ ] `checklists/expert-completion.md` has been reviewed — every item checked or annotated
 - [ ] `checklists/adoption-milestones.md` reflects actual current state at each milestone
 - [ ] `modules/10-adoption-roadmap/checklist.md` After Capstone section is fully checked

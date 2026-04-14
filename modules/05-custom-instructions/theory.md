@@ -90,7 +90,23 @@ Instruction files are not a substitute for every type of guidance.
 | One-off task constraint | Prompt constraint (Constraints line) |
 | Exploratory or experimental session | Prompt only — do not pollute instructions with temporary rules |
 | Framework migration in progress | Prompt-per-turn with explicit version context, not an instruction — rules change during migration |
-| Guidance that differs per task type | Prompt library template (parameterized) |
+| Guidance that differs per task type | Prompt file (`.prompt.md`) — see Module 04 |
+| Reusable named action invokable from chat | Prompt file (`.prompt.md`) — see Module 04 |
+| Bounded role with restricted tool access | Custom agent — see Module 06 |
+
+### Instruction file vs. prompt file vs. custom agent
+
+These three mechanisms cover different needs and are not interchangeable. Choose by activation pattern, not by familiarity.
+
+| Mechanism | Activation | Lives at | Best for |
+|-----------|-----------|----------|---------|
+| **Instruction file** (this module) | Always-on for matching scope | `.github/copilot-instructions.md` or `.github/instructions/*.instructions.md` | Conventions, style rules, "always do X" guidance |
+| **Prompt file** (Module 04) | On-demand via `/[name]` in chat | `.github/prompts/*.prompt.md` | Reusable named actions: extract function, write tests, audit security |
+| **Custom agent** (Module 06) | On-demand via `@[name]` in Agent mode | `.github/agents/*.agent.md` | Scoped role with bounded tool permissions, durable persona |
+
+**Rule of thumb:** If the rule must fire on every relevant turn → instruction file. If it is a discrete action a developer chooses to run → prompt file. If it is a bounded role with restricted tools → agent.
+
+**Migration pattern:** When prose in your instruction file describes a step-by-step action ("To extract a function, do X then Y..."), that is a prompt file in disguise. Move it.
 
 ---
 
@@ -100,3 +116,7 @@ Instruction files are not a substitute for every type of guidance.
 - [Custom instructions for GitHub Copilot](https://docs.github.com/en/copilot/customizing-copilot/adding-repository-custom-instructions-for-github-copilot)
 - [Prompt files and reusable prompts (VS Code)](https://code.visualstudio.com/docs/copilot/customization/prompt-files)
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot)
+
+---
+
+← [Back to Module 05 README](./README.md)

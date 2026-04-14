@@ -211,3 +211,7 @@ A repository that satisfies all 6 properties today may degrade over time without
 - [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot)
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+
+---
+
+← [Back to Module 09 README](./README.md)

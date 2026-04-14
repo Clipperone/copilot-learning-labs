@@ -6,7 +6,7 @@ Use this checklist after completing Modules 06–07 and Labs 06–07 to confirm 
 
 ## Module 06: Agents and Role Specialization
 
-- [ ] Can state the 3 conditions that make Agent mode the correct choice over Ask, Edit, or Plan
+- [ ] Can state the 3 conditions that make Agent mode the correct choice over Ask or Plan
 - [ ] Can name all 4 required anatomy fields: purpose, constraints, tool permissions, handoff criteria
 - [ ] Can pass the completeness test on any persona definition — all 4 "can I tell you" questions have specific answers
 - [ ] Can name all 10 agent roles and state the primary output for each

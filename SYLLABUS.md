@@ -15,7 +15,7 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | 1 — Beginner | 01–03 | 01–03 | ~6 hrs | Use all modes correctly, configure a project, make cost-aware decisions |
 | 2 — Intermediate | 04–05 | 04–05 | ~5 hrs | Write structured prompts for any scenario, maintain persistent custom instructions |
 | 3 — Advanced | 06–07 | 06–07 | ~6 hrs | Define and operate 10 specialized agents, run coordinated multi-agent workflows |
-| 4 — Expert | 08–10 + Capstone | 08–09 | ~7 hrs | Apply all features, govern AI output, produce 7 committed deliverables spanning the full course |
+| 4 — Expert | 08–11 + Capstone | 08–09 (M10/M11 are in-module only) | ~9 hrs | Apply all features, govern AI output, integrate platform/github.com surfaces, produce 8 committed deliverables spanning the full course |
 
 ---
 
@@ -269,11 +269,35 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 | 60 days | Agent workflows, advanced features in production | 10 agent definitions + first multi-agent run |
 | 90 days | Full mastery, governance, team rollout ready | Capstone complete; adoption plan written and shared |
 
+**Lab:** None (capstone follows Module 11)
+
+---
+
+### [Module 11: Platform & GitHub.com Integration](./modules/11-platform-integration/)
+
+**Goal:** Use Copilot beyond VS Code — coding agent (issue → PR), Copilot in github.com (PR summaries, review, issue triage), and the `gh copilot` CLI. Choose the right surface per task.
+
+**Prerequisite:** Module 10 complete.
+
+| Topic | Key skills |
+|-------|-----------|
+| Copilot coding agent | Scope an issue for delegation; review the resulting PR like an external contribution |
+| Copilot in github.com | PR summaries with all 4 properties; Copilot review triage; issue summarization |
+| `gh copilot` CLI | `suggest` and `explain`; the M08 4-question gate at the terminal |
+| Surface decision matrix | VS Code / github.com / CLI / coding agent — pick the right one |
+| `copilot-setup-steps.yml` | Configuring the coding-agent sandbox |
+
+**Module:** [modules/11-platform-integration/](./modules/11-platform-integration/)
+**Lab:** None — exercises run in-module on github.com / CLI / sandbox repos
+**Deliverable:** Capstone Deliverable 8 — `capstone/platform-artifact.md`
+
+---
+
 **Capstone:** [/capstone/](./capstone/)
 
 **Level 4 completion:** → [checklists/expert-completion.md](./checklists/expert-completion.md)
 
-**Deliverables:** `.github/copilot-instructions.md`, `CONVENTIONS.md`, ≥3 agent definitions, ≥3 prompt entries, one multi-agent workflow file, `capstone/validation-report.md` (5-gate pre-merge result), and `capstone/roadmap.md` (self-placement + 90-day plan + KPIs + governance policy)
+**Deliverables:** `.github/copilot-instructions.md`, `CONVENTIONS.md`, ≥3 agent definitions, ≥3 prompt entries, one multi-agent workflow file, `capstone/validation-report.md` (5-gate pre-merge result), `capstone/roadmap.md` (self-placement + 90-day plan + KPIs + governance policy), and `capstone/platform-artifact.md` (M11 platform deliverable)
 
 ---
 
@@ -299,6 +323,8 @@ This curriculum teaches GitHub Copilot Pro+ from first use to full professional 
 09-repository-quality
       │
 10-adoption-roadmap
+      │
+11-platform-integration
       │
   Capstone
 ```

@@ -95,9 +95,96 @@ Output: Test file content only — starting from the import line.
 
 ---
 
+## Prompt Files (`.prompt.md`)
+
+A prompt file is the productized form of a parameterized template. Instead of pasting a Markdown prompt and filling placeholders by hand, you save the prompt as a `.prompt.md` file and invoke it directly in chat with `/`.
+
+### Where prompt files live
+
+| Scope | Location | When to use |
+|-------|----------|-------------|
+| Workspace | `.github/prompts/*.prompt.md` (or `.prompts/`) | Repo-wide team prompts, version-controlled |
+| User | VS Code user prompts directory | Personal prompts that follow you across projects |
+
+### Anatomy
+
+```markdown
+---
+mode: agent
+model: claude-sonnet
+tools: ['codebase', 'editFiles']
+description: Extract a long function into smaller helpers
+---
+
+Task: Refactor `${input:targetFunction}` in `${file}` by extracting helpers.
+Constraints:
+  - Each helper has one responsibility and ≤ 20 lines.
+  - Public signature of `${input:targetFunction}` does not change.
+  - Existing tests must still pass.
+Output: The full updated file content only.
+```
+
+**Frontmatter fields:**
+
+- `mode` — `ask`, `agent`, or omit to inherit current mode.
+- `model` — pin a specific model; omit to use the chat's current model.
+- `tools` — list of tool names (Agent mode only) the prompt may use.
+- `description` — shown in the `/` picker.
+
+**Body substitutions:**
+
+- `${input:variableName}` — prompts the user when invoked.
+- `${input:variableName:default}` — with a default value.
+- `${selection}` — current editor selection.
+- `${file}` — current file path.
+- `${workspaceFolder}` — repo root.
+
+### Decision table — instructions vs. prompt files vs. agents
+
+| Mechanism | Activation | Best for |
+|-----------|-----------|---------|
+| Instruction file (Module 05) | Always-on for matching scope | Conventions, style, "always do X" |
+| Prompt file (`.prompt.md`) | On-demand via `/` | Reusable actions: extract function, write tests, security audit |
+| Custom agent (Module 06 + 08) | On-demand via `@` | Scoped role with bounded tool permissions |
+
+**Quick rule:** If the rule should fire **every** turn → instruction file. If it is a **named action** I run sometimes → prompt file. If it is a **bounded role with restricted tools** → agent.
+
+### Conventions
+
+- **Naming:** `verb-object.prompt.md` — `extract-function.prompt.md`, `audit-security.prompt.md`.
+- **One objective per file.** If you find yourself adding `OR` to the description, split it.
+- **Version with the repo.** Treat prompts like code — review them in PRs, change `Verified` dates when they change.
+- **Link upstream.** When a prompt relies on a path-specific instruction file, mention it in the description.
+
+### Anti-patterns
+
+- **Prompt files for one-off tasks.** If you will run it once, just type the prompt — no file needed.
+- **Secrets in frontmatter.** Frontmatter is committed. No tokens, no internal hostnames.
+- **Body bloat.** A prompt body over ~150 lines is doing too much — split into two prompts and chain them.
+- **Inheriting a model with no rationale.** If a prompt pins `model: o3`, the description must say *why* — otherwise the next contributor will not know whether to keep or remove the pin.
+- **Prompt files as documentation.** A `.prompt.md` file is something Copilot runs. If you want humans to read it for guidance, that belongs in `prompts/README.md` or in `instructions/`.
+
+### Migrating an existing Markdown prompt to `.prompt.md`
+
+The course already contains a Markdown prompt library at [prompts/](../../prompts/). Each file there can be promoted to a runnable `.prompt.md`:
+
+1. Copy the prompt file to `.github/prompts/[name].prompt.md`.
+2. Convert each `[PLACEHOLDER]` to `${input:placeholderName}`.
+3. Add frontmatter with `mode`, `description`, and (if needed) `model` and `tools`.
+4. Run it twice with different inputs to verify variables substitute correctly.
+5. Add a one-line cross-reference back to the source Markdown so contributors know they are paired.
+
+> Verify availability and frontmatter schema against the [VS Code prompt files docs](https://code.visualstudio.com/docs/copilot/customization/prompt-files) — both the format and the supported tools list evolve.
+
+---
+
 ## Official Resources
 
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot)
 - [GitHub Copilot Chat in your IDE](https://docs.github.com/en/copilot/how-tos/chat-with-copilot/chat-in-ide)
 - [Prompt engineering for Copilot Chat (VS Code)](https://code.visualstudio.com/docs/copilot/copilot-chat#_prompt-engineering-with-copilot-chat)
 - [GitHub Copilot model selection (VS Code)](https://code.visualstudio.com/docs/copilot/copilot-chat#_use-a-specific-chat-model)
+
+---
+
+← [Back to Module 04 README](./README.md)

@@ -111,6 +111,39 @@ For each row: name the failure mode, then quote the phrase from the description 
 
 ---
 
+## Exercise 6 — Design an Agent for a Role Not in the Catalog
+
+**Objective:** Produce a complete 4-field persona definition and tool-permissions matrix for a role that is **not** one of the 10 core agents in this module. Tests whether you can apply the anatomy to an unfamiliar domain, without copying a template.
+
+**Scenario — pick one (or substitute your own team's equivalent):**
+
+- **A.** *Kubernetes Migration Specialist* — converts a docker-compose service into a Helm chart with production-safe defaults.
+- **B.** *Database Schema Reviewer* — audits a proposed SQL migration for backwards compatibility, index strategy, and rollback safety.
+- **C.** *Accessibility Auditor* — reviews a React component for WCAG 2.2 AA violations and proposes fixes.
+- **D.** *Dependency Upgrade Analyst* — evaluates a single `package.json`/`requirements.txt` upgrade for breaking-change risk.
+
+**Task:**
+
+Produce a file `agents/[role-name].md` containing:
+
+1. **Purpose** — one sentence naming the single deliverable this role produces.
+2. **Constraints** — at least 3 bounded rules (imperative, verifiable). No "use best practices."
+3. **Tool permissions matrix** — the full table (Read, Edit, Create, Terminal, Web search) with a justification for every ❌.
+4. **Handoff criteria** — the exact artifact name, the review gate that signals completion, and the next role (or human) who takes over.
+5. **Model recommendation** — default or premium, with one-sentence rationale (reference the escalation guidance in [docs/model-selection-reference.md](../../docs/model-selection-reference.md)).
+
+**Self-check — your definition passes if:**
+
+- [ ] A colleague reading only your file could run an initialization prompt without asking you follow-ups.
+- [ ] Each constraint names *what must/must not happen*, not intent.
+- [ ] No tool is granted "just in case" — every ✅ is load-bearing for the single deliverable.
+- [ ] The handoff artifact is a file or a specific review gate, not a verbal conclusion.
+- [ ] Running this role for 45 minutes would produce exactly one reviewable output.
+
+> **Anti-pattern to avoid:** Do not derive this role by renaming an existing one (e.g., "Code Reviewer, but for databases"). The role's *deliverable* must be distinct, or it belongs as a path-specific instruction under an existing role.
+
+---
+
 ## Answer Guidance
 
 Confirm your answers against the [README.md](./README.md) sections Risks and Safeguards, Agent Anatomy, and Tool Permissions Model before proceeding to Lab 06.

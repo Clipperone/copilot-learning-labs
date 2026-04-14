@@ -183,13 +183,12 @@ You have completed this module when you can:
 - [ ] Describe the governance policy tier that applies to your current team size.
 - [ ] Run the 4-step monthly review cycle on your own repository without referencing this document.
 
-**Next step:** → [Capstone — End-to-End Copilot Workflow Integration](../../capstone/)
+**Next step:** → [Module 11 — Platform & GitHub.com Integration](../11-platform-integration/), then [Capstone](../../capstone/).
 
 ---
 
 ## Module Complete
 
-This is the final module. You have completed the full GitHub Copilot Pro+ Mastery course.
-
-→ Complete the [capstone](../../capstone/) — produce 7 committed deliverables spanning M04–M10.
+→ Continue to [Module 11 — Platform & GitHub.com Integration](../11-platform-integration/) for the non-IDE surfaces (coding agent, github.com, `gh copilot` CLI).
+→ Then complete the [capstone](../../capstone/) — 8 committed deliverables spanning M04–M11.
 → Self-assess with [checklists/expert-completion.md](../../checklists/expert-completion.md) to verify Expert-level readiness.

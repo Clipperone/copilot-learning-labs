@@ -107,3 +107,7 @@ In a 2-session workflow, a slightly imprecise handoff is recoverable. In a 4-ses
 - [Agent mode in VS Code](https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode)
 - [Copilot customization in VS Code](https://code.visualstudio.com/docs/copilot/copilot-customization)
 - [GitHub Copilot documentation](https://docs.github.com/en/copilot)
+
+---
+
+← [Back to Module 07 README](./README.md)

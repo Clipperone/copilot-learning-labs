@@ -83,6 +83,8 @@ Inline completion and Inline chat are editor interactions and are not listed in 
 
 **Agent mode** is the most powerful but also the most expensive in terms of premium requests. It can loop through multiple steps, run commands, read and write files, and use web search if configured.
 
+> **Note on Edit mode.** Earlier VS Code versions had a separate **Edit mode** panel for coordinated multi-file edits. It was consolidated into Agent mode in **VS Code 1.110**. The capability still exists — see Module 08 for how to do "Edits-style" work inside Agent mode and via custom agents. Older docs, tutorials, or screenshots that show four panel modes (Ask / Edit / Plan / Agent) are out of date.
+
 ---
 
 ## AI Failure Mode Reference
@@ -122,6 +124,25 @@ VS Code includes the content of open files in the context it sends to the model.
 
 ---
 
+## When NOT to Use Copilot
+
+Copilot is a productivity amplifier, not a universal tool. Situations where reaching for it hurts more than helps:
+
+| Situation | Why Copilot is the wrong tool | What to do instead |
+|-----------|------------------------------|-------------------|
+| **You do not understand the problem yet** | Copilot will generate plausible code for the wrong problem. You ship faster, but in the wrong direction. | Read, sketch, or ask a colleague first. Return when you can state the task in one sentence. |
+| **The change is a one-character edit you already know** | Invoking chat or inline chat is slower than typing. | Type it. |
+| **Sensitive data is in scope** (credentials, PII, regulated data, customer secrets) | The file may be included in the prompt and sent to the model. Check your org's content-exclusion policy first. | Close or exclude the file; redact before asking; use `.copilotignore` (Module 08). |
+| **The code must be novel for legal or compliance reasons** (patents, licensing, clean-room) | Copilot's suggestions can echo training data. Code referencing and license filters reduce but do not eliminate the risk. | Disable suggestions for the file/repo; document the decision. |
+| **You are learning a concept for the first time** | Accepting a suggestion skips the struggle that produces real learning. | Write the code yourself; use Ask mode afterwards to review your solution. |
+| **The task is pure mechanical refactor your IDE can do safely** (rename symbol, extract method) | The IDE's static tools are exact; Copilot is probabilistic. | Use VS Code's built-in refactor (`F2` rename, extract method). |
+| **You are debugging a race condition, memory leak, or concurrency issue** | These bugs require runtime evidence (logs, traces, profilers). Copilot cannot see runtime state. | Reproduce, profile, then bring findings to Copilot for analysis. |
+| **The stakes of a wrong answer are severe and unverifiable locally** (production migrations, irreversible deletions, crypto parameters) | A plausible-looking answer that is subtly wrong is worse than no answer. | Use Copilot to draft a checklist of considerations; validate each against authoritative sources. |
+
+**Rule of thumb:** If you cannot state how you will verify the output, you are not ready to use Copilot on this task.
+
+---
+
 ## Official Resources
 
 - [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
@@ -129,3 +150,7 @@ VS Code includes the content of open files in the context it sends to the model.
 - [GitHub Copilot plan comparison](https://docs.github.com/en/copilot/about-github-copilot/subscription-plans-for-github-copilot)
 - [VS Code Copilot keyboard shortcuts](https://code.visualstudio.com/docs/copilot/copilot-vscode-features)
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+
+---
+
+← [Back to Module 01 README](./README.md)

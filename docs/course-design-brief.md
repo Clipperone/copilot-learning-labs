@@ -94,7 +94,7 @@ Build the full course and repository content so that it explicitly covers all th
 ### 1) Foundations
 - installation, authentication, activation, and environment verification in VS Code
 - key Copilot settings in VS Code
-- differences between inline completion, chat, ask, edit, plan, and agent mode (according to the current official feature set)
+- differences between inline completion, inline chat, Ask, Plan, and Agent modes (according to the current official feature set; Edit mode was consolidated into Agent in VS Code 1.110)
 - when to use each mode
 - how to evaluate AI output critically instead of trusting it blindly
 

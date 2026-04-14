@@ -26,7 +26,7 @@ Answer these questions to self-place:
 **You:** New to Copilot, or using it passively (ghost text + occasional chat) without deliberate technique.
 
 **You will be able to, after this path:**
-- Use all six Copilot modes correctly and choose the right one for each task
+- Use all current Copilot modes (inline completion, inline chat, Ask, Plan, Agent) correctly and choose the right one for each task
 - Configure any project with a working instruction file, linter, and task runner
 - Make cost-aware decisions between included and premium requests without looking them up
 - Evaluate AI-generated code with the four-question review gate before every commit
@@ -143,12 +143,14 @@ Answer these questions to self-place:
 | 3 | [Module 09 — AI-Friendly Repository Engineering](./modules/09-repository-quality/) | ~2 hrs |
 | 4 | [Lab 09 — Repository Health Audit](./labs/lab-09-repository-health-audit/) | ~60 min |
 | 5 | [Module 10 — Adoption Roadmap](./modules/10-adoption-roadmap/) | ~2 hrs |
-| 6 | [Capstone — End-to-End Copilot Workflow Integration](./capstone/) | ~2 hrs |
-| 7 | [expert-completion.md](./checklists/expert-completion.md) ← final self-assessment | — |
+| 6 | [Module 11 — Platform & GitHub.com Integration](./modules/11-platform-integration/) | ~2 hrs |
+| 7 | [Capstone — End-to-End Copilot Workflow Integration](./capstone/) | ~2 hrs |
+| 8 | [expert-completion.md](./checklists/expert-completion.md) ← final self-assessment | — |
 
 **Exit deliverables:**
-- 7 capstone deliverables committed (instructions, conventions, agents, prompts, workflow, validation report, roadmap)
+- 8 capstone deliverables committed (instructions, conventions, agents, prompts, workflow, validation report, roadmap, platform artifact)
 - Written 90-day adoption roadmap
+- One platform artifact (coding-agent PR or `copilot-setup-steps.yml` + rewritten PR summary)
 - [checklists/expert-completion.md](./checklists/expert-completion.md) fully checked
 
 ---
@@ -226,6 +228,8 @@ Then start Path 1 from the beginning.
 09-repository-quality
       |
 10-adoption-roadmap
+      |
+11-platform-integration
       |
   Capstone
 ```

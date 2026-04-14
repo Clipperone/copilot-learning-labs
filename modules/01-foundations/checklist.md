@@ -59,6 +59,14 @@ Use this checklist to self-assess before moving to Module 02. Every item must be
 
 ---
 
+## When NOT to Use Copilot
+
+- [ ] I can name at least 4 situations where Copilot is the wrong tool (see [theory.md](./theory.md) — *When NOT to Use Copilot*)
+- [ ] I apply the rule of thumb: if I cannot state how I will verify the output, I am not ready to use Copilot on this task
+- [ ] I know which sensitivity classes (credentials, PII, regulated data) require closing or excluding the file before any chat turn
+
+---
+
 ## Ready for Module 02?
 
 If every box above is checked, proceed to:

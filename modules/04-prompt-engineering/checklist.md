@@ -34,6 +34,14 @@ Use this checklist after finishing the module and before starting Lab 04. If you
 - [ ] I know the four signs that a prompt is ready to commit to the shared library.
 - [ ] I have read [templates/prompt-template.md](../../templates/prompt-template.md).
 
+## Prompt Files (`.prompt.md`)
+
+- [ ] I can name where prompt files live (workspace `.github/prompts/` and user prompts directory).
+- [ ] I can write the minimum frontmatter (`mode`, `description`) and add `model` / `tools` only when justified.
+- [ ] I can convert `[PLACEHOLDER]` to `${input:variableName}` and use `${selection}` / `${file}` / `${workspaceFolder}` correctly.
+- [ ] I can choose between an instruction file (always-on), a prompt file (named action), and a custom agent (scoped role).
+- [ ] I completed Exercise 6 — promoted one Markdown prompt to `.prompt.md` and verified two invocations with different inputs.
+
 ## Premium Model Decisions
 
 - [ ] I know which scenarios warrant a premium model and can justify the decision.

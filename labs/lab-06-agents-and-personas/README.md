@@ -15,7 +15,7 @@ After completing this lab you can write a complete agent persona definition usin
 
 ## Prerequisites
 
-- [ ] Completed [Module 06 — Agents and Role Specialization](../../modules/06-agents/) and all 5 exercises
+- [ ] Completed [Module 06 — Agents and Role Specialization](../../modules/06-agents/) and all 6 exercises
 - [ ] GitHub Copilot Pro+ active in VS Code — Agent mode required
 - [ ] Lab 05 complete (the starter project is the same codebase)
 - [ ] [templates/agent-definition-template.md](../../templates/agent-definition-template.md) open in a reference tab

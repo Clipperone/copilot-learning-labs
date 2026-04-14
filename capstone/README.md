@@ -2,7 +2,7 @@
 
 > **Level:** Expert
 > **Estimated time:** ~2 hours
-> **Prerequisite:** All 10 modules complete. `checklists/advanced-completion.md` fully checked.
+> **Prerequisite:** All 11 modules complete. `checklists/advanced-completion.md` fully checked.
 > **Verified:** 2026-04
 
 This capstone has no solution directory. Your deliverables reflect your project context. What they must contain is defined here; what they say is yours.
@@ -19,7 +19,7 @@ This is not a planning exercise. It is a build exercise that ends with a plan.
 
 ## Prerequisites
 
-- [ ] Modules 01–10 complete
+- [ ] Modules 01–11 complete
 - [ ] `checklists/advanced-completion.md` fully checked
 - [ ] `modules/10-adoption-roadmap/checklist.md` — Before Capstone section checked
 - [ ] A designated project context (see Setup below)
@@ -33,7 +33,7 @@ This is not a planning exercise. It is a build exercise that ends with a plan.
 - **Option A — Provided scenario:** Use the scenario in the Project Brief below. All deliverables go in this course repository under the paths in the Deliverables table.
 - **Option B — Real project:** Apply the capstone to an active project from your work. Commit configuration deliverables (items 1–5) to that repository. Commit `capstone/validation-report.md` and `capstone/roadmap.md` to this course repository either way. Record the external repository URL in `capstone/roadmap.md` Section 1.
 
-**Step 2 — Verify Copilot Pro+ is active** and all 5 modes are accessible in VS Code.
+**Step 2 — Verify Copilot Pro+ is active**, all current panel modes (Ask, Plan, Agent) are accessible in VS Code, and `gh copilot` CLI is installed (Module 11).
 
 **Step 3 — Confirm** `checklists/advanced-completion.md` is fully checked before opening any session.
 
@@ -59,7 +59,7 @@ There are no starter files for this capstone. Begin from an empty directory or y
 
 ## Required Deliverables
 
-Seven deliverables. Each maps to one or more modules. All must be committed.
+Eight deliverables. Each maps to one or more modules. All must be committed.
 
 | # | Deliverable | Where it lives | Module |
 |---|-------------|---------------|--------|
@@ -70,6 +70,7 @@ Seven deliverables. Each maps to one or more modules. All must be committed.
 | 5 | `agents/workflow-[name].md` — one multi-agent workflow with all 5 required sections | This course repo `agents/` | M07 |
 | 6 | `capstone/validation-report.md` — gate-by-gate pre-merge validation of the diff below | This course repo `capstone/` | M08/M09 |
 | 7 | `capstone/roadmap.md` — 90-day adoption plan with self-placement, milestones, KPIs, governance policy, and review cycle commitment | This course repo `capstone/` | M10 |
+| 8 | `capstone/platform-artifact.md` — one platform artifact (Option A: coding-agent PR + your review notes; Option B: `copilot-setup-steps.yml` + rewritten PR summary) | This course repo `capstone/` | M11 |
 
 ---
 
@@ -142,7 +143,7 @@ Each row must have a gate deliverable that is a specific file or checklist — n
 | 7 days | [aligned to your weakest Level 1–2 skill] | [specific file or checklist] |
 | 30 days | [aligned to your Level 2–3 gaps] | [specific file or checklist] |
 | 60 days | [aligned to your Level 3–4 gaps] | [specific file or checklist] |
-| 90 days | Full integration and team rollout ready | Capstone all 7 deliverables committed; `checklists/expert-completion.md` reviewed |
+| 90 days | Full integration and team rollout ready | Capstone all 8 deliverables committed; `checklists/expert-completion.md` reviewed |
 
 **Section 3 — KPI selection**
 
@@ -166,7 +167,7 @@ State a specific monthly review date. Name who is responsible for each of the 4 
 
 The capstone is complete when:
 
-1. All 7 deliverables are committed to the repository (or linked project for Option B)
+1. All 8 deliverables are committed to the repository (or linked project for Option B)
 2. `capstone/validation-report.md` exists with all 5 gates assessed, BLOCKED result, and Gate 4 (OWASP A03 — SQL injection) identified as the primary blocking gate
 3. `capstone/roadmap.md` exists with all 6 sections filled — no `[specific evidence]` or `[specific file]` stubs remaining
 4. `checklists/expert-completion.md` has been reviewed — every item is either checked or annotated with a remediation note
@@ -185,6 +186,7 @@ The capstone is complete when:
 | `agents/workflow-[name].md` | All 5 required sections present; each sub-task has one named output file and one acceptance criterion; no compound steps |
 | `capstone/validation-report.md` | All 5 gates assessed with Pass/Fail/Partial; Gate 4 (OWASP A03 — SQL injection) recorded as BLOCKING; overall result is BLOCKED |
 | `capstone/roadmap.md` | All 6 sections present; no stubs; 3 KPIs from the minimum set; ≥5 governance rules in declarative format; review date specific |
+| `capstone/platform-artifact.md` | Option A: links to the coding-agent PR + 5-step review notes (pull, read, run, scope-check, commits) + merge/reject decision with reasoning. OR Option B: committed `copilot-setup-steps.yml` + before/after PR summary showing all 4 properties (what changed, why, what did NOT change, risk surface) |
 
 ---
 
@@ -224,14 +226,16 @@ This capstone exercises these Copilot modes:
 | Workflow file | Ask (structure output; verify sub-tasks manually) | Low |
 | Validation report | Ask (diff as input; binary per-gate output) | Low |
 | `roadmap.md` | Plan mode (for structure); all decisions are yours | Low |
+| `platform-artifact.md` (Option A) | Copilot coding agent (one bounded issue) | Medium–High |
+| `platform-artifact.md` (Option B) | github.com PR summary + manual rewrite | Low |
 
-One Ask session and one Plan session for the roadmap is sufficient. No Agent session is warranted for any capstone deliverable — the decisions belong to you, not the model.
+One Ask session and one Plan session for the roadmap is sufficient. No in-IDE Agent session is warranted for any capstone deliverable — the decisions belong to you, not the model. The coding-agent run for Deliverable 8 (Option A) is the only autonomous session in the capstone; scope tightly per Module 11.
 
 ---
 
 ## When You Are Done
 
-1. Verify all 7 deliverables are committed (use `capstone/checklist.md`)
+1. Verify all 8 deliverables are committed (use `capstone/checklist.md`)
 2. Review `checklists/expert-completion.md` — check or annotate every item
 3. Update `checklists/adoption-milestones.md` with your current actual state
 4. Return to `modules/10-adoption-roadmap/checklist.md` and complete the After Capstone section

@@ -279,7 +279,7 @@ See [checklist.md](./checklist.md) for the full self-assessment.
 |------|---------|
 | `README.md` | Module overview (this file) |
 | `theory.md` | Extended reference — Plan mode internals, CI/CD integration patterns, enterprise context controls |
-| `exercises.md` | All 5 exercises with full instructions and expected answers |
+| `exercises.md` | All 8 exercises with full instructions and expected answers |
 | `checklist.md` | Completion checklist and self-assessment |
 
 ---

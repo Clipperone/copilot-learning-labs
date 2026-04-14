@@ -63,7 +63,7 @@ Open the folder in VS Code, install the recommended extensions when prompted, an
 
 | Skill area | What you will be able to do |
 |------------|----------------------------|
-| **Setup and modes** | Configure Copilot Pro+ and VS Code for maximum productivity; choose the right mode — inline completion, chat, ask, edit, plan, agent — for any task |
+| **Setup and modes** | Configure Copilot Pro+ and VS Code for maximum productivity; choose the right mode — inline completion, inline chat, Ask, Plan, Agent — for any task |
 | **Prompt engineering** | Write effective, repeatable prompts for code generation, refactoring, debugging, testing, documentation, and security review |
 | **Custom instructions** | Design persistent instructions that guide Copilot consistently across a project at global, project, and path scope |
 | **Agent workflows** | Define role-specialized agents with clear responsibilities, tool permissions, and handoff protocols |
@@ -103,6 +103,7 @@ Open the folder in VS Code, install the recommended extensions when prompted, an
 | 08 | [Advanced Features](./modules/08-advanced-features/) | Expert | [Lab 08 — Advanced Feature Tour](./labs/lab-08-advanced-feature-tour/) | Plan mode, AI review, terminal integration, CI/CD |
 | 09 | [AI-Friendly Repository Engineering](./modules/09-repository-quality/) | Expert | [Lab 09 — Repository Health Audit](./labs/lab-09-repository-health-audit/) | AI-friendly project structure, governance, review protocols |
 | 10 | [Adoption Roadmap](./modules/10-adoption-roadmap/) | Expert | [Capstone](./capstone/) | 7/30/60/90-day personal and team adoption plan |
+| 11 | [Platform & GitHub.com Integration](./modules/11-platform-integration/) | Expert | [Capstone](./capstone/) (Deliverable 8) | Coding agent, Copilot in github.com, `gh copilot` CLI, surface decisions |
 
 ---
 

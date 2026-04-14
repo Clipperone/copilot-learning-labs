@@ -38,6 +38,15 @@ Use this checklist to self-assess before moving to Module 04.
 
 ---
 
+## Context Variables and Chat Participants
+
+- [ ] I can name and use `#file:`, `#selection`, `#codebase`, `#sym`, `#changes`, `#terminalLastCommand`
+- [ ] I can name and use `@workspace`, `@terminal`, `@vscode` and state when each is the right participant
+- [ ] I default to `#file:` over leaving tabs open, and to `@workspace` over pasting multiple files
+- [ ] I treat `#codebase` as a discovery tool, not a default — I use it only when I do not know where the answer lives
+
+---
+
 ## Exercise Completion
 
 - [ ] Exercise 1 completed — classified 10 actions correctly

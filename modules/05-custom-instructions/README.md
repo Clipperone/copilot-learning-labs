@@ -28,7 +28,7 @@ Module 04 built the constraint layer one prompt at a time. Every structured prom
 
 This module makes that constraint layer automatic. An instruction file is a constraint you write once. It applies to every Copilot session in its scope without typing it again.
 
-The gain is not just convenience. Consistent instructions mean consistent output — across team members, across days, and across modes (ask, edit, agent). A team that has invested 30 minutes writing a good instruction file gets systematically better output than a team that wings it each time.
+The gain is not just convenience. Consistent instructions mean consistent output — across team members, across days, and across modes (Ask, Plan, Agent). A team that has invested 30 minutes writing a good instruction file gets systematically better output than a team that wings it each time.
 
 ---
 

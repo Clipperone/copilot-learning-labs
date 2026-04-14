@@ -111,7 +111,7 @@ Day 1 checklist for new Copilot team members:
 ```text
 CONVENTIONS.md — Copilot Policy (v1.0 · YYYY-MM)
 
-Rule 1: Every AI-assisted commit includes an `AI-assisted:` trailer specifying mode (Ask, Edit, Plan, or Agent).
+Rule 1: Every AI-assisted commit includes an `AI-assisted:` trailer specifying mode (Ask, Plan, or Agent).
 Rule 2: Every AI-assisted commit includes a `Reviewed-by:` trailer with the reviewer's full name.
 Rule 3: All AI-generated functions must include an inline comment with the originating prompt on the first commit.
 Rule 4: `.copilotignore` entries may only be added or removed via pull request with a senior engineer approval.
@@ -138,3 +138,80 @@ Rule 5: CONVENTIONS.md may only be changed via pull request with at least two ap
 | Checklist freshness audit | Open `checklists/ai-output-review.md`; verify the OWASP check section reflects the team's current use of AI-generated API endpoints and pytest coverage | One-sentence note per checklist section: whether current or flagged for update |
 | Agent drift review | Open the 3 most-used agent definitions (by frequency of use in the past month); compare stated tool permissions to what was actually used; flag any handoff that did not match the documented criterion | Updated `## Revision Notes` section in each definition where mismatches were found |
 | Roadmap sync | Open `checklists/adoption-milestones.md`; mark actual state for the current 30/60/90-day milestone; record gap if off-track | Updated `adoption-milestones.md` with current date and actual status |
+
+---
+
+## Exercise 6: Reading the Copilot Usage Dashboard
+
+**Objective:** Distinguish governance signals from misleading metrics.
+
+**Scenario:** Your org's Copilot admin dashboard shows the following snapshot for a 12-person engineering team after the first month:
+
+| Metric | Value |
+|--------|-------|
+| Active users (any interaction in past 7 days) | 7 / 12 (58%) |
+| Suggestions shown per developer per day | 142 |
+| Acceptance rate | 41% |
+| Lines of code accepted | 4,820 |
+| Premium requests used | 38% of monthly cap, day 8 of 30 |
+| Agent-mode share of premium requests | 78% |
+| Self-reported time saved (survey) | 6 hours/week/developer |
+
+**Task:**
+
+1. Name the **3 trustworthy signals** in this snapshot. State what each tells you about adoption health.
+2. Name the **2 misleading metrics** in this snapshot. State why they should not drive decisions.
+3. State **one immediate action** you would take based on the signals and **one conversation** you would defer until the next monthly review.
+
+**Expected answer:**
+
+1. Trustworthy signals:
+   - **Engagement breadth (58%).** Below the 60% week-4 threshold — adoption-failure signal. Five developers have not yet integrated Copilot into their daily flow.
+   - **Premium quota burn rate (38% on day 8).** Linear projection: ~143% of cap by month-end. Quota exhaustion is imminent unless something changes.
+   - **Agent-mode share (78%).** Very high — either the team is solving genuinely Agent-grade problems, or mode-selection discipline (M03/M06) has slipped. The number itself is a signal that warrants investigation.
+2. Misleading metrics:
+   - **Acceptance rate (41%).** Cannot tell if low because reviewers are rigorous (good) or because suggestions are poor (bad). Not actionable on its own.
+   - **Lines accepted (4,820) and "time saved" (6h/week).** Volume and self-report; neither has a verifiable baseline.
+3. **Immediate action:** Investigate the Agent-mode share — pull the top 3 users by Agent session count, ask what they are using Agent for. If the answer is "single-file edits," they need M03 retraining. **Deferred conversation:** the engagement-breadth gap (5 inactive developers) belongs in the next monthly review with onboarding owners, not in a same-day intervention.
+
+> **Anti-pattern check:** A common mistake is to celebrate the high "time saved" number. Without a pre-Copilot baseline, this number measures team optimism, not productivity.
+
+---
+
+## Exercise 7: Drafting a Content Exclusion Policy
+
+**Objective:** Write 5 admin-scope content exclusions tied to sensitivity classes; identify what exclusions cannot solve.
+
+**Scenario:** A 30-person fintech engineering org is rolling out Copilot Business. Their codebase contains:
+
+- Customer PII in `services/customers/` (regulated, GDPR + PCI-DSS)
+- Payment processor integration secrets in `**/.env*` and `infra/secrets/**`
+- Generated protobuf clients in `**/generated/**` (low value as suggestions; pollutes context)
+- Internal-only audit logs in `compliance/audit/**` (sensitive but read by compliance team)
+- Public marketing site source in `website/` (no restriction)
+
+**Task:**
+
+1. Draft the **5 exclusion patterns** that should be added to the **organization-scope** content exclusions list. For each, state:
+   - The glob pattern.
+   - The sensitivity class from Module 08.
+   - One-sentence rationale.
+2. Identify **2 risks** that exclusions alone do **not** solve for this org. For each, name the additional control needed.
+
+**Expected answer:**
+
+1. Exclusion patterns:
+
+    | Pattern | Sensitivity (M08) | Rationale |
+    |---------|------------------|-----------|
+    | `**/.env`, `**/.env.*` | Restricted | Credentials must never enter any AI context |
+    | `infra/secrets/**` | Restricted | Payment processor keys; treat the same as `.env` |
+    | `services/customers/**` | Confidential (regulated) | GDPR/PCI-DSS scope; org-level enforcement required for compliance |
+    | `compliance/audit/**` | Confidential | Audit log content includes user actions and decisions; not for AI inference |
+    | `**/generated/**` | Internal | Not a security exclusion — a context-pollution exclusion; suggesting generated code wastes tokens |
+
+2. What exclusions do NOT solve:
+   - **Retroactive removal.** Exclusions stop new sends; they do not affect data already used in any model's training. Additional control: secret rotation policy for any credential that may have been sent before the exclusion was active.
+   - **Local file-handling errors.** A developer who copy-pastes excluded content into chat bypasses the exclusion. Additional control: the M01 "When NOT to use Copilot" rule + DLP scanning on outbound chat traffic at the network layer (Enterprise feature).
+
+> **Anti-pattern check:** Adding `**/website/**` to the exclusion list "to be safe" would block legitimate Copilot use on the marketing site without security benefit. Exclusions are not free — every exclusion is a place Copilot cannot help.

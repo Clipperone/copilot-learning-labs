@@ -1,12 +1,12 @@
 # Module 06 — Completion Checklist
 
-Use this checklist after finishing the module reading and all 5 exercises, and before starting Lab 06. If you cannot check an item confidently, revisit the linked section in [README.md](./README.md).
+Use this checklist after finishing the module reading and all 6 exercises, and before starting Lab 06. If you cannot check an item confidently, revisit the linked section in [README.md](./README.md).
 
 ---
 
 ## What Is an Agent Session?
 
-- [ ] I can state the 3 conditions that make Agent mode the correct choice over Ask, Edit, or Plan.
+- [ ] I can state the 3 conditions that make Agent mode the correct choice over Ask or Plan.
 - [ ] I can apply the cost test — "Could a structured Ask prompt produce the same result?" — and give the answer that justifies using an agent.
 - [ ] I know why agent sessions are more expensive than Ask mode and can name two specific reasons.
 
@@ -46,6 +46,14 @@ Use this checklist after finishing the module reading and all 5 exercises, and b
 
 - [ ] I know which roles justify a premium model: Security Reviewer — and sometimes Solution Architect and Performance Optimizer.
 - [ ] I know which roles do not justify a premium model and can state why.
+
+## Designing a Novel Agent (Exercise 6)
+
+- [ ] I completed Exercise 6 — produced a 4-field persona for a role outside the 10-role catalog without copying a template.
+- [ ] My definition includes a tool-permissions matrix with a justification for every ❌ entry.
+- [ ] My handoff criteria name a specific artifact and the next role (or human) who takes over.
+- [ ] I selected default vs. premium model with a one-sentence rationale tied to the role's deliverable.
+- [ ] My role's deliverable is genuinely distinct — it is not a renamed version of an existing catalog role.
 
 ---
 

@@ -139,7 +139,7 @@ Everything you produce is usable in your own projects immediately.
 
 ---
 
-## Capstone — 7 Deliverables
+## Capstone — 8 Deliverables
 
 Apply every skill from the course to a single project context.
 

@@ -77,6 +77,40 @@ Remedy: start a new session with a compressed summary of what was established.
 
 ---
 
+## Context Variables and Chat Participants
+
+VS Code exposes a named vocabulary for scoping what the model sees. Using these explicitly is cheaper and more predictable than relying on whatever happens to be open.
+
+### Context variables (`#`) — narrow the input
+
+| Variable | What it adds to context | When to use |
+|----------|------------------------|-------------|
+| `#file:path/to/file.py` | The full contents of one file | You want Copilot to reason about a specific file that may not be open |
+| `#selection` | The currently highlighted text in the editor | Targeted edits or explanations of a code fragment |
+| `#codebase` | A workspace-wide semantic search over indexed files | You do not know which files are relevant; let Copilot find them |
+| `#sym:symbolName` | Definition and usages of a named symbol | Refactor, rename, or explain a function/class across files |
+| `#changes` | The current Git diff (staged + unstaged) | Commit messages, PR summaries, self-review before push |
+| `#terminalLastCommand` / `#terminalSelection` | Last terminal output, or highlighted terminal text | Debug a failed command without copy-pasting |
+
+### Chat participants (`@`) — change who answers
+
+| Participant | Scope / capability | Typical prompts |
+|-------------|-------------------|-----------------|
+| `@workspace` | Reasons over the whole workspace using semantic index | "Where is authentication handled?" "What calls `User.delete()`?" |
+| `@terminal` | Generates and explains shell commands; reads last terminal output | "Why did `pytest` fail?" "Command to find files larger than 10MB" |
+| `@vscode` | Answers about VS Code itself — settings, commands, keybindings | "How do I enable format on save?" "What command opens the terminal?" |
+
+### Discipline rules
+
+1. **Prefer `#file:` over "open all the tabs you need."** Explicit references are deterministic; tab-sweeping is not.
+2. **Prefer `@workspace` over pasting multiple files.** The semantic index is optimized; manual pastes burn tokens and frequently miss the relevant file anyway.
+3. **`#codebase` is a discovery tool, not a default.** It widens the window; use it when you genuinely do not know where the answer lives.
+4. **Name the participant first, then the question.** `@terminal why did the last command fail?` beats a generic chat turn asking about the terminal.
+
+> Feature availability and participant names evolve. Verify against the [VS Code chat context docs](https://code.visualstudio.com/docs/copilot/chat/copilot-chat-context) before assuming behavior.
+
+---
+
 ## Prompt Architecture
 
 A complete prompt has three components. Missing any one forces a follow-up:
@@ -155,3 +189,7 @@ These are estimates. Check your actual usage at [github.com/settings/copilot](ht
 - [Premium requests documentation](https://docs.github.com/en/copilot/concepts/billing/copilot-requests)
 - [GitHub Copilot model selection (VS Code)](https://code.visualstudio.com/docs/copilot/copilot-chat#_use-a-specific-chat-model)
 - [Understanding context in Copilot](https://code.visualstudio.com/docs/copilot/copilot-chat#_use-chat-variables)
+
+---
+
+← [Back to Module 03 README](./README.md)

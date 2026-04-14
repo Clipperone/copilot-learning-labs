@@ -65,7 +65,7 @@ nav_order: 1
 
 | Resource | Description |
 |----------|-------------|
-| [Modules](modules) | All 10 learning modules |
+| [Modules](modules) | All 11 learning modules |
 | [Labs](labs) | 9 hands-on labs with starter files and solutions |
 | [Prompt Library](prompt-library) | Reusable prompts by category |
 | [Capstone](capstone) | Final integration project with 7 deliverables |

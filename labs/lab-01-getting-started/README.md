@@ -72,7 +72,7 @@ If any prerequisite is unmet, complete the setup steps in [Module 01 — Foundat
 
 **Covers:** Module 01 §3 — choosing the right mode for each task
 
-**Goal:** Use Ask, Edit, Plan, and Inline chat on different task types to build mode-selection instinct.
+**Goal:** Use Ask, Agent, Plan, and Inline chat on different task types to build mode-selection instinct.
 
 Before each sub-task: state which mode you are using and why (one sentence in your own head or in a comment).
 
